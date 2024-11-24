@@ -12,7 +12,9 @@
 DataPacket USER[MAX_USERS];
 Data_send_server data;
 Type_open_door action;
-Student student;
+//Student student;
+Student students[MAX_STUDENTS];
+
 
 volatile enum statemachine currentstate = STATE_IDLE;
 

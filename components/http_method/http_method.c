@@ -5,6 +5,7 @@
 
 
 
+
 void process_json_data(const char *json_data) {
     cJSON *json_array = cJSON_Parse(json_data);
     if (json_array == NULL || !cJSON_IsArray(json_array)) {
@@ -12,9 +13,11 @@ void process_json_data(const char *json_data) {
         return;
     }
 
+    int student_count = 0;
+
     // Lặp qua từng đối tượng trong mảng JSON
     int array_size = cJSON_GetArraySize(json_array);
-    for (int i = 0; i < array_size; i++) {
+    for (int i = 0; i < array_size && student_count < MAX_STUDENTS; i++) {
         cJSON *item = cJSON_GetArrayItem(json_array, i);
 
         // Lấy từng trường dữ liệu
@@ -33,35 +36,44 @@ void process_json_data(const char *json_data) {
         }
 
         // Tạo một đối tượng sinh viên
-        Student student;
-        student.id = id->valueint;
-        strncpy(student.full_name, full_name->valuestring, sizeof(student.full_name) - 1);
-        strncpy(student.student_id, student_id->valuestring, sizeof(student.student_id) - 1);
-        strncpy(student.position, position->valuestring, sizeof(student.position) - 1);
-        strncpy(student.email, email->valuestring, sizeof(student.email) - 1);
-        strncpy(student.password, password->valuestring, sizeof(student.password) - 1);
-        student.pass_en = pass_en->valueint;
-        student.fing_en = fing_en->valueint;
+        students[student_count].id = id->valueint;
+        strncpy(students[student_count].full_name, full_name->valuestring, sizeof(students[student_count].full_name) - 1);
+        strncpy(students[student_count].student_id, student_id->valuestring, sizeof(students[student_count].student_id) - 1);
+        strncpy(students[student_count].position, position->valuestring, sizeof(students[student_count].position) - 1);
+        strncpy(students[student_count].email, email->valuestring, sizeof(students[student_count].email) - 1);
+        strncpy(students[student_count].password, password->valuestring, sizeof(students[student_count].password) - 1);
+        students[student_count].pass_en = pass_en->valueint;
+        students[student_count].fing_en = fing_en->valueint;
+        
+
+        student_count++;
 
         // Lưu vào NVS
         nvs_handle_t nvs_handle;
         esp_err_t err = nvs_open("storage", NVS_READWRITE, &nvs_handle);
         if (err == ESP_OK) {
             char key[20];
-            snprintf(key, sizeof(key), "student_%d", student.id);
+            snprintf(key, sizeof(key), "student_%d", students[student_count].id);
             char value[200];
-            snprintf(value, sizeof(value), "%s|%s|%s|%s|%s|%d|%d", student.full_name, student.student_id, student.position, student.email, student.password, student.pass_en, student.fing_en);
+            snprintf(value, sizeof(value), "%s|%s|%s|%s|%s|%d|%d",  students[student_count].full_name, 
+                                                                    students[student_count].student_id, 
+                                                                    students[student_count].position, 
+                                                                    students[student_count].email, 
+                                                                    students[student_count].password, 
+                                                                    students[student_count].pass_en, 
+                                                                    students[student_count].fing_en);
 
             nvs_set_str(nvs_handle, key, value); // Lưu thông tin sinh viên
             nvs_commit(nvs_handle); // Ghi vào flash
             nvs_close(nvs_handle);
 
-            ESP_LOGI(TAG, "Stored student: %s", student.full_name);
+            ESP_LOGI(TAG, "Stored student: %s", students[student_count].full_name);
         } else {
             ESP_LOGE(TAG, "Failed to open NVS");
         }
     }
 
+    
     // Giải phóng bộ nhớ JSON
     cJSON_Delete(json_array);
 }
@@ -132,6 +144,14 @@ void http_get_task(void *pvParameters) {
         esp_http_client_handle_t client = esp_http_client_init(&config_get);
         esp_http_client_perform(client);
         esp_http_client_cleanup(client);
+
+
+        // ESP_LOGI(TAG, "STUDENT_LIST");
+        // for (int i = 0; i < 5; i++) {
+        //     ESP_LOGI("STUDENT", "ID: %d, Full Name: %s, Student ID: %s, Position: %s, Email: %s, Password: %s, Pass Enabled: %d, Fingerprint Enabled: %d",
+        //             students[i].id, students[i].full_name, students[i].student_id, students[i].position,
+        //             students[i].email, students[i].password, students[i].pass_en, students[i].fing_en);
+        // }
 
         vTaskDelay(5000 / portTICK_PERIOD_MS);
     }

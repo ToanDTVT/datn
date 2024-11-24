@@ -7,7 +7,7 @@
 #include "user_data.h"
 #include "wifi_config.h"
 
-extern Student student;
+extern Student students[MAX_STUDENTS];
 
 //void fetch_database();
 

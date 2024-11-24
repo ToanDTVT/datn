@@ -1,0 +1,200 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Nov 21 2024 21:08:18[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2669ch (157340) map[0m
+[0;32mI (163) esp_image: segment 1: paddr=000366c4 vaddr=3ffb0000 size=03c68h ( 15464) load[0m
+[0;32mI (170) esp_image: segment 2: paddr=0003a334 vaddr=40080000 size=05ce4h ( 23780) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a3288h (668296) map[0m
+[0;32mI (421) esp_image: segment 4: paddr=000e32b0 vaddr=40085ce4 size=116dch ( 71388) load[0m
+[0;32mI (463) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (463) boot: Disabling RNG early entropy source...[0m
+[0;32mI (475) cpu_start: Multicore app[0m
+[0;32mI (476) cpu_start: Pro cpu up.[0m
+[0;32mI (476) cpu_start: Starting app cpu, entry point is 0x40081480[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (495) cpu_start: Pro cpu start user code[0m
+[0;32mI (495) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (495) cpu_start: Application information:[0m
+[0;32mI (500) cpu_start: Project name:     datn[0m
+[0;32mI (505) cpu_start: App version:      7f3f230-dirty[0m
+[0;32mI (510) cpu_start: Compile time:     Nov 25 2024 02:51:07[0m
+[0;32mI (516) cpu_start: ELF file SHA256:  e7b0cb861af259e5...[0m
+[0;32mI (522) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (527) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (532) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (537) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (542) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (549) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (555) heap_init: At 3FFBE408 len 00021BF8 (134 KiB): DRAM[0m
+[0;32mI (561) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (568) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (574) heap_init: At 400973C0 len 00008C40 (35 KiB): IRAM[0m
+[0;32mI (582) spi_flash: detected chip: generic[0m
+[0;32mI (585) spi_flash: flash io: dio[0m
+[0;32mI (590) app_start: Starting scheduler on CPU0[0m
+[0;32mI (594) app_start: Starting scheduler on CPU1[0m
+[0;32mI (594) main_task: Started on CPU0[0m
+[0;32mI (604) main_task: Calling app_main()[0m
+[0;32mI (604) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (614) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (624) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (634) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (644) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (654) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (654) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (664) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (714) wifi:wifi driver task: 3ffc7b4c, prio:23, stack:6656, core=0[0m
+[0;32mI (724) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (724) wifi:wifi certification version: v7.0[0m
+[0;32mI (724) wifi:config NVS flash: enabled[0m
+[0;32mI (724) wifi:config nano formating: disabled[0m
+[0;32mI (734) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (734) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (734) wifi:Init management short buffer num: 32[0m
+[0;32mI (744) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (744) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (754) wifi:Init static rx buffer num: 10[0m
+[0;32mI (754) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (764) wifi_init: rx ba win: 6[0m
+[0;32mI (764) wifi_init: tcpip mbox: 32[0m
+[0;32mI (764) wifi_init: udp mbox: 6[0m
+[0;32mI (774) wifi_init: tcp mbox: 6[0m
+[0;32mI (774) wifi_init: tcp tx win: 5760[0m
+[0;32mI (774) wifi_init: tcp rx win: 5760[0m
+[0;32mI (784) wifi_init: tcp mss: 1440[0m
+[0;32mI (784) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (794) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (794) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;33mW (884) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (944) wifi:mode : sta (cc:7b:5c:28:c2:a8)[0m
+[0;32mI (944) wifi:enable tsf[0m
+[0;32mI (1954) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1954) wifi:state: init -> auth (b0)[0m
+[0;32mI (1974) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1984) wifi:state: assoc -> run (10)[0m
+[0;31mE (2954) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2954) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2954) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (2964) HTTP_CLIENT: STUDENT_LIST[0m
+[0;32mI (2964) STUDENT: ID: 0, Full Name: , Student ID: , Position: , Email: , Password: , Pass Enabled: 0, Fingerprint Enabled: 0[0m
+[0;32mI (2974) STUDENT: ID: 0, Full Name: , Student ID: , Position: , Email: , Password: , Pass Enabled: 0, Fingerprint Enabled: 0[0m
+[0;32mI (2994) STUDENT: ID: 0, Full Name: , Student ID: , Position: , Email: , Password: , Pass Enabled: 0, Fingerprint Enabled: 0[0m
+[0;32mI (3004) STUDENT: ID: 0, Full Name: , Student ID: , Position: , Email: , Password: , Pass Enabled: 0, Fingerprint Enabled: 0[0m
+[0;32mI (3014) STUDENT: ID: 0, Full Name: , Student ID: , Position: , Email: , Password: , Pass Enabled: 0, Fingerprint Enabled: 0[0m
+Password: 
+[0;32mI (3024) main_task: Returned from app_main()[0m
+[0;32mI (4104) wifi:connected with BaPhuQuy, aid = 1, channel 1, BW20, bssid = e0:b6:68:22:70:2b[0m
+[0;32mI (4114) wifi:security: WPA2-PSK, phy: bgn, rssi: -45[0m
+[0;32mI (4114) wifi:pm start, type: 1[0m
+
+[0;32mI (4114) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4144) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (5384) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (6214) wifi:<ba-add>idx:0 (ifx:0, e0:b6:68:22:70:2b), tid:6, ssn:3, winSize:64[0m
+[0;32mI (7124) esp_netif_handlers: sta ip: 192.168.2.17, mask: 255.255.255.0, gw: 192.168.2.253[0m
+[0;32mI (7614) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (8044) wifi:<ba-add>idx:1 (ifx:0, e0:b6:68:22:70:2b), tid:0, ssn:0, winSize:64[0m
+[0;32mI (8084) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (8194) HTTP_CLIENT: Stored student: [0m
+[0;32mI (8194) HTTP_CLIENT: Stored student: [0m
+[0;32mI (8204) HTTP_CLIENT: Stored student: [0m
+[0;32mI (8204) HTTP_CLIENT: Stored student: [0m
+[0;32mI (8214) HTTP_CLIENT: Stored student: [0m
+[0;32mI (8214) HTTP_CLIENT: STUDENT_LIST[0m
+[0;32mI (8214) STUDENT: ID: 1, Full Name: Trần Quốc Toàn, Student ID: 2014785, Position: sinh viên, Email: toan.tran3112@hcmut.edu.vn, Password: 311202, Pass Enabled: 1, Fingerprint Enabled: 0[0m
+[0;32mI (8234) STUDENT: ID: 2, Full Name: Nguyễn Tiến Nhật, Student ID: 2014846, Position: sinh viên, Email: nhat.nguyen@hcmut.edu.vn, Password: , Pass Enabled: 0, Fingerprint Enabled: 0[0m
+[0;32mI (8254) STUDENT: ID: 3, Full Name: Trịnh Tự Minh, Student ID: 2014113, Position: sinh viên, Email: tu.minh3@hcmut.edu.vn, Password: , Pass Enabled: 0, Fingerprint Enabled: 0[0m
+[0;32mI (8274) STUDENT: ID: 4, Full Name: Trần Anh Tú, Student ID: 2014742, Position: sinh viên, Email: tu.anh@hcmut.edu.vn, Password: , Pass Enabled: 0, Fingerprint Enabled: 0[0m
+[0;32mI (8284) STUDENT: ID: 7, Full Name: Đặng Phước Cường , Student ID: 2014666, Position: sinh viên, Email: dp.cuong@hcmut.edu.vn, Password: 030802, Pass Enabled: 1, Fingerprint Enabled: 0[0m
+[0;32mI (9844) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (12074) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (13394) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (13514) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (13514) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (13514) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (13524) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (13534) HTTP_CLIENT: Stored student: [0m
+[0;32mI (13534) HTTP_CLIENT: STUDENT_LIST[0m
+[0;32mI (13544) STUDENT: ID: 1, Full Name: Trần Quốc Toàn, Student ID: 2014785, Position: sinh viên, Email: toan.tran3112@hcmut.edu.vn, Password: 311202, Pass Enabled: 1, Fingerprint Enabled: 0[0m
+[0;32mI (13554) STUDENT: ID: 2, Full Name: Nguyễn Tiến Nhật, Student ID: 2014846, Position: sinh viên, Email: nhat.nguyen@hcmut.edu.vn, Password: , Pass Enabled: 0, Fingerprint Enabled: 0[0m
+[0;32mI (13574) STUDENT: ID: 3, Full Name: Trịnh Tự Minh, Student ID: 2014113, Position: sinh viên, Email: tu.minh3@hcmut.edu.vn, Password: , Pass Enabled: 0, Fingerprint Enabled: 0[0m
+[0;32mI (13594) STUDENT: ID: 4, Full Name: Trần Anh Tú, Student ID: 2014742, Position: sinh viên, Email: tu.anh@hcmut.edu.vn, Password: , Pass Enabled: 0, Fingerprint Enabled: 0[0m
+[0;32mI (13604) STUDENT: ID: 7, Full Name: Đặng Phước Cường , Student ID: 2014666, Position: sinh viên, Email: dp.cuong@hcmut.edu.vn, Password: 030802, Pass Enabled: 1, Fingerprint Enabled: 0[0m
+[0;32mI (14304) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (16534) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (18774) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (18844) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (18954) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (18954) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (18964) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (18974) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (18974) HTTP_CLIENT: Stored student: [0m
+[0;32mI (18984) HTTP_CLIENT: STUDENT_LIST[0m
+[0;32mI (18984) STUDENT: ID: 1, Full Name: Trần Quốc Toàn, Student ID: 2014785, Position: sinh viên, Email: toan.tran3112@hcmut.edu.vn, Password: 311202, Pass Enabled: 1, Fingerprint Enabled: 0[0m
+[0;32mI (19004) STUDENT: ID: 2, Full Name: Nguyễn Tiến Nhật, Student ID: 2014846, Position: sinh viên, Email: nhat.nguyen@hcmut.edu.vn, Password: , Pass Enabled: 0, Fingerprint Enabled: 0[0m
+[0;32mI (19024) STUDENT: ID: 3, Full Name: Trịnh Tự Minh, Student ID: 2014113, Position: sinh viên, Email: tu.minh3@hcmut.edu.vn, Password: , Pass Enabled: 0, Fingerprint Enabled: 0[0m
+[0;32mI (19034) STUDENT: ID: 4, Full Name: Trần Anh Tú, Student ID: 2014742, Position: sinh viên, Email: tu.anh@hcmut.edu.vn, Password: , Pass Enabled: 0, Fingerprint Enabled: 0[0m
+[0;32mI (19054) STUDENT: ID: 7, Full Name: Đặng Phước Cường , Student ID: 2014666, Position: sinh viên, Email: dp.cuong@hcmut.edu.vn, Password: 030802, Pass Enabled: 1, Fingerprint Enabled: 0[0m
+[0;32mI (21004) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (23234) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (24174) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (24284) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (24284) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (24294) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (24294) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (24304) HTTP_CLIENT: Stored student: [0m
+[0;32mI (24314) HTTP_CLIENT: STUDENT_LIST[0m
+[0;32mI (24314) STUDENT: ID: 1, Full Name: Trần Quốc Toàn, Student ID: 2014785, Position: sinh viên, Email: toan.tran3112@hcmut.edu.vn, Password: 311202, Pass Enabled: 1, Fingerprint Enabled: 0[0m
+[0;32mI (24334) STUDENT: ID: 2, Full Name: Nguyễn Tiến Nhật, Student ID: 2014846, Position: sinh viên, Email: nhat.nguyen@hcmut.edu.vn, Password: , Pass Enabled: 0, Fingerprint Enabled: 0[0m
+[0;32mI (24344) STUDENT: ID: 3, Full Name: Trịnh Tự Minh, Student ID: 2014113, Position: sinh viên, Email: tu.minh3@hcmut.edu.vn, Password: , Pass Enabled: 0, Fingerprint Enabled: 0[0m
+[0;32mI (24364) STUDENT: ID: 4, Full Name: Trần Anh Tú, Student ID: 2014742, Position: sinh viên, Email: tu.anh@hcmut.edu.vn, Password: , Pass Enabled: 0, Fingerprint Enabled: 0[0m
+[0;32mI (24384) STUDENT: ID: 7, Full Name: Đặng Phước Cường , Student ID: 2014666, Position: sinh viên, Email: dp.cuong@hcmut.edu.vn, Password: 030802, Pass Enabled: 1, Fingerprint Enabled: 0[0m
+[0;32mI (25464) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (27694) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (29574) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (29684) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (29684) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (29694) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (29704) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (29704) HTTP_CLIENT: Stored student: [0m
+[0;32mI (29714) HTTP_CLIENT: STUDENT_LIST[0m
+[0;32mI (29714) STUDENT: ID: 1, Full Name: Trần Quốc Toàn, Student ID: 2014785, Position: sinh viên, Email: toan.tran3112@hcmut.edu.vn, Password: 311202, Pass Enabled: 1, Fingerprint Enabled: 0[0m
+[0;32mI (29734) STUDENT: ID: 2, Full Name: Nguyễn Tiến Nhật, Student ID: 2014846, Position: sinh viên, Email: nhat.nguyen@hcmut.edu.vn, Password: , Pass Enabled: 0, Fingerprint Enabled: 0[0m
+[0;32mI (29754) STUDENT: ID: 3, Full Name: Trịnh Tự Minh, Student ID: 2014113, Position: sinh viên, Email: tu.minh3@hcmut.edu.vn, Password: , Pass Enabled: 0, Fingerprint Enabled: 0[0m
+[0;32mI (29764) STUDENT: ID: 4, Full Name: Trần Anh Tú, Student ID: 2014742, Position: sinh viên, Email: tu.anh@hcmut.edu.vn, Password: , Pass Enabled: 0, Fingerprint Enabled: 0[0m
+[0;32mI (29784) STUDENT: ID: 7, Full Name: Đặng Phước Cường , Student ID: 2014666, Position: sinh viên, Email: dp.cuong@hcmut.edu.vn, Password: 030802, Pass Enabled: 1, Fingerprint Enabled: 0[0m
