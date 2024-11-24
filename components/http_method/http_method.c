@@ -23,8 +23,11 @@ void process_json_data(const char *json_data) {
         cJSON *student_id = cJSON_GetObjectItem(item, "student_id");
         cJSON *position = cJSON_GetObjectItem(item, "position");
         cJSON *email = cJSON_GetObjectItem(item, "email");
+        cJSON *password = cJSON_GetObjectItem(item, "password");
+        cJSON *pass_en = cJSON_GetObjectItem(item, "pass_en");
+        cJSON *fing_en = cJSON_GetObjectItem(item, "fing_en");
 
-        if (!id || !full_name || !student_id || !position || !email) {
+        if (!id || !full_name || !student_id || !position || !email || !password || !pass_en || !fing_en) {
             ESP_LOGE(TAG, "Missing fields in JSON object");
             continue;
         }
@@ -36,6 +39,9 @@ void process_json_data(const char *json_data) {
         strncpy(student.student_id, student_id->valuestring, sizeof(student.student_id) - 1);
         strncpy(student.position, position->valuestring, sizeof(student.position) - 1);
         strncpy(student.email, email->valuestring, sizeof(student.email) - 1);
+        strncpy(student.password, password->valuestring, sizeof(student.password) - 1);
+        student.pass_en = pass_en->valueint;
+        student.fing_en = fing_en->valueint;
 
         // Lưu vào NVS
         nvs_handle_t nvs_handle;
@@ -44,7 +50,7 @@ void process_json_data(const char *json_data) {
             char key[20];
             snprintf(key, sizeof(key), "student_%d", student.id);
             char value[200];
-            snprintf(value, sizeof(value), "%s|%s|%s|%s", student.full_name, student.student_id, student.position, student.email);
+            snprintf(value, sizeof(value), "%s|%s|%s|%s|%s|%d|%d", student.full_name, student.student_id, student.position, student.email, student.password, student.pass_en, student.fing_en);
 
             nvs_set_str(nvs_handle, key, value); // Lưu thông tin sinh viên
             nvs_commit(nvs_handle); // Ghi vào flash

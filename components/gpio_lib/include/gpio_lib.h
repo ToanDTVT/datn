@@ -2,6 +2,7 @@
 #define GPIO_LIB_H
 
 #include <string.h>
+#include <stdbool.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "freertos/event_groups.h"

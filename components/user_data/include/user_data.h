@@ -9,7 +9,6 @@
 #define MAX_USERS 10
 #define SIZE_OF_PASSWORD 5
 #define MAX_STUDENTS 100
-//#define SIZE_OF_FINGERPRINT 512
 
 typedef struct {
 	uint8_t en;
@@ -48,6 +47,9 @@ typedef struct {
     char student_id[20];
     char position[20];
     char email[50];
+	char password[10];
+	int pass_en;
+	int fing_en;
 } Student;
 
 
