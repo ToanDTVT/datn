@@ -18,7 +18,7 @@ set(HEAD_HASH)
 file(READ "D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/CMakeFiles/git-data/HEAD" HEAD_CONTENTS LIMIT 1024)
 
 string(STRIP "${HEAD_CONTENTS}" HEAD_CONTENTS)
-set(GIT_DIR "D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/.git")
+set(GIT_DIR "D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/.git")
 # handle git-worktree
 if(EXISTS "${GIT_DIR}/commondir")
 	file(READ "${GIT_DIR}/commondir" GIT_DIR_NEW LIMIT 1024)
