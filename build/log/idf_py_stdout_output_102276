@@ -1,0 +1,56 @@
+-- IDF_TARGET not set, using default target: esp32
+-- Found Git: D:/ESP/ESP_v5.1.5/Espressif/tools/idf-git/2.44.0/cmd/git.exe (found version "2.44.0.windows.1")
+-- ccache will be used for faster recompilation
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: D:/ESP/ESP_v5.1.5/Espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: D:/ESP/ESP_v5.1.5/Espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: D:/ESP/ESP_v5.1.5/Espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/sdkconfig
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Found Python3: D:/ESP/ESP_v5.1.5/Espressif/python_env/idf5.1_py3.11_env/Scripts/python.exe (found version "3.11.2") found components: Interpreter
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - no
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - not found
+-- Could NOT find Threads (missing: Threads_FOUND) 
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- App "datn" version: 1
+-- Adding linker script D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos gpio_lib hal handle_fingerprint handle_password heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport uart_lib ulp unity usb user_data vfs wear_levelling wifi_provisioning wireless wpa_supplicant xtensa
+-- Component paths: D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/app_trace D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/app_update D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/bootloader D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/bootloader_support D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/bt D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/cmock D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/console D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/cxx D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/driver D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/efuse D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp-tls D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_adc D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_app_format D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_coex D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_common D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_eth D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_event D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_gdbstub D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_hid D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_server D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_https_ota D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_https_server D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_hw_support D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_lcd D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_local_ctrl D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_mm D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_netif D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_netif_stack D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_partition D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_phy D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_pm D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_psram D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_ringbuf D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_rom D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_timer D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_wifi D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/espcoredump D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esptool_py D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/fatfs D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/gpio_lib D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/hal D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/handle_fingerprint D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/handle_password D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/http_parser D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/idf_test D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/ieee802154 D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/json D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/log D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/lwip D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/mbedtls D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/mqtt D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/newlib D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/nvs_flash D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/openthread D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/partition_table D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/perfmon D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/protobuf-c D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/protocomm D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/pthread D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/sdmmc D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/soc D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/spi_flash D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/spiffs D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/tcp_transport D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/uart_lib D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/ulp D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/unity D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/usb D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/user_data D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/vfs D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/wear_levelling D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/wifi_provisioning D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wireless D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/wpa_supplicant D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/xtensa
+-- Configuring done (20.3s)
+-- Generating done (2.1s)
+-- Build files have been written to: D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build

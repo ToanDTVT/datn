@@ -1,0 +1,91 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D "D:\ESP\ESP_v5.1.5\ESP project v5.1.5\datn\build\bootloader\esp-idf\esptool_py" && D:\ESP\ESP_v5.1.5\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/mqtt_method/CMakeFiles/__idf_mqtt_method.dir/mqtt_method.c.obj
+D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/mqtt_method/mqtt_method.c: In function 'mqtt_event_handler':
+D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/mqtt_method/mqtt_method.c:128:30: warning: unused variable 'client' [-Wunused-variable]
+  128 |     esp_mqtt_client_handle_t client = event->client;
+      |                              ^~~~~~
+[5/10] Linking C static library esp-idf\mqtt_method\libmqtt_method.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable datn.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 27 ELF sections
+Successfully created esp32 image.
+Generated D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/datn.bin
+[9/10] C:\WINDOWS\system32\cmd.exe /C "cd /D "D:\ESP\ESP_v5.1.5\ESP project v5.1.5\datn\build\esp-idf\esptool_py" && D:\ESP\ESP_v5.1.5\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/partition_table/partition-table.bin" "D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/datn.bin""
+datn.bin binary size 0xe1190 bytes. Smallest app partition is 0x100000 bytes. 0x1ee70 bytes (12%) free.
+[9/10] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\ESP\ESP_v5.1.5\Espressif\frameworks\esp-idf-v5.1.5\components\esptool_py && D:\ESP\ESP_v5.1.5\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5 -D SERIAL_TOOL=D:/ESP/ESP_v5.1.5/Espressif/python_env/idf5.1_py3.11_env/Scripts/python.exe;;D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build" -P D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM5 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 datn.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM5
+Connecting......
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: cc:7b:5c:28:c2:a8
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000f1fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26720 bytes to 16733...
+Writing at 0x00001000... (50 %)
+Writing at 0x000076a1... (100 %)
+Wrote 26720 bytes (16733 compressed) at 0x00001000 in 0.8 seconds (effective 279.0 kbit/s)...
+Hash of data verified.
+Compressed 922000 bytes to 591798...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001ca39... (5 %)
+Writing at 0x00023ba8... (8 %)
+Writing at 0x00029217... (10 %)
+Writing at 0x00034497... (13 %)
+Writing at 0x0003d828... (16 %)
+Writing at 0x0004340e... (18 %)
+Writing at 0x00048df5... (21 %)
+Writing at 0x0004ea82... (24 %)
+Writing at 0x000544d0... (27 %)
+Writing at 0x0005a02d... (29 %)
+Writing at 0x0005f8c7... (32 %)
+Writing at 0x000654c8... (35 %)
+Writing at 0x0006b844... (37 %)
+Writing at 0x00071368... (40 %)
+Writing at 0x00076b62... (43 %)
+Writing at 0x0007bcc8... (45 %)
+Writing at 0x000811b4... (48 %)
+Writing at 0x000867ff... (51 %)
+Writing at 0x0008c00a... (54 %)
+Writing at 0x0009131c... (56 %)
+Writing at 0x00096b2f... (59 %)
+Writing at 0x0009c9bb... (62 %)
+Writing at 0x000a20f9... (64 %)
+Writing at 0x000a7785... (67 %)
+Writing at 0x000acfcd... (70 %)
+Writing at 0x000b294d... (72 %)
+Writing at 0x000b7f01... (75 %)
+Writing at 0x000bd90c... (78 %)
+Writing at 0x000c34b9... (81 %)
+Writing at 0x000c8cfd... (83 %)
+Writing at 0x000d1ac7... (86 %)
+Writing at 0x000da1f6... (89 %)
+Writing at 0x000dfe9a... (91 %)
+Writing at 0x000e581f... (94 %)
+Writing at 0x000eafc3... (97 %)
+Writing at 0x000f046e... (100 %)
+Wrote 922000 bytes (591798 compressed) at 0x00010000 in 14.3 seconds (effective 514.6 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 524.3 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

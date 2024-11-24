@@ -1,0 +1,13 @@
+CMake Error at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/tools/cmake/build.cmake:266 (message):
+  Failed to resolve component 'protocol_examples_common'.
+Call Stack (most recent call first):
+  D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/tools/cmake/build.cmake:302 (__build_resolve_and_add_req)
+  D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/tools/cmake/build.cmake:303 (__build_expand_requirements)
+  D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/tools/cmake/build.cmake:303 (__build_expand_requirements)
+  D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/tools/cmake/build.cmake:303 (__build_expand_requirements)
+  D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/tools/cmake/build.cmake:603 (__build_expand_requirements)
+  D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/tools/cmake/project.cmake:604 (idf_build_process)
+  CMakeLists.txt:11 (project)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

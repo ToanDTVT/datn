@@ -1,0 +1,230 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Nov 21 2024 21:08:18[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=263a0h (156576) map[0m
+[0;32mI (163) esp_image: segment 1: paddr=000363c8 vaddr=3ffb0000 size=03c58h ( 15448) load[0m
+[0;32mI (170) esp_image: segment 2: paddr=0003a028 vaddr=40080000 size=05ff0h ( 24560) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a09b4h (657844) map[0m
+[0;32mI (418) esp_image: segment 4: paddr=000e09dc vaddr=40085ff0 size=113d0h ( 70608) load[0m
+[0;32mI (459) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (459) boot: Disabling RNG early entropy source...[0m
+[0;32mI (471) cpu_start: Multicore app[0m
+[0;32mI (472) cpu_start: Pro cpu up.[0m
+[0;32mI (472) cpu_start: Starting app cpu, entry point is 0x40081480[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (489) cpu_start: Pro cpu start user code[0m
+[0;32mI (489) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (489) cpu_start: Application information:[0m
+[0;32mI (494) cpu_start: Project name:     datn[0m
+[0;32mI (498) cpu_start: App version:      1[0m
+[0;32mI (503) cpu_start: Compile time:     Nov 21 2024 21:04:48[0m
+[0;32mI (509) cpu_start: ELF file SHA256:  2271e2c4a62e96b8...[0m
+[0;32mI (515) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (520) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (525) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (530) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (535) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (542) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (548) heap_init: At 3FFBA3D8 len 00025C28 (151 KiB): DRAM[0m
+[0;32mI (554) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (560) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (567) heap_init: At 400973C0 len 00008C40 (35 KiB): IRAM[0m
+[0;32mI (574) spi_flash: detected chip: generic[0m
+[0;32mI (578) spi_flash: flash io: dio[0m
+[0;32mI (582) app_start: Starting scheduler on CPU0[0m
+[0;32mI (587) app_start: Starting scheduler on CPU1[0m
+[0;32mI (587) main_task: Started on CPU0[0m
+[0;32mI (597) main_task: Calling app_main()[0m
+[0;32mI (597) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (607) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (617) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (627) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (637) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (647) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (647) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (657) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (707) wifi:wifi driver task: 3ffc3b80, prio:23, stack:6656, core=0[0m
+[0;32mI (717) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (717) wifi:wifi certification version: v7.0[0m
+[0;32mI (717) wifi:config NVS flash: enabled[0m
+[0;32mI (717) wifi:config nano formating: disabled[0m
+[0;32mI (717) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (727) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (727) wifi:Init management short buffer num: 32[0m
+[0;32mI (737) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (737) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (747) wifi:Init static rx buffer num: 10[0m
+[0;32mI (747) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (747) wifi_init: rx ba win: 6[0m
+[0;32mI (757) wifi_init: tcpip mbox: 32[0m
+[0;32mI (757) wifi_init: udp mbox: 6[0m
+[0;32mI (767) wifi_init: tcp mbox: 6[0m
+[0;32mI (767) wifi_init: tcp tx win: 5760[0m
+[0;32mI (767) wifi_init: tcp rx win: 5760[0m
+[0;32mI (777) wifi_init: tcp mss: 1440[0m
+[0;32mI (777) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (787) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (787) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (877) wifi:mode : sta (cc:7b:5c:28:c2:a8)[0m
+[0;32mI (877) wifi:enable tsf[0m
+[0;32mI (1887) HTTP_CLIENT: Sending GET request...[0m
+[0;31mE (1897) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (1897) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1897) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (1907) HTTP_CLIENT: HTTP GET request failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (1937) wifi:new:<2,1>, old:<1,0>, ap:<255,255>, sta:<2,1>, prof:1[0m
+[0;32mI (1947) wifi:state: init -> auth (b0)[0m
+Password: 
+[0;32mI (2917) main_task: Returned from app_main()[0m
+[0;32mI (2957) wifi:state: auth -> init (200)[0m
+[0;32mI (2967) wifi:new:<2,0>, old:<2,1>, ap:<255,255>, sta:<2,1>, prof:1[0m
+[0;32mI (5197) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (7437) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (9667) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (11897) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (14127) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (16357) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (18597) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (20827) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (23057) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (25287) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (27527) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (29757) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (31987) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (34217) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (36457) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (38687) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (40917) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (43147) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (45387) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (47617) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (49847) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (52077) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (54317) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (56547) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (58777) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (61007) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (63237) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (65477) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (67707) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (69937) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (72167) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (74397) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (76637) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (78867) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (81097) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (83327) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (85557) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (87797) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (90027) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (92257) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (94487) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (96717) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (98947) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (101177) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (103407) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (105637) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (107867) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (110097) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (112327) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (114557) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (116797) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (119027) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (121257) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (123487) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (125717) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (127947) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (130177) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (132407) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (134637) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (136867) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (139097) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (141327) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (143557) UART: PS_SEARCH: Fingerprint not found.
+[0m

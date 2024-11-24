@@ -1,0 +1,867 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Nov 21 2024 21:08:18[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26740h (157504) map[0m
+[0;32mI (164) esp_image: segment 1: paddr=00036768 vaddr=3ffb0000 size=03c58h ( 15448) load[0m
+[0;32mI (170) esp_image: segment 2: paddr=0003a3c8 vaddr=40080000 size=05c50h ( 23632) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9f874h (653428) map[0m
+[0;32mI (416) esp_image: segment 4: paddr=000df89c vaddr=40085c50 size=118c4h ( 71876) load[0m
+[0;32mI (458) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (458) boot: Disabling RNG early entropy source...[0m
+[0;32mI (469) cpu_start: Multicore app[0m
+[0;32mI (470) cpu_start: Pro cpu up.[0m
+[0;32mI (471) cpu_start: Starting app cpu, entry point is 0x40081484[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (488) cpu_start: Pro cpu start user code[0m
+[0;32mI (488) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (488) cpu_start: Application information:[0m
+[0;32mI (493) cpu_start: Project name:     datn[0m
+[0;32mI (497) cpu_start: App version:      1[0m
+[0;32mI (502) cpu_start: Compile time:     Nov 21 2024 21:04:48[0m
+[0;32mI (508) cpu_start: ELF file SHA256:  3427cc4f4256a0b9...[0m
+[0;32mI (514) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (519) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (524) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (529) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (534) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (541) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (547) heap_init: At 3FFBA3E0 len 00025C20 (151 KiB): DRAM[0m
+[0;32mI (553) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (559) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (566) heap_init: At 40097514 len 00008AEC (34 KiB): IRAM[0m
+[0;32mI (573) spi_flash: detected chip: generic[0m
+[0;32mI (576) spi_flash: flash io: dio[0m
+[0;32mI (581) app_start: Starting scheduler on CPU0[0m
+[0;32mI (586) app_start: Starting scheduler on CPU1[0m
+[0;32mI (586) main_task: Started on CPU0[0m
+[0;32mI (596) main_task: Calling app_main()[0m
+[0;32mI (596) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (606) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (616) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (626) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (636) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (646) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (646) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (656) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (706) wifi:wifi driver task: 3ffc3b88, prio:23, stack:6656, core=0[0m
+[0;32mI (716) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (716) wifi:wifi certification version: v7.0[0m
+[0;32mI (716) wifi:config NVS flash: enabled[0m
+[0;32mI (716) wifi:config nano formating: disabled[0m
+[0;32mI (716) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (726) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (726) wifi:Init management short buffer num: 32[0m
+[0;32mI (736) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (736) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (746) wifi:Init static rx buffer num: 10[0m
+[0;32mI (746) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (746) wifi_init: rx ba win: 6[0m
+[0;32mI (756) wifi_init: tcpip mbox: 32[0m
+[0;32mI (756) wifi_init: udp mbox: 6[0m
+[0;32mI (766) wifi_init: tcp mbox: 6[0m
+[0;32mI (766) wifi_init: tcp tx win: 5760[0m
+[0;32mI (766) wifi_init: tcp rx win: 5760[0m
+[0;32mI (776) wifi_init: tcp mss: 1440[0m
+[0;32mI (776) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (786) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (786) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (876) wifi:mode : sta (cc:7b:5c:28:c2:a8)[0m
+[0;32mI (876) wifi:enable tsf[0m
+[0;32mI (1886) wifi:new:<2,1>, old:<1,0>, ap:<255,255>, sta:<2,1>, prof:1[0m
+[0;32mI (1886) wifi:state: init -> auth (b0)[0m
+[0;32mI (1886) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1896) wifi:state: assoc -> run (10)[0m
+[0;32mI (1926) wifi:connected with Theshowcoffee T2, aid = 3, channel 2, 40U, bssid = 54:af:97:f2:61:69[0m
+[0;32mI (1926) wifi:security: WPA2-PSK, phy: bgn, rssi: -77[0m
+[0;32mI (1926) wifi:pm start, type: 1[0m
+
+[0;32mI (1926) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1966) wifi:<ba-add>idx:0 (ifx:0, 54:af:97:f2:61:69), tid:0, ssn:3, winSize:64[0m
+[0;32mI (2026) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+Password: 
+[0;32mI (2886) main_task: Returned from app_main()[0m
+[0;31mE (3286) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3286) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3286) mqtt_client: Error transport connect[0m
+[0;31mE (3386) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3386) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3386) mqtt_client: Error transport connect[0m
+[0;32mI (3436) esp_netif_handlers: sta ip: 192.168.0.103, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;31mE (3486) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3486) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3486) mqtt_client: Error transport connect[0m
+[0;31mE (3586) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3586) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3586) mqtt_client: Error transport connect[0m
+[0;31mE (3686) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3686) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3686) mqtt_client: Error transport connect[0m
+[0;31mE (3786) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3786) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3786) mqtt_client: Error transport connect[0m
+[0;31mE (3886) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3886) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3896) mqtt_client: Error transport connect[0m
+[0;31mE (3986) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3986) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3986) mqtt_client: Error transport connect[0m
+[0;32mI (4076) wifi:<ba-add>idx:1 (ifx:0, 54:af:97:f2:61:69), tid:4, ssn:0, winSize:64[0m
+[0;32mI (4536) MQTT_CLIENT: MQTT kết nối thành công[0m
+[0;31mE (4536) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (4536) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;31mE (4546) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (4556) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;31mE (4566) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;31mE (4556) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (4546) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -2[0m
+[0;31mE (4586) mqtt_client: MQTT connect failed[0m
+[0;31mE (4576) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (4566) MQTT_CLIENT: MQTT kết nối thành công[0m
+[0;31mE (4606) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -2[0m
+[0;31mE (4616) mqtt_client: MQTT connect failed[0m
+[0;31mE (4616) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (4626) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (4626) MQTT_CLIENT: MQTT kết nối thành công[0m
+[0;31mE (4636) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;31mE (4646) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (4656) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;31mE (4666) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;31mE (4786) mqtt_client: Error create mqtt task[0m
+[0;32mI (4836) MQTT_CLIENT: MQTT kết nối thành công[0m
+[0;31mE (4886) mqtt_client: Error create mqtt task[0m
+[0;31mE (4896) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (4896) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;31mE (4906) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;31mE (4986) mqtt_client: esp_mqtt_set_config(415): Memory exhausted[0m
+[0;31mE (4986) event: event_loop was NULL[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x400dac44  PS      : 0x00060c30  A0      : 0x800d8556  A1      : 0x3ffcc810  
+A2      : 0x00000000  A3      : 0xffffffff  A4      : 0x400d8564  A5      : 0x3fff61ac  
+A6      : 0x3ffb4180  A7      : 0x0000000c  A8      : 0x800daae2  A9      : 0x3ffcc7c0  
+A10     : 0x0000113e  A11     : 0x3f4055d4  A12     : 0xffffffff  A13     : 0x400d8564  
+A14     : 0x3fff61ac  A15     : 0xb33fffff  SAR     : 0x0000000a  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000000  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xfffffffe  
+
+
+Backtrace: 0x400dac41:0x3ffcc810 0x400d8553:0x3ffcc830 0x4008cb09:0x3ffcc910
+
+
+
+
+ELF file SHA256: 3427cc4f4256a0b9
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (32) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Nov 21 2024 21:08:18[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26740h (157504) map[0m
+[0;32mI (163) esp_image: segment 1: paddr=00036768 vaddr=3ffb0000 size=03c58h ( 15448) load[0m
+[0;32mI (170) esp_image: segment 2: paddr=0003a3c8 vaddr=40080000 size=05c50h ( 23632) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9f874h (653428) map[0m
+[0;32mI (416) esp_image: segment 4: paddr=000df89c vaddr=40085c50 size=118c4h ( 71876) load[0m
+[0;32mI (458) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (458) boot: Disabling RNG early entropy source...[0m
+[0;32mI (469) cpu_start: Multicore app[0m
+[0;32mI (470) cpu_start: Pro cpu up.[0m
+[0;32mI (471) cpu_start: Starting app cpu, entry point is 0x40081484[0m
+[0;32mI (456) cpu_start: App cpu up.[0m
+[0;32mI (488) cpu_start: Pro cpu start user code[0m
+[0;32mI (488) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (488) cpu_start: Application information:[0m
+[0;32mI (493) cpu_start: Project name:     datn[0m
+[0;32mI (497) cpu_start: App version:      1[0m
+[0;32mI (502) cpu_start: Compile time:     Nov 21 2024 21:04:48[0m
+[0;32mI (508) cpu_start: ELF file SHA256:  3427cc4f4256a0b9...[0m
+[0;32mI (514) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (519) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (524) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (529) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (534) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (541) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (547) heap_init: At 3FFBA3E0 len 00025C20 (151 KiB): DRAM[0m
+[0;32mI (553) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (559) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (566) heap_init: At 40097514 len 00008AEC (34 KiB): IRAM[0m
+[0;32mI (573) spi_flash: detected chip: generic[0m
+[0;32mI (577) spi_flash: flash io: dio[0m
+[0;32mI (581) app_start: Starting scheduler on CPU0[0m
+[0;32mI (586) app_start: Starting scheduler on CPU1[0m
+[0;32mI (586) main_task: Started on CPU0[0m
+[0;32mI (596) main_task: Calling app_main()[0m
+[0;32mI (596) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (606) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (616) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (626) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (636) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (646) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (646) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (656) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (706) wifi:wifi driver task: 3ffc3b88, prio:23, stack:6656, core=0[0m
+[0;32mI (716) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (716) wifi:wifi certification version: v7.0[0m
+[0;32mI (716) wifi:config NVS flash: enabled[0m
+[0;32mI (716) wifi:config nano formating: disabled[0m
+[0;32mI (716) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (726) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (726) wifi:Init management short buffer num: 32[0m
+[0;32mI (736) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (736) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (746) wifi:Init static rx buffer num: 10[0m
+[0;32mI (746) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (746) wifi_init: rx ba win: 6[0m
+[0;32mI (756) wifi_init: tcpip mbox: 32[0m
+[0;32mI (756) wifi_init: udp mbox: 6[0m
+[0;32mI (766) wifi_init: tcp mbox: 6[0m
+[0;32mI (766) wifi_init: tcp tx win: 5760[0m
+[0;32mI (766) wifi_init: tcp rx win: 5760[0m
+[0;32mI (776) wifi_init: tcp mss: 1440[0m
+[0;32mI (776) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (786) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (786) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;33mW (876) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (936) wifi:mode : sta (cc:7b:5c:28:c2:a8)[0m
+[0;32mI (936) wifi:enable tsf[0m
+[0;32mI (1976) wifi:new:<2,1>, old:<1,0>, ap:<255,255>, sta:<2,1>, prof:1[0m
+[0;32mI (1976) wifi:state: init -> auth (b0)[0m
+[0;32mI (2006) wifi:state: auth -> assoc (0)[0m
+[0;32mI (2006) wifi:state: assoc -> run (10)[0m
+[0;32mI (2086) wifi:connected with Theshowcoffee T2, aid = 3, channel 2, 40U, bssid = 54:af:97:f2:61:69[0m
+[0;32mI (2086) wifi:security: WPA2-PSK, phy: bgn, rssi: -80[0m
+[0;32mI (2086) wifi:pm start, type: 1[0m
+
+[0;32mI (2086) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2116) wifi:<ba-add>idx:0 (ifx:0, 54:af:97:f2:61:69), tid:0, ssn:3, winSize:64[0m
+[0;32mI (2176) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2626) wifi:<ba-add>idx:1 (ifx:0, 54:af:97:f2:61:69), tid:1, ssn:0, winSize:64[0m
+Password: 
+[0;32mI (2936) main_task: Returned from app_main()[0m
+[0;31mE (3336) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3336) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3336) mqtt_client: Error transport connect[0m
+[0;31mE (3436) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3436) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3436) mqtt_client: Error transport connect[0m
+[0;31mE (3536) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3536) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3536) mqtt_client: Error transport connect[0m
+[0;32mI (3596) esp_netif_handlers: sta ip: 192.168.0.103, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;31mE (3636) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3636) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3636) mqtt_client: Error transport connect[0m
+[0;31mE (3736) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3736) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3736) mqtt_client: Error transport connect[0m
+[0;31mE (3836) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3836) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3836) mqtt_client: Error transport connect[0m
+[0;31mE (3936) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3936) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3946) mqtt_client: Error transport connect[0m
+[0;31mE (4396) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (4396) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;31mE (4396) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -2[0m
+[0;32mI (4406) MQTT_CLIENT: MQTT kết nối thành công[0m
+[0;31mE (4406) mqtt_client: MQTT connect failed[0m
+[0;31mE (4476) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (4476) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;31mE (4476) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (4496) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;31mE (4496) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (4506) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -2[0m
+[0;31mE (4516) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;31mE (4516) mqtt_client: MQTT connect failed[0m
+[0;31mE (4526) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -2[0m
+[0;31mE (4546) mqtt_client: MQTT connect failed[0m
+[0;32mI (4506) MQTT_CLIENT: MQTT kết nối thành công[0m
+[0;31mE (4486) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;31mE (4836) transport_base: esp_transport_base_init(506): Memory exhausted[0m
+[0;31mE (4836) mqtt_client: esp_mqtt_client_create_transport(320): Memory exhausted[0m
+[0;31mE (4836) mqtt_client: Failed to create transport list[0m
+[0;31mE (4936) mqtt_client: Error create mqtt task[0m
+[0;31mE (5036) mqtt_client: Error create mqtt task[0m
+[0;31mE (5136) mqtt_client: esp_mqtt_set_config(395): Memory exhausted[0m
+[0;31mE (5136) mqtt_client: Client was not initialized[0m
+[0;32mI (5226) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;31mE (5236) mqtt_client: esp_mqtt_set_config(395): Memory exhausted[0m
+[0;31mE (5236) mqtt_client: Client was not initialized[0m
+[0;31mE (5336) mqtt_client: esp_mqtt_set_config(395): Memory exhausted[0m
+[0;31mE (5336) mqtt_client: Client was not initialized[0m
+[0;31mE (5436) mqtt_client: esp_mqtt_set_config(395): Memory exhausted[0m
+[0;31mE (5436) mqtt_client: Client was not initialized[0m
+[0;31mE (5536) mqtt_client: esp_mqtt_set_config(395): Memory exhausted[0m
+[0;31mE (5536) mqtt_client: Client was not initialized[0m
+[0;31mE (5636) mqtt_client: esp_mqtt_set_config(395): Memory exhausted[0m
+[0;31mE (5636) mqtt_client: Client was not initialized[0m
+[0;31mE (5736) mqtt_client: esp_mqtt_set_config(395): Memory exhausted[0m
+[0;31mE (5736) mqtt_client: Client was not initialized[0m
+[0;31mE (5836) mqtt_client: esp_mqtt_set_config(395): Memory exhausted[0m
+[0;31mE (5836) mqtt_client: Client was not initialized[0m
+[0;31mE (5936) mqtt_client: esp_mqtt_set_config(395): Memory exhausted[0m
+[0;31mE (5936) mqtt_client: Client was not initialized[0m
+[0;31mE (6036) mqtt_client: create_client_data(842): Memory exhausted[0m
+[0;31mE (6036) mqtt_client: Client was not initialized[0m
+[0;31mE (6136) mqtt_client: esp_mqtt_set_config(395): Memory exhausted[0m
+[0;31mE (6136) mqtt_client: Client was not initialized[0m
+[0;31mE (6236) mqtt_client: esp_mqtt_set_config(395): Memory exhausted[0m
+[0;31mE (6236) mqtt_client: Client was not initialized[0m
+[0;31mE (6336) mqtt_client: esp_mqtt_set_config(395): Memory exhausted[0m
+[0;31mE (6336) mqtt_client: Client was not initialized[0m
+[0;31mE (6436) mqtt_client: esp_mqtt_set_config(395): Memory exhausted[0m
+[0;31mE (6436) mqtt_client: Client was not initialized[0m
+[0;31mE (6536) mqtt_client: esp_mqtt_set_config(395): Memory exhausted[0m
+[0;31mE (6536) mqtt_client: Client was not initialized[0m
+[0;31mE (6636) event: event_loop was NULL[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x400dac44  PS      : 0x00060530  A0      : 0x800d8556  A1      : 0x3ffcc820  
+A2      : 0x00000000  A3      : 0xffffffff  A4      : 0x400d8564  A5      : 0x3ffffd58  
+A6      : 0x3ffb4180  A7      : 0x0000000c  A8      : 0x800daae2  A9      : 0x3ffcc7d0  
+A10     : 0x000017b0  A11     : 0x3f4055d4  A12     : 0xffffffff  A13     : 0x400d8564  
+A14     : 0x3ffffd58  A15     : 0xb33fffff  SAR     : 0x0000000a  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000000  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xfffffffe  
+
+
+Backtrace: 0x400dac41:0x3ffcc820 0x400d8553:0x3ffcc840 0x4008cb09:0x3ffcc920
+
+
+
+
+ELF file SHA256: 3427cc4f4256a0b9
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (32) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Nov 21 2024 21:08:18[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26740h (157504) map[0m
+[0;32mI (163) esp_image: segment 1: paddr=00036768 vaddr=3ffb0000 size=03c58h ( 15448) load[0m
+[0;32mI (170) esp_image: segment 2: paddr=0003a3c8 vaddr=40080000 size=05c50h ( 23632) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9f874h (653428) map[0m
+[0;32mI (416) esp_image: segment 4: paddr=000df89c vaddr=40085c50 size=118c4h ( 71876) load[0m
+[0;32mI (458) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (458) boot: Disabling RNG early entropy source...[0m
+[0;32mI (469) cpu_start: Multicore app[0m
+[0;32mI (470) cpu_start: Pro cpu up.[0m
+[0;32mI (471) cpu_start: Starting app cpu, entry point is 0x40081484[0m
+[0;32mI (456) cpu_start: App cpu up.[0m
+[0;32mI (488) cpu_start: Pro cpu start user code[0m
+[0;32mI (488) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (488) cpu_start: Application information:[0m
+[0;32mI (493) cpu_start: Project name:     datn[0m
+[0;32mI (497) cpu_start: App version:      1[0m
+[0;32mI (502) cpu_start: Compile time:     Nov 21 2024 21:04:48[0m
+[0;32mI (508) cpu_start: ELF file SHA256:  3427cc4f4256a0b9...[0m
+[0;32mI (514) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (519) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (524) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (529) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (534) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (541) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (547) heap_init: At 3FFBA3E0 len 00025C20 (151 KiB): DRAM[0m
+[0;32mI (553) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (559) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (566) heap_init: At 40097514 len 00008AEC (34 KiB): IRAM[0m
+[0;32mI (573) spi_flash: detected chip: generic[0m
+[0;32mI (577) spi_flash: flash io: dio[0m
+[0;32mI (581) app_start: Starting scheduler on CPU0[0m
+[0;32mI (586) app_start: Starting scheduler on CPU1[0m
+[0;32mI (586) main_task: Started on CPU0[0m
+[0;32mI (596) main_task: Calling app_main()[0m
+[0;32mI (596) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (606) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (616) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (626) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (636) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (646) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (646) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (656) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (706) wifi:wifi driver task: 3ffc3b88, prio:23, stack:6656, core=0[0m
+[0;32mI (716) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (716) wifi:wifi certification version: v7.0[0m
+[0;32mI (716) wifi:config NVS flash: enabled[0m
+[0;32mI (716) wifi:config nano formating: disabled[0m
+[0;32mI (716) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (726) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (726) wifi:Init management short buffer num: 32[0m
+[0;32mI (736) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (736) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (746) wifi:Init static rx buffer num: 10[0m
+[0;32mI (746) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (746) wifi_init: rx ba win: 6[0m
+[0;32mI (756) wifi_init: tcpip mbox: 32[0m
+[0;32mI (756) wifi_init: udp mbox: 6[0m
+[0;32mI (766) wifi_init: tcp mbox: 6[0m
+[0;32mI (766) wifi_init: tcp tx win: 5760[0m
+[0;32mI (766) wifi_init: tcp rx win: 5760[0m
+[0;32mI (776) wifi_init: tcp mss: 1440[0m
+[0;32mI (776) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (786) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (786) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (876) wifi:mode : sta (cc:7b:5c:28:c2:a8)[0m
+[0;32mI (876) wifi:enable tsf[0m
+[0;32mI (1886) wifi:new:<2,1>, old:<1,0>, ap:<255,255>, sta:<2,1>, prof:1[0m
+[0;32mI (1886) wifi:state: init -> auth (b0)[0m
+[0;32mI (1896) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1896) wifi:state: assoc -> run (10)[0m
+[0;32mI (1946) wifi:connected with Theshowcoffee T2, aid = 3, channel 2, 40U, bssid = 54:af:97:f2:61:69[0m
+[0;32mI (1946) wifi:security: WPA2-PSK, phy: bgn, rssi: -79[0m
+[0;32mI (1956) wifi:pm start, type: 1[0m
+
+[0;32mI (1956) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1976) wifi:<ba-add>idx:0 (ifx:0, 54:af:97:f2:61:69), tid:0, ssn:3, winSize:64[0m
+[0;32mI (2026) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2236) wifi:<ba-add>idx:1 (ifx:0, 54:af:97:f2:61:69), tid:1, ssn:0, winSize:64[0m
+Password: 
+[0;32mI (2886) main_task: Returned from app_main()[0m
+[0;31mE (3286) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3286) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3286) mqtt_client: Error transport connect[0m
+[0;31mE (3386) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3386) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3386) mqtt_client: Error transport connect[0m
+[0;32mI (3466) esp_netif_handlers: sta ip: 192.168.0.103, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;31mE (3486) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3486) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3486) mqtt_client: Error transport connect[0m
+[0;31mE (3586) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3586) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3586) mqtt_client: Error transport connect[0m
+[0;31mE (3686) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3686) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3686) mqtt_client: Error transport connect[0m
+[0;31mE (3786) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3786) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3786) mqtt_client: Error transport connect[0m
+[0;31mE (3886) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3886) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3896) mqtt_client: Error transport connect[0m
+[0;31mE (4456) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (4456) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;31mE (4466) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -2[0m
+[0;31mE (4466) mqtt_client: MQTT connect failed[0m
+[0;32mI (4476) MQTT_CLIENT: MQTT kết nối thành công[0m
+[0;31mE (4486) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (4486) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (4486) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;31mE (4496) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;31mE (4506) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;31mE (4516) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -2[0m
+[0;31mE (4526) mqtt_client: MQTT connect failed[0m
+[0;32mI (4516) MQTT_CLIENT: MQTT kết nối thành công[0m
+[0;32mI (4516) MQTT_CLIENT: MQTT kết nối thành công[0m
+[0;31mE (4546) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (4556) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;31mE (4566) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;31mE (4666) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (4666) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;31mE (4666) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (4696) MQTT_CLIENT: MQTT kết nối thành công[0m
+[0;31mE (4786) mqtt_client: Error create mqtt task[0m
+[0;32mI (4786) MQTT_CLIENT: MQTT kết nối thành công[0m
+[0;31mE (4886) mqtt_client: Error create mqtt task[0m
+[0;31mE (4986) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (4986) mqtt_client: Client was not initialized[0m
+[0;31mE (5086) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (5086) mqtt_client: Client was not initialized[0m
+[0;32mI (5146) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;31mE (5186) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (5186) mqtt_client: Client was not initialized[0m
+[0;31mE (5286) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (5286) mqtt_client: Client was not initialized[0m
+[0;31mE (5386) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (5386) mqtt_client: Client was not initialized[0m
+[0;31mE (5486) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (5486) mqtt_client: Client was not initialized[0m
+[0;31mE (5586) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (5586) mqtt_client: Client was not initialized[0m
+[0;31mE (5686) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (5686) mqtt_client: Client was not initialized[0m
+[0;31mE (5786) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (5786) mqtt_client: Client was not initialized[0m
+[0;31mE (5886) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (5886) mqtt_client: Client was not initialized[0m
+[0;31mE (5986) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (5986) mqtt_client: Client was not initialized[0m
+[0;31mE (6086) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (6086) mqtt_client: Client was not initialized[0m
+[0;31mE (6186) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (6186) mqtt_client: Client was not initialized[0m
+[0;31mE (6286) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (6286) mqtt_client: Client was not initialized[0m
+[0;31mE (6386) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (6386) mqtt_client: Client was not initialized[0m
+[0;31mE (6486) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (6486) mqtt_client: Client was not initialized[0m
+[0;31mE (6586) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (6586) mqtt_client: Client was not initialized[0m
+[0;31mE (6686) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (6686) mqtt_client: Client was not initialized[0m
+[0;31mE (6786) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (6786) mqtt_client: Client was not initialized[0m
+[0;31mE (6886) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (6886) mqtt_client: Client was not initialized[0m
+[0;31mE (6986) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (6986) mqtt_client: Client was not initialized[0m
+[0;31mE (7086) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (7086) mqtt_client: Client was not initialized[0m
+[0;31mE (7186) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (7186) mqtt_client: Client was not initialized[0m
+[0;31mE (7286) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (7286) mqtt_client: Client was not initialized[0m
+[0;32mI (7376) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;31mE (7386) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (7386) mqtt_client: Client was not initialized[0m
+[0;31mE (7486) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (7486) mqtt_client: Client was not initialized[0m
+[0;31mE (7586) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (7586) mqtt_client: Client was not initialized[0m
+[0;31mE (7686) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (7686) mqtt_client: Client was not initialized[0m
+[0;31mE (7786) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (7786) mqtt_client: Client was not initialized[0m
+[0;31mE (7886) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (7886) mqtt_client: Client was not initialized[0m
+[0;31mE (7986) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (7986) mqtt_client: Client was not initialized[0m
+[0;31mE (8086) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (8086) mqtt_client: Client was not initialized[0m
+[0;31mE (8186) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (8186) mqtt_client: Client was not initialized[0m
+[0;31mE (8286) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (8286) mqtt_client: Client was not initialized[0m
+[0;31mE (8386) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (8386) mqtt_client: Client was not initialized[0m
+[0;31mE (8486) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (8486) mqtt_client: Client was not initialized[0m
+[0;31mE (8586) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (8586) mqtt_client: Client was not initialized[0m
+[0;31mE (8686) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (8686) mqtt_client: Client was not initialized[0m
+[0;31mE (8786) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (8786) mqtt_client: Client was not initialized[0m
+[0;31mE (8886) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (8886) mqtt_client: Client was not initialized[0m
+[0;31mE (8986) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (8986) mqtt_client: Client was not initialized[0m
+[0;31mE (9086) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (9086) mqtt_client: Client was not initialized[0m
+[0;31mE (9186) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (9186) mqtt_client: Client was not initialized[0m
+[0;31mE (9286) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (9286) mqtt_client: Client was not initialized[0m
+[0;31mE (9386) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (9386) mqtt_client: Client was not initialized[0m
+[0;31mE (9486) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (9486) mqtt_client: Client was not initialized[0m
+[0;31mE (9586) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (9586) mqtt_client: Client was not initialized[0m
+[0;32mI (9606) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;31mE (9686) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (9686) mqtt_client: Client was not initialized[0m
+[0;31mE (9786) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (9786) mqtt_client: Client was not initialized[0m
+[0;31mE (9886) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (9886) mqtt_client: Client was not initialized[0m
+[0;31mE (9986) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (9986) mqtt_client: Client was not initialized[0m
+[0;31mE (10086) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (10086) mqtt_client: Client was not initialized[0m
+[0;31mE (10186) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (10186) mqtt_client: Client was not initialized[0m
+[0;31mE (10286) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (10286) mqtt_client: Client was not initialized[0m
+[0;31mE (10386) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (10386) mqtt_client: Client was not initialized[0m
+[0;31mE (10486) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (10486) mqtt_client: Client was not initialized[0m
+[0;31mE (10586) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (10586) mqtt_client: Client was not initialized[0m
+[0;31mE (10686) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (10686) mqtt_client: Client was not initialized[0m
+[0;31mE (10786) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (10786) mqtt_client: Client was not initialized[0m
+[0;31mE (10886) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (10886) mqtt_client: Client was not initialized[0m
+[0;31mE (10986) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (10986) mqtt_client: Client was not initialized[0m
+[0;31mE (11086) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (11086) mqtt_client: Client was not initialized[0m
+[0;31mE (11186) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (11186) mqtt_client: Client was not initialized[0m
+[0;31mE (11286) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (11286) mqtt_client: Client was not initialized[0m
+[0;31mE (11386) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (11386) mqtt_client: Client was not initialized[0m
+[0;31mE (11486) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (11486) mqtt_client: Client was not initialized[0m
+[0;31mE (11586) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (11586) mqtt_client: Client was not initialized[0m
+[0;31mE (11686) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (11686) mqtt_client: Client was not initialized[0m
+[0;31mE (11786) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (11786) mqtt_client: Client was not initialized[0m
+[0;32mI (11836) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;31mE (11886) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (11886) mqtt_client: Client was not initialized[0m
+[0;31mE (11986) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (11986) mqtt_client: Client was not initialized[0m
+[0;31mE (12086) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (12086) mqtt_client: Client was not initialized[0m
+[0;31mE (12186) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (12186) mqtt_client: Client was not initialized[0m
+[0;31mE (12286) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (12286) mqtt_client: Client was not initialized[0m
+[0;31mE (12386) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (12386) mqtt_client: Client was not initialized[0m
+[0;31mE (12486) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (12486) mqtt_client: Client was not initialized[0m
+[0;31mE (12586) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (12586) mqtt_client: Client was not initialized[0m
+[0;31mE (12686) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (12686) mqtt_client: Client was not initialized[0m
+[0;31mE (12786) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (12786) mqtt_client: Client was not initialized[0m
+[0;31mE (12886) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (12886) mqtt_client: Client was not initialized[0m
+[0;31mE (12986) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (12986) mqtt_client: Client was not initialized[0m
+[0;31mE (13086) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (13086) mqtt_client: Client was not initialized[0m
+[0;31mE (13186) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (13186) mqtt_client: Client was not initialized[0m
+[0;31mE (13286) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (13286) mqtt_client: Client was not initialized[0m
+[0;31mE (13386) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (13386) mqtt_client: Client was not initialized[0m
+[0;31mE (13486) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (13486) mqtt_client: Client was not initialized[0m
+[0;31mE (13586) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (13586) mqtt_client: Client was not initialized[0m
+[0;31mE (13686) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (13686) mqtt_client: Client was not initialized[0m
+[0;31mE (13786) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (13786) mqtt_client: Client was not initialized[0m
+[0;31mE (13886) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (13886) mqtt_client: Client was not initialized[0m
+[0;31mE (13986) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (13986) mqtt_client: Client was not initialized[0m
+[0;32mI (14066) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;31mE (14086) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (14086) mqtt_client: Client was not initialized[0m
+[0;31mE (14186) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (14186) mqtt_client: Client was not initialized[0m
+[0;31mE (14286) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (14286) mqtt_client: Client was not initialized[0m
+[0;31mE (14386) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (14386) mqtt_client: Client was not initialized[0m
+[0;31mE (14486) mqtt_client: esp_mqtt_client_init(862): Memory exhausted[0m
+[0;31mE (14486) mqtt_client: Client was not initialized[0m
+[0;31mE (14506) esp-tls: [sock=55] select() timeout[0m
+[0;31mE (14506) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (14506) mqtt_client: Error transport connect[0m
+[0;31mE (14546) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned 0[0m
+[0;31mE (14546) mqtt_client: MQTT connect failed[0m
+[0;31mE (14586) event: event_loop was NULL[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x400dac44  PS      : 0x00060630  A0      : 0x800d8556  A1      : 0x3ffcc890  
+A2      : 0x00000000  A3      : 0xffffffff  A4      : 0x400d8564  A5      : 0x3fff6a7c  
+A6      : 0x3ffb4180  A7      : 0x0000000c  A8      : 0x800daae2  A9      : 0x3ffcc840  
+A10     : 0x000036be  A11     : 0x3f4055d4  A12     : 0xffffffff  A13     : 0x400d8564  
+A14     : 0x3fff6a7c  A15     : 0xb33fffff  SAR     : 0x0000000a  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000000  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xfffffffe  
+
+
+Backtrace: 0x400dac41:0x3ffcc890 0x400d8553:0x3ffcc8b0 0x4008cb09:0x3ffcc990
+
+
+
+
+ELF file SHA256: 3427cc4f4256a0b9
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (32) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Nov 21 2024 21:08:18[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26740h (157504) map[0m
+[0;32mI (163) esp_image: segment 1: paddr=00036768 vaddr=3ffb0000 size=03c58h ( 15448) load[0m
+[0;32mI (170) esp_image: segment 2: paddr=0003a3c8 vaddr=40080000 size=05c50h ( 23632) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9f874h (653428) map[0m
+[0;32mI (416) esp_image: segment 4: paddr=000df89c vaddr=40085c50 size=118c4h ( 71876) load[0m
+[0;32mI (458) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (458) boot: Disabling RNG early entropy source...[0m
+[0;32mI (469) cpu_start: Multicore app[0m
+[0;32mI (470) cpu_start: Pro cpu up.[0m
+[0;32mI (471) cpu_start: Starting app cpu, entry point is 0x40081484[0m
+[0;32mI (456) cpu_start: App cpu up.[0m
+[0;32mI (488) cpu_start: Pro cpu start user code[0m
+[0;32mI (488) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (488) cpu_start: Application information:[0m
+[0;32mI (493) cpu_start: Project name:     datn[0m
+[0;32mI (497) cpu_start: App version:      1[0m
+[0;32mI (502) cpu_start: Compile time:     Nov 21 2024 21:04:48[0m
+[0;32mI (508) cpu_start: ELF file SHA256:  3427cc4f4256a0b9...[0m
+[0;32mI (514) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (519) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (524) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (529) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (534) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (541) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (547) heap_init: At 3FFBA3E0 len 00025C20 (151 KiB): DRAM[0m
+[0;32mI (553) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (559) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (566) heap_init: At 40097514 len 00008AEC (34 KiB): IRAM[0m
+[0;32mI (573) spi_flash: detected chip: generic[0m
+[0;32mI (577) spi_flash: flash io: dio[0m
+[0;32mI (581) app_start: Starting scheduler on CPU0[0m
+[0;32mI (586) app_start: Starting scheduler on CPU1[0m
+[0;32mI (586) main_task: Started on CPU0[0m
+[0;32mI (596) main_task: Calling app_main()[0m
+[0;32mI (596) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (606) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (616) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (626) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (636) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (646) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (646) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (656) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (706) wifi:wifi driver task: 3ffc3b88, prio:23, stack:6656, core=0[0m
+[0;32mI (716) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (716) wifi:wifi certification version: v7.0[0m
+[0;32mI (716) wifi:config NVS flash: enabled[0m
+[0;32mI (716) wifi:config nano formating: disabled[0m
+[0;32mI (716) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (726) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (726) wifi:Init management short buffer num: 32[0m
+[0;32mI (736) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (736) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (746) wifi:Init static rx buffer num: 10[0m
+[0;32mI (746) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (746) wifi_init: rx ba win: 6[0m
+[0;32mI (756) wifi_init: tcpip mbox: 32[0m
+[0;32mI (756) wifi_init: udp mbox: 6[0m
+[0;32mI (766) wifi_init: tcp mbox: 6[0m
+[0;32mI (766) wifi_init: tcp tx win: 5760[0m
+[0;32mI (766) wifi_init: tcp rx win: 5760[0m
+[0;32mI (776) wifi_init: tcp mss: 1440[0m
+[0;32mI (776) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (786) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (786) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (876) wifi:mode : sta (cc:7b:5c:28:c2:a8)[0m
+[0;32mI (876) wifi:enable tsf[0m
+[0;32mI (1886) wifi:new:<2,1>, old:<1,0>, ap:<255,255>, sta:<2,1>, prof:1[0m
+[0;32mI (1886) wifi:state: init -> auth (b0)[0m
+[0;32mI (1906) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1906) wifi:state: assoc -> run (10)[0m
+[0;32mI (1996) wifi:connected with Theshowcoffee T2, aid = 3, channel 2, 40U, bssid = 54:af:97:f2:61:69[0m
+[0;32mI (1996) wifi:security: WPA2-PSK, phy: bgn, rssi: -78[0m
+[0;32mI (2006) wifi:pm start, type: 1[0m
+
+[0;32mI (2006) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2016) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2056) wifi:<ba-add>idx:0 (ifx:0, 54:af:97:f2:61:69), tid:0, ssn:3, winSize:64[0m

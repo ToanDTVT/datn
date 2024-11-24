@@ -1,0 +1,33 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/**",
+                "D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/tools/mocks/esp_hw_support/include",
+                "D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/driver/**",
+                "D:/ESP/ESP project/arduino_esp32/arduino-esp32/**",
+                "D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/mqtt/esp-mqtt/include",
+                "D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_common/include",
+                "D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_wifi/include",
+                "D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_event/include",
+                "D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/log/include",
+                "D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/**",
+                "D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/examples/common_components/protocol_examples_common/**",
+                "D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/examples/common_components/protocol_examples_common/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.19041.0",
+            "compilerPath": "cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-msvc-x64"
+        }
+    ],
+    "version": 4
+}

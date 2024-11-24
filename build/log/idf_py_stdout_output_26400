@@ -1,0 +1,204 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Nov 21 2024 21:08:18[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26738h (157496) map[0m
+[0;32mI (164) esp_image: segment 1: paddr=00036760 vaddr=3ffb0000 size=03c58h ( 15448) load[0m
+[0;32mI (170) esp_image: segment 2: paddr=0003a3c0 vaddr=40080000 size=05c58h ( 23640) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9f878h (653432) map[0m
+[0;32mI (416) esp_image: segment 4: paddr=000df8a0 vaddr=40085c58 size=118bch ( 71868) load[0m
+[0;32mI (458) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (458) boot: Disabling RNG early entropy source...[0m
+[0;32mI (469) cpu_start: Multicore app[0m
+[0;32mI (470) cpu_start: Pro cpu up.[0m
+[0;32mI (471) cpu_start: Starting app cpu, entry point is 0x40081484[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (488) cpu_start: Pro cpu start user code[0m
+[0;32mI (488) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (488) cpu_start: Application information:[0m
+[0;32mI (492) cpu_start: Project name:     datn[0m
+[0;32mI (497) cpu_start: App version:      1[0m
+[0;32mI (502) cpu_start: Compile time:     Nov 21 2024 21:04:48[0m
+[0;32mI (508) cpu_start: ELF file SHA256:  5908398e935b3c94...[0m
+[0;32mI (514) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (519) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (524) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (529) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (534) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (541) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (547) heap_init: At 3FFBA3E0 len 00025C20 (151 KiB): DRAM[0m
+[0;32mI (553) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (559) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (566) heap_init: At 40097514 len 00008AEC (34 KiB): IRAM[0m
+[0;32mI (573) spi_flash: detected chip: generic[0m
+[0;32mI (576) spi_flash: flash io: dio[0m
+[0;32mI (581) app_start: Starting scheduler on CPU0[0m
+[0;32mI (586) app_start: Starting scheduler on CPU1[0m
+[0;32mI (586) main_task: Started on CPU0[0m
+[0;32mI (596) main_task: Calling app_main()[0m
+[0;32mI (596) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (606) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (616) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (626) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (636) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (646) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (646) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (656) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (706) wifi:wifi driver task: 3ffc3b88, prio:23, stack:6656, core=0[0m
+[0;32mI (716) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (716) wifi:wifi certification version: v7.0[0m
+[0;32mI (716) wifi:config NVS flash: enabled[0m
+[0;32mI (716) wifi:config nano formating: disabled[0m
+[0;32mI (716) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (726) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (726) wifi:Init management short buffer num: 32[0m
+[0;32mI (736) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (736) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (746) wifi:Init static rx buffer num: 10[0m
+[0;32mI (746) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (746) wifi_init: rx ba win: 6[0m
+[0;32mI (756) wifi_init: tcpip mbox: 32[0m
+[0;32mI (756) wifi_init: udp mbox: 6[0m
+[0;32mI (766) wifi_init: tcp mbox: 6[0m
+[0;32mI (766) wifi_init: tcp tx win: 5760[0m
+[0;32mI (766) wifi_init: tcp rx win: 5760[0m
+[0;32mI (776) wifi_init: tcp mss: 1440[0m
+[0;32mI (776) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (786) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (786) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;33mW (876) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (946) wifi:mode : sta (cc:7b:5c:28:c2:a8)[0m
+[0;32mI (946) wifi:enable tsf[0m
+Password: 
+[0;31mE (2956) mqtt_client: No scheme found[0m
+[0;31mE (2956) mqtt_client: Failed to create transport list[0m
+[0;32mI (2956) main_task: Returned from app_main()[0m
+[0;31mE (3056) mqtt_client: No scheme found[0m
+[0;31mE (3056) mqtt_client: Failed to create transport list[0m
+[0;31mE (3156) mqtt_client: No scheme found[0m
+[0;31mE (3156) mqtt_client: Failed to create transport list[0m
+[0;31mE (3256) mqtt_client: No scheme found[0m
+[0;31mE (3256) mqtt_client: Failed to create transport list[0m
+[0;31mE (3356) mqtt_client: No scheme found[0m
+[0;31mE (3356) mqtt_client: Failed to create transport list[0m
+[0;31mE (3456) mqtt_client: No scheme found[0m
+[0;31mE (3456) mqtt_client: Failed to create transport list[0m
+[0;31mE (3556) mqtt_client: No scheme found[0m
+[0;31mE (3556) mqtt_client: Failed to create transport list[0m
+[0;31mE (3656) mqtt_client: No scheme found[0m
+[0;31mE (3656) mqtt_client: Failed to create transport list[0m
+[0;31mE (3756) mqtt_client: No scheme found[0m
+[0;31mE (3756) mqtt_client: Failed to create transport list[0m
+[0;31mE (3856) mqtt_client: No scheme found[0m
+[0;31mE (3856) mqtt_client: Failed to create transport list[0m
+[0;31mE (3956) mqtt_client: No scheme found[0m
+[0;31mE (3956) mqtt_client: Failed to create transport list[0m
+[0;31mE (4056) mqtt_client: No scheme found[0m
+[0;31mE (4056) mqtt_client: Failed to create transport list[0m
+[0;31mE (4156) mqtt_client: No scheme found[0m
+[0;31mE (4156) mqtt_client: Failed to create transport list[0m
+[0;31mE (4256) mqtt_client: No scheme found[0m
+[0;31mE (4256) mqtt_client: Failed to create transport list[0m
+[0;31mE (4356) mqtt_client: No scheme found[0m
+[0;31mE (4356) mqtt_client: Failed to create transport list[0m
+[0;31mE (4456) mqtt_client: No scheme found[0m
+[0;31mE (4456) mqtt_client: Failed to create transport list[0m
+[0;31mE (4556) mqtt_client: No scheme found[0m
+[0;31mE (4556) mqtt_client: Failed to create transport list[0m
+[0;31mE (4656) mqtt_client: No scheme found[0m
+[0;31mE (4656) mqtt_client: Failed to create transport list[0m
+[0;31mE (4756) mqtt_client: No scheme found[0m
+[0;31mE (4756) mqtt_client: Failed to create transport list[0m
+[0;31mE (4856) mqtt_client: No scheme found[0m
+[0;31mE (4856) mqtt_client: Failed to create transport list[0m
+[0;31mE (4956) mqtt_client: No scheme found[0m
+[0;31mE (4956) mqtt_client: Failed to create transport list[0m
+[0;31mE (5056) mqtt_client: No scheme found[0m
+[0;31mE (5056) mqtt_client: Failed to create transport list[0m
+[0;31mE (5156) mqtt_client: No scheme found[0m
+[0;31mE (5156) mqtt_client: Failed to create transport list[0m
+[0;32mI (5196) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;31mE (5256) mqtt_client: No scheme found[0m
+[0;31mE (5256) mqtt_client: Failed to create transport list[0m
+[0;31mE (5356) mqtt_client: No scheme found[0m
+[0;31mE (5356) mqtt_client: Failed to create transport list[0m
+[0;31mE (5456) mqtt_client: No scheme found[0m
+[0;31mE (5456) mqtt_client: Failed to create transport list[0m
+[0;31mE (5556) mqtt_client: No scheme found[0m
+[0;31mE (5556) mqtt_client: Failed to create transport list[0m
+[0;31mE (5656) mqtt_client: No scheme found[0m
+[0;31mE (5656) mqtt_client: Failed to create transport list[0m
+[0;31mE (5756) mqtt_client: No scheme found[0m
+[0;31mE (5756) mqtt_client: Failed to create transport list[0m
+[0;31mE (5856) mqtt_client: No scheme found[0m
+[0;31mE (5856) mqtt_client: Failed to create transport list[0m
+[0;31mE (5956) mqtt_client: No scheme found[0m
+[0;31mE (5956) mqtt_client: Failed to create transport list[0m
+[0;31mE (6056) mqtt_client: No scheme found[0m
+[0;31mE (6056) mqtt_client: Failed to create transport list[0m
+[0;31mE (6156) mqtt_client: No scheme found[0m
+[0;31mE (6156) mqtt_client: Failed to create transport list[0m
+[0;31mE (6256) mqtt_client: No scheme found[0m
+[0;31mE (6256) mqtt_client: Failed to create transport list[0m
+[0;31mE (6356) mqtt_client: No scheme found[0m
+[0;31mE (6356) mqtt_client: Failed to create transport list[0m
+[0;31mE (6456) mqtt_client: No scheme found[0m
+[0;31mE (6456) mqtt_client: Failed to create transport list[0m
+[0;31mE (6556) mqtt_client: No scheme found[0m
+[0;31mE (6556) mqtt_client: Failed to create transport list[0m
+[0;31mE (6656) mqtt_client: No scheme found[0m
+[0;31mE (6656) mqtt_client: Failed to create transport list[0m
+[0;31mE (6756) mqtt_client: No scheme found[0m
+[0;31mE (6756) mqtt_client: Failed to create transport list[0m
+[0;31mE (6856) mqtt_client: No scheme found[0m
+[0;31mE (6856) mqtt_client: Failed to create transport list[0m
+[0;31mE (6956) mqtt_client: No scheme found[0m
+[0;31mE (6956) mqtt_client: Failed to create transport list[0m
+[0;31mE (7056) mqtt_client: No scheme found[0m
+[0;31mE (7056) mqtt_client: Failed to create transport list[0m
+[0;31mE (7156) mqtt_client: No scheme found[0m
+[0;31mE (7156) mqtt_client: Failed to create transport list[0m
+[0;31mE (7256) mqtt_client: No scheme found[0m
+[0;31mE (7256) mqtt_client: Failed to create transport list[0m
+[0;31mE (7356) mqtt_client: No scheme found[0m
+[0;31mE (7356) mqtt_client: Failed to create transport list[0m
+[0;32mI (7426) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;31mE (7456) mqtt_client: No scheme found[0m
+[0;31mE (7456) mqtt_client: Failed to create transport list[0m
+[0;31mE (7556) mqtt_client: No scheme found[0m
+[0;31mE (7556) mqtt_client: Failed to create transport list[0m
+[0;31mE (7656) mqtt_client: No scheme found[0m
+[0;31mE (7656) mqtt_client: Failed to create transport list[0m
+[0;31mE (7756) mqtt_client: No scheme found[0m
+[0;31mE (7756) mqtt_client: Failed to create transport list[0m
+[0;31mE (7856) mqtt_client: No scheme found[0m
+[0;31mE (7856) mqtt_client: Failed to create transport list[0m
+[0;31mE (7956) mqtt_client: No scheme found[0m
+[0;31mE (7956) mqtt_client: Failed to create transport list[0m
+[0;31mE (8056) mqtt_client: No scheme found[0m
+[0;31mE (8056) mqtt_client: Failed to create transport list[0m

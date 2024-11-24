@@ -1,0 +1,65 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40081af6: panic_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/panic.c:466
+0x4008a2bd: esp_system_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/esp_system_chip.c:84
+0x40091365: __assert_func at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/newlib/assert.c:81
+0x40082437: heap_caps_free at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/heap_caps_base.c:63 (discriminator 1)
+0x40091395: free at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/newlib/heap.c:39
+0x400e4f0d: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:588
+0x400e5e06: esp_http_client_perform at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1245
+0x400d7e6a: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:169 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40081af6: panic_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/panic.c:466
+0x4008a2bd: esp_system_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/esp_system_chip.c:84
+0x40091365: __assert_func at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/newlib/assert.c:81
+0x40082437: heap_caps_free at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/heap_caps_base.c:63 (discriminator 1)
+0x40091395: free at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/newlib/heap.c:39
+0x400e4f0d: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:588
+0x400e5e06: esp_http_client_perform at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1245
+0x400d7e6a: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:169 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40081af6: panic_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/panic.c:466
+0x4008a2bd: esp_system_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/esp_system_chip.c:84
+0x40091365: __assert_func at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/newlib/assert.c:81
+0x40082437: heap_caps_free at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/heap_caps_base.c:63 (discriminator 1)
+0x40091395: free at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/newlib/heap.c:39
+0x400e4f0d: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:588
+0x400e5e06: esp_http_client_perform at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1245
+0x400d7e6a: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:169 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40081af6: panic_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/panic.c:466
+0x4008a2bd: esp_system_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/esp_system_chip.c:84
+0x40091365: __assert_func at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/newlib/assert.c:81
+0x40082437: heap_caps_free at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/heap_caps_base.c:63 (discriminator 1)
+0x40091395: free at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/newlib/heap.c:39
+0x400e4f0d: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:588
+0x400e5e06: esp_http_client_perform at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1245
+0x400d7e6a: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:169 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0m

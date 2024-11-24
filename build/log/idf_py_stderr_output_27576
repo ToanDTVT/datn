@@ -1,0 +1,636 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40167aed: esp_http_client_get_status_code at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1648
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x40167aea: esp_http_client_get_status_code at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1646
+0x400d7ddc: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:51 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40081af6: panic_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/panic.c:466
+0x4008a2bd: esp_system_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/esp_system_chip.c:84
+0x40091365: __assert_func at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/newlib/assert.c:81
+0x4008ee04: block_next at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/tlsf/tlsf_block_functions.h:94
+ (inlined by) block_link_next at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/tlsf/tlsf_block_functions.h:101
+ (inlined by) block_mark_as_free at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/tlsf/tlsf_block_functions.h:109
+ (inlined by) tlsf_free at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/tlsf/tlsf.c:1121
+0x4008ec8c: multi_heap_free_impl at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/multi_heap.c:231
+0x4008243e: heap_caps_free at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/heap_caps_base.c:64
+0x40091395: free at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/newlib/heap.c:39
+0x400e4155: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:588
+0x400e504e: esp_http_client_perform at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1245
+0x400d7dca: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:49 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40167aed: esp_http_client_get_status_code at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1648
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x40167aea: esp_http_client_get_status_code at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1646
+0x400d7ddc: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:51 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400e4149: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:579
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400e4146: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:578
+0x400e504e: esp_http_client_perform at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1245
+0x400d7dca: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:49 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40167aed: esp_http_client_get_status_code at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1648
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x40167aea: esp_http_client_get_status_code at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1646
+0x400d7ddc: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:51 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400e4149: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:579
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400e4146: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:578
+0x400e504e: esp_http_client_perform at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1245
+0x400d7dca: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:49 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400e4149: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:579
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400e4146: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:578
+0x400e504e: esp_http_client_perform at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1245
+0x400d7dca: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:49 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40169fc5: esp_transport_get_error_handle at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/tcp_transport/transport.c:255 (discriminator 1)
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x40169fc2: esp_transport_get_error_handle at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/tcp_transport/transport.c:254
+0x400e43cb: esp_http_client_close at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1607
+0x400e453d: esp_http_client_cleanup at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:881
+0x400d7e14: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:56 (discriminator 15)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40169fc5: esp_transport_get_error_handle at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/tcp_transport/transport.c:255 (discriminator 1)
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x40169fc2: esp_transport_get_error_handle at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/tcp_transport/transport.c:254
+0x400e43cb: esp_http_client_close at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1607
+0x400e453d: esp_http_client_cleanup at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:881
+0x400d7e14: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:56 (discriminator 15)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400e4149: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:579
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400e4146: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:578
+0x400e504e: esp_http_client_perform at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1245
+0x400d7dca: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:49 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x4008f173: insert_free_block at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/tlsf/tlsf.c:362
+ (inlined by) block_insert at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/tlsf/tlsf.c:388
+ (inlined by) tlsf_free at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/tlsf/tlsf.c:1124
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x4008f170: insert_free_block at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/tlsf/tlsf.c:361
+ (inlined by) block_insert at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/tlsf/tlsf.c:388
+ (inlined by) tlsf_free at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/tlsf/tlsf.c:1124
+0x4008ec8c: multi_heap_free_impl at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/multi_heap.c:231
+0x4008243e: heap_caps_free at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/heap_caps_base.c:64
+0x40091395: free at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/newlib/heap.c:39
+0x400e4155: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:588
+0x400e504e: esp_http_client_perform at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1245
+0x400d7dca: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:49 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400e4149: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:579
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400e4146: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:578
+0x400e504e: esp_http_client_perform at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1245
+0x400d7dca: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:49 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400e4149: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:579
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400e4146: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:578
+0x400e504e: esp_http_client_perform at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1245
+0x400d7dca: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:49 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400e4149: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:579
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400e4146: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:578
+0x400e504e: esp_http_client_perform at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1245
+0x400d7dca: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:49 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40167aed: esp_http_client_get_status_code at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1648
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x40167aea: esp_http_client_get_status_code at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1646
+0x400d7ddc: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:51 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40167aed: esp_http_client_get_status_code at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1648
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x40167aea: esp_http_client_get_status_code at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1646
+0x400d7ddc: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:51 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400e4149: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:579
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400e4146: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:578
+0x400e504e: esp_http_client_perform at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1245
+0x400d7dca: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:49 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400e4149: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:579
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400e4146: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:578
+0x400e504e: esp_http_client_perform at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1245
+0x400d7dca: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:49 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400e4149: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:579
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400e4146: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:578
+0x400e504e: esp_http_client_perform at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1245
+0x400d7dca: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:49 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400e43d9: esp_http_client_close at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1607
+0x400e453d: esp_http_client_cleanup at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:881
+0x400d7e14: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:56 (discriminator 15)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x4008f173: insert_free_block at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/tlsf/tlsf.c:362
+ (inlined by) block_insert at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/tlsf/tlsf.c:388
+ (inlined by) tlsf_free at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/tlsf/tlsf.c:1124
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x4008f170: insert_free_block at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/tlsf/tlsf.c:361
+ (inlined by) block_insert at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/tlsf/tlsf.c:388
+ (inlined by) tlsf_free at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/tlsf/tlsf.c:1124
+0x4008ec8c: multi_heap_free_impl at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/multi_heap.c:231
+0x4008243e: heap_caps_free at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/heap_caps_base.c:64
+0x40091395: free at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/newlib/heap.c:39
+0x400e4155: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:588
+0x400e504e: esp_http_client_perform at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1245
+0x400d7dca: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:49 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400e56ef: http_header_clean at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/lib/http_header.c:220
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400e56ec: http_header_clean at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/lib/http_header.c:219
+0x400e571a: http_header_destroy at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/lib/http_header.c:44
+0x400e4550: esp_http_client_cleanup at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:886
+0x400d7e14: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:56 (discriminator 15)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40167aed: esp_http_client_get_status_code at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1648
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x40167aea: esp_http_client_get_status_code at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1646
+0x400d7ddc: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:51 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40167aed: esp_http_client_get_status_code at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1648
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x40167aea: esp_http_client_get_status_code at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1646
+0x400d7ddc: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:51 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40167aed: esp_http_client_get_status_code at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1648
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x40167aea: esp_http_client_get_status_code at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1646
+0x400d7ddc: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:51 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400e4149: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:579
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400e4146: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:578
+0x400e504e: esp_http_client_perform at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1245
+0x400d7dca: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:49 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400e4149: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:579
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400e4146: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:578
+0x400e504e: esp_http_client_perform at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1245
+0x400d7dca: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:49 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400e4149: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:579
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400e4146: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:578
+0x400e504e: esp_http_client_perform at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1245
+0x400d7dca: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:49 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400e4149: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:579
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400e4146: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:578
+0x400e504e: esp_http_client_perform at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1245
+0x400d7dca: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:49 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40169fc5: esp_transport_get_error_handle at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/tcp_transport/transport.c:255 (discriminator 1)
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x40169fc2: esp_transport_get_error_handle at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/tcp_transport/transport.c:254
+0x400e43cb: esp_http_client_close at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1607
+0x400e453d: esp_http_client_cleanup at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:881
+0x400d7e14: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:56 (discriminator 15)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400e4149: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:579
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400e4146: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:578
+0x400e504e: esp_http_client_perform at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1245
+0x400d7dca: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:49 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400e4149: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:579
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400e4146: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:578
+0x400e504e: esp_http_client_perform at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1245
+0x400d7dca: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:49 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400e4149: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:579
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400e4146: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:578
+0x400e504e: esp_http_client_perform at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1245
+0x400d7dca: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:49 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40167aed: esp_http_client_get_status_code at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1648
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x40167aea: esp_http_client_get_status_code at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1646
+0x400d7ddc: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:51 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40167aed: esp_http_client_get_status_code at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1648
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x40167aea: esp_http_client_get_status_code at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1646
+0x400d7ddc: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:51 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400e43d9: esp_http_client_close at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1607
+0x400e453d: esp_http_client_cleanup at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:881
+0x400d7e14: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:56 (discriminator 15)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400e4149: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:579
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400e4146: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:578
+0x400e504e: esp_http_client_perform at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1245
+0x400d7dca: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:49 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x4008f173: insert_free_block at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/tlsf/tlsf.c:362
+ (inlined by) block_insert at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/tlsf/tlsf.c:388
+ (inlined by) tlsf_free at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/tlsf/tlsf.c:1124
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x4008f170: insert_free_block at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/tlsf/tlsf.c:361
+ (inlined by) block_insert at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/tlsf/tlsf.c:388
+ (inlined by) tlsf_free at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/tlsf/tlsf.c:1124
+0x4008ec8c: multi_heap_free_impl at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/multi_heap.c:231
+0x4008243e: heap_caps_free at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/heap/heap_caps_base.c:64
+0x40091395: free at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/newlib/heap.c:39
+0x400e4155: esp_http_client_prepare at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:588
+0x400e504e: esp_http_client_perform at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1245
+0x400d7dca: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:49 (discriminator 13)
+0x400d6ffd: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:55
+0x4016e833: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008cb05: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081480: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0m
