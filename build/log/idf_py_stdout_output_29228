@@ -1,0 +1,585 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Nov 21 2024 21:08:18[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2839ch (164764) map[0m
+[0;32mI (166) esp_image: segment 1: paddr=000383c4 vaddr=3ffb0000 size=03d28h ( 15656) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=0003c0f4 vaddr=40080000 size=03f24h ( 16164) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a7898h (686232) map[0m
+[0;32mI (428) esp_image: segment 4: paddr=000e78c0 vaddr=40083f24 size=135f0h ( 79344) load[0m
+[0;32mI (473) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (473) boot: Disabling RNG early entropy source...[0m
+[0;32mI (485) cpu_start: Multicore app[0m
+[0;32mI (486) cpu_start: Pro cpu up.[0m
+[0;32mI (486) cpu_start: Starting app cpu, entry point is 0x40081484[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (505) cpu_start: Pro cpu start user code[0m
+[0;32mI (505) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (505) cpu_start: Application information:[0m
+[0;32mI (510) cpu_start: Project name:     datn[0m
+[0;32mI (514) cpu_start: App version:      48da8ca-dirty[0m
+[0;32mI (520) cpu_start: Compile time:     Nov 25 2024 03:44:25[0m
+[0;32mI (526) cpu_start: ELF file SHA256:  f3d265f66bedb8f4...[0m
+[0;32mI (532) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (537) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (542) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (547) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (552) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (559) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (565) heap_init: At 3FFBE4D0 len 00021B30 (134 KiB): DRAM[0m
+[0;32mI (571) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (577) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (584) heap_init: At 40097514 len 00008AEC (34 KiB): IRAM[0m
+[0;32mI (592) spi_flash: detected chip: generic[0m
+[0;32mI (595) spi_flash: flash io: dio[0m
+[0;32mI (600) app_start: Starting scheduler on CPU0[0m
+[0;32mI (604) app_start: Starting scheduler on CPU1[0m
+[0;32mI (604) main_task: Started on CPU0[0m
+[0;32mI (614) main_task: Calling app_main()[0m
+[0;32mI (614) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (624) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (634) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (644) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (654) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (664) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (664) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (674) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (724) wifi:wifi driver task: 3ffc7c98, prio:23, stack:6656, core=0[0m
+[0;32mI (734) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (734) wifi:wifi certification version: v7.0[0m
+[0;32mI (734) wifi:config NVS flash: enabled[0m
+[0;32mI (734) wifi:config nano formating: disabled[0m
+[0;32mI (744) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (744) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (744) wifi:Init management short buffer num: 32[0m
+[0;32mI (754) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (754) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (764) wifi:Init static rx buffer num: 10[0m
+[0;32mI (764) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (774) wifi_init: rx ba win: 6[0m
+[0;32mI (774) wifi_init: tcpip mbox: 32[0m
+[0;32mI (774) wifi_init: udp mbox: 6[0m
+[0;32mI (784) wifi_init: tcp mbox: 6[0m
+[0;32mI (784) wifi_init: tcp tx win: 5760[0m
+[0;32mI (784) wifi_init: tcp rx win: 5760[0m
+[0;32mI (794) wifi_init: tcp mss: 1440[0m
+[0;32mI (794) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (804) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (804) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;33mW (894) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (954) wifi:mode : sta (cc:7b:5c:28:c2:a8)[0m
+[0;32mI (954) wifi:enable tsf[0m
+[0;32mI (1954) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1964) wifi:state: init -> auth (b0)[0m
+[0;32mI (1964) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1974) wifi:state: assoc -> run (10)[0m
+[0;32mI (2074) wifi:connected with BaPhuQuy, aid = 3, channel 1, BW20, bssid = e0:b6:68:22:70:2b[0m
+[0;32mI (2074) wifi:security: WPA2-PSK, phy: bgn, rssi: -51[0m
+[0;32mI (2074) wifi:pm start, type: 1[0m
+
+[0;32mI (2074) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2114) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;31mE (2964) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2964) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2964) HTTP_CLIENT: Connection failed, sock < 0[0m
+Password: 
+[0;32mI (2974) main_task: Returned from app_main()[0m
+[0;32mI (2974) MQTT: Event ID: 7[0m
+[0;31mE (2984) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2994) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2994) mqtt_client: Error transport connect[0m
+[0;32mI (3004) MQTT: Event ID: 0[0m
+[0;32mI (3004) MQTT: Event ID: 2[0m
+[0;32mI (3474) MQTT: Event ID: 7[0m
+[0;31mE (3474) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3474) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3484) mqtt_client: Error transport connect[0m
+[0;32mI (3484) MQTT: Event ID: 0[0m
+[0;32mI (3484) MQTT: Event ID: 2[0m
+[0;32mI (3974) MQTT: Event ID: 7[0m
+[0;31mE (3974) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3974) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3984) mqtt_client: Error transport connect[0m
+[0;32mI (3984) MQTT: Event ID: 0[0m
+[0;32mI (3994) MQTT: Event ID: 2[0m
+[0;32mI (4174) wifi:<ba-add>idx:0 (ifx:0, e0:b6:68:22:70:2b), tid:6, ssn:2, winSize:64[0m
+[0;32mI (4474) MQTT: Event ID: 7[0m
+[0;32mI (4974) MQTT: Event ID: 7[0m
+[0;32mI (5084) esp_netif_handlers: sta ip: 192.168.2.17, mask: 255.255.255.0, gw: 192.168.2.253[0m
+[0;32mI (5304) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (5474) MQTT: Event ID: 7[0m
+[0;32mI (5604) wifi:<ba-add>idx:1 (ifx:0, e0:b6:68:22:70:2b), tid:0, ssn:0, winSize:64[0m
+[0;32mI (5974) MQTT: Event ID: 7[0m
+[0;32mI (6114) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (6124) MQTT: Subscribed to RPC requests[0m
+[0;31mE (6124) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (6124) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (6134) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (6134) MQTT: Event ID: 0[0m
+[0;32mI (6134) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (6144) MQTT: Subscribed to RPC requests[0m
+[0;31mE (6144) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (6144) MQTT: Subscribed to RPC requests[0m
+[0;32mI (6164) MQTT: Event ID: 2[0m
+[0;31mE (6164) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (6174) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (6184) MQTT: Event ID: 0[0m
+[0;31mE (6184) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (6194) MQTT: Event ID: 2[0m
+[0;32mI (6434) MQTT: Event ID: 3[0m
+[0;32mI (6474) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;31mE (6474) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (6474) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (6474) MQTT: Subscribed to RPC requests[0m
+[0;32mI (6484) MQTT: Event ID: 0[0m
+[0;32mI (6474) MQTT: Event ID: 7[0m
+[0;31mE (6494) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (6504) MQTT: Event ID: 2[0m
+[0;32mI (6834) MQTT: Event ID: 3[0m
+[0;32mI (6974) MQTT: Event ID: 7[0m
+[0;31mE (7104) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;32mI (7104) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;31mE (7104) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (7104) MQTT: Subscribed to RPC requests[0m
+[0;32mI (7114) MQTT: Event ID: 0[0m
+[0;31mE (7124) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (7124) MQTT: Event ID: 2[0m
+[0;32mI (7344) MQTT: Event ID: 3[0m
+[0;32mI (7474) MQTT: Event ID: 7[0m
+[0;32mI (7494) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (7494) MQTT: Subscribed to RPC requests[0m
+[0;31mE (7494) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (7504) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (7514) MQTT: Event ID: 0[0m
+[0;31mE (7514) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (7524) MQTT: Event ID: 2[0m
+[0;32mI (7534) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (7744) MQTT: Event ID: 3[0m
+[0;32mI (7974) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;31mE (7974) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (7974) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (7984) MQTT: Event ID: 0[0m
+[0;32mI (7974) MQTT: Subscribed to RPC requests[0m
+[0;31mE (7984) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (7984) MQTT: Event ID: 7[0m
+[0;32mI (8004) MQTT: Event ID: 2[0m
+[0;32mI (8274) MQTT: Event ID: 3[0m
+[0;32mI (8484) MQTT: Event ID: 7[0m
+[0;32mI (8514) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (8524) MQTT: Subscribed to RPC requests[0m
+[0;31mE (8524) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (8524) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (8534) MQTT: Event ID: 0[0m
+[0;31mE (8534) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (8544) MQTT: Event ID: 2[0m
+[0;32mI (8764) MQTT: Event ID: 3[0m
+[0;32mI (8984) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;31mE (8984) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (8984) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (8984) MQTT: Subscribed to RPC requests[0m
+[0;32mI (8994) MQTT: Event ID: 0[0m
+[0;32mI (8984) MQTT: Event ID: 7[0m
+[0;31mE (9004) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (9014) MQTT: Event ID: 2[0m
+[0;32mI (9224) MQTT: Event ID: 3[0m
+[0;32mI (9484) MQTT: Event ID: 7[0m
+[0;32mI (9494) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (9494) MQTT: Subscribed to RPC requests[0m
+[0;31mE (9504) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (9504) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (9514) MQTT: Event ID: 0[0m
+[0;31mE (9514) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (9524) MQTT: Event ID: 2[0m
+[0;32mI (9734) MQTT: Event ID: 3[0m
+[0;32mI (9774) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (9984) MQTT: Event ID: 7[0m
+[0;32mI (9994) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;31mE (9994) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (9994) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (9994) MQTT: Subscribed to RPC requests[0m
+[0;32mI (10004) MQTT: Event ID: 0[0m
+[0;31mE (10014) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (10024) MQTT: Event ID: 2[0m
+[0;32mI (10234) MQTT: Event ID: 3[0m
+[0;32mI (10484) MQTT: Event ID: 7[0m
+[0;32mI (10524) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;31mE (10524) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (10524) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (10524) MQTT: Subscribed to RPC requests[0m
+[0;32mI (10534) MQTT: Event ID: 0[0m
+[0;31mE (10544) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (10554) MQTT: Event ID: 2[0m
+[0;32mI (10764) MQTT: Event ID: 3[0m
+[0;31mE (10964) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (10964) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (10974) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (10974) MQTT: Event ID: 0[0m
+[0;31mE (10984) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (10984) MQTT: Subscribed to RPC requests[0m
+[0;32mI (10984) MQTT: Event ID: 7[0m
+[0;32mI (10994) MQTT: Event ID: 2[0m
+[0;32mI (11264) MQTT: Event ID: 3[0m
+[0;32mI (11484) MQTT: Event ID: 7[0m
+[0;32mI (11514) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (11514) MQTT: Subscribed to RPC requests[0m
+[0;31mE (11524) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (11524) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (11534) MQTT: Event ID: 0[0m
+[0;31mE (11534) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (11544) MQTT: Event ID: 2[0m
+[0;32mI (11754) MQTT: Event ID: 3[0m
+[0;32mI (11984) MQTT: Event ID: 7[0m
+[0;32mI (11994) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (11994) MQTT: Subscribed to RPC requests[0m
+[0;31mE (11994) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (11994) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (12004) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (12004) MQTT: Event ID: 0[0m
+[0;31mE (12014) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (12024) MQTT: Event ID: 2[0m
+[0;32mI (12264) MQTT: Event ID: 3[0m
+[0;32mI (12484) MQTT: Event ID: 7[0m
+[0;32mI (12504) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (12514) MQTT: Subscribed to RPC requests[0m
+[0;31mE (12514) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (12514) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (12524) MQTT: Event ID: 0[0m
+[0;31mE (12524) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (12534) MQTT: Event ID: 2[0m
+[0;32mI (12784) MQTT: Event ID: 3[0m
+[0;32mI (12984) MQTT: Event ID: 7[0m
+[0;31mE (12994) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (12994) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (12994) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (13014) MQTT: Event ID: 7[0m
+[0;32mI (13054) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (13054) MQTT: Subscribed to RPC requests[0m
+[0;31mE (13054) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (13054) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (13064) MQTT: Event ID: 0[0m
+[0;31mE (13074) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (13074) MQTT: Event ID: 2[0m
+[0;32mI (13294) MQTT: Event ID: 3[0m
+[0;32mI (13484) MQTT: Event ID: 7[0m
+[0;32mI (13494) MQTT: Event ID: 7[0m
+[0;31mE (13494) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (13494) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (13504) MQTT: Event ID: 0[0m
+[0;32mI (13494) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (13504) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;31mE (13504) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (13514) MQTT: Subscribed to RPC requests[0m
+[0;32mI (13514) MQTT: Subscribed to RPC requests[0m
+[0;32mI (13524) MQTT: Event ID: 2[0m
+[0;31mE (13534) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (13544) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (13554) MQTT: Event ID: 0[0m
+[0;31mE (13554) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (13564) MQTT: Event ID: 2[0m
+[0;32mI (13754) MQTT: Event ID: 3[0m
+[0;31mE (13984) mqtt_client: Error create mqtt task[0m
+[0;31mE (14004) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (14004) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (14014) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (14014) MQTT: Event ID: 0[0m
+[0;32mI (14014) MQTT: Subscribed to RPC requests[0m
+[0;31mE (14014) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (14004) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (14034) MQTT: Event ID: 2[0m
+[0;32mI (14034) MQTT: Subscribed to RPC requests[0m
+[0;31mE (14044) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (14054) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (14064) MQTT: Event ID: 0[0m
+[0;31mE (14064) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (14074) MQTT: Event ID: 2[0m
+[0;32mI (14244) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (14314) MQTT: Event ID: 3[0m
+[0;31mE (14484) mqtt_client: Error create mqtt task[0m
+[0;31mE (14984) mqtt_client: Error create mqtt task[0m
+[0;31mE (15484) mqtt_client: esp_mqtt_set_config(415): Memory exhausted[0m
+[0;31mE (15484) event: event_loop was NULL[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x400dbf94  PS      : 0x00060430  A0      : 0x800d8848  A1      : 0x3ffd3340  
+A2      : 0x00000000  A3      : 0xffffffff  A4      : 0x400d8858  A5      : 0x3ffff4e4  
+A6      : 0x3ffb4250  A7      : 0x3ffbe51c  A8      : 0x800dbe32  A9      : 0x3ffd32f0  
+A10     : 0x00003a2f  A11     : 0x3f4058dc  A12     : 0xffffffff  A13     : 0x400d8858  
+A14     : 0x3ffff4e4  A15     : 0xb33fffff  SAR     : 0x0000000a  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000000  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xfffffffe  
+
+
+Backtrace: 0x400dbf91:0x3ffd3340 0x400d8845:0x3ffd3360 0x4008cb09:0x3ffd3380
+
+
+
+
+ELF file SHA256: f3d265f66bedb8f4
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (32) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Nov 21 2024 21:08:18[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2839ch (164764) map[0m
+[0;32mI (166) esp_image: segment 1: paddr=000383c4 vaddr=3ffb0000 size=03d28h ( 15656) load[0m
+[0;32mI (172) esp_image: segment 2: paddr=0003c0f4 vaddr=40080000 size=03f24h ( 16164) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a7898h (686232) map[0m
+[0;32mI (428) esp_image: segment 4: paddr=000e78c0 vaddr=40083f24 size=135f0h ( 79344) load[0m
+[0;32mI (473) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (473) boot: Disabling RNG early entropy source...[0m
+[0;32mI (485) cpu_start: Multicore app[0m
+[0;32mI (486) cpu_start: Pro cpu up.[0m
+[0;32mI (486) cpu_start: Starting app cpu, entry point is 0x40081484[0m
+[0;32mI (474) cpu_start: App cpu up.[0m
+[0;32mI (505) cpu_start: Pro cpu start user code[0m
+[0;32mI (505) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (505) cpu_start: Application information:[0m
+[0;32mI (510) cpu_start: Project name:     datn[0m
+[0;32mI (515) cpu_start: App version:      48da8ca-dirty[0m
+[0;32mI (520) cpu_start: Compile time:     Nov 25 2024 03:44:25[0m
+[0;32mI (526) cpu_start: ELF file SHA256:  f3d265f66bedb8f4...[0m
+[0;32mI (532) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (537) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (542) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (547) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (552) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (559) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (565) heap_init: At 3FFBE4D0 len 00021B30 (134 KiB): DRAM[0m
+[0;32mI (571) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (578) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (584) heap_init: At 40097514 len 00008AEC (34 KiB): IRAM[0m
+[0;32mI (592) spi_flash: detected chip: generic[0m
+[0;32mI (595) spi_flash: flash io: dio[0m
+[0;32mI (600) app_start: Starting scheduler on CPU0[0m
+[0;32mI (604) app_start: Starting scheduler on CPU1[0m
+[0;32mI (604) main_task: Started on CPU0[0m
+[0;32mI (614) main_task: Calling app_main()[0m
+[0;32mI (614) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (624) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (634) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (644) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (654) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (664) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (664) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (674) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (724) wifi:wifi driver task: 3ffc7c98, prio:23, stack:6656, core=0[0m
+[0;32mI (734) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (734) wifi:wifi certification version: v7.0[0m
+[0;32mI (734) wifi:config NVS flash: enabled[0m
+[0;32mI (734) wifi:config nano formating: disabled[0m
+[0;32mI (744) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (744) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (744) wifi:Init management short buffer num: 32[0m
+[0;32mI (754) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (754) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (764) wifi:Init static rx buffer num: 10[0m
+[0;32mI (764) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (774) wifi_init: rx ba win: 6[0m
+[0;32mI (774) wifi_init: tcpip mbox: 32[0m
+[0;32mI (774) wifi_init: udp mbox: 6[0m
+[0;32mI (784) wifi_init: tcp mbox: 6[0m
+[0;32mI (784) wifi_init: tcp tx win: 5760[0m
+[0;32mI (784) wifi_init: tcp rx win: 5760[0m
+[0;32mI (794) wifi_init: tcp mss: 1440[0m
+[0;32mI (794) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (804) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (804) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;33mW (894) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (914) wifi:mode : sta (cc:7b:5c:28:c2:a8)[0m
+[0;32mI (914) wifi:enable tsf[0m
+[0;32mI (1924) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1934) wifi:state: init -> auth (b0)[0m
+[0;32mI (1944) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1984) wifi:state: assoc -> run (10)[0m
+[0;32mI (2084) wifi:connected with BaPhuQuy, aid = 3, channel 1, BW20, bssid = e0:b6:68:22:70:2b[0m
+[0;32mI (2084) wifi:security: WPA2-PSK, phy: bgn, rssi: -52[0m
+[0;32mI (2094) wifi:pm start, type: 1[0m
+
+[0;32mI (2094) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2114) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;31mE (2934) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+Password: 
+[0;31mE (2934) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2944) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (2944) MQTT: Event ID: 7[0m
+[0;31mE (2944) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2954) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2964) mqtt_client: Error transport connect[0m
+[0;32mI (2974) MQTT: Event ID: 0[0m
+[0;32mI (2974) MQTT: Event ID: 2[0m
+[0;32mI (2974) main_task: Returned from app_main()[0m
+[0;32mI (3444) MQTT: Event ID: 7[0m
+[0;31mE (3444) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3444) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3454) mqtt_client: Error transport connect[0m
+[0;32mI (3454) MQTT: Event ID: 0[0m
+[0;32mI (3464) MQTT: Event ID: 2[0m
+[0;32mI (3944) MQTT: Event ID: 7[0m
+[0;31mE (3944) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (3944) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (3954) mqtt_client: Error transport connect[0m
+[0;32mI (3954) MQTT: Event ID: 0[0m
+[0;32mI (3964) MQTT: Event ID: 2[0m
+[0;32mI (4164) wifi:<ba-add>idx:0 (ifx:0, e0:b6:68:22:70:2b), tid:6, ssn:2, winSize:64[0m
+[0;32mI (4444) MQTT: Event ID: 7[0m
+[0;32mI (4944) MQTT: Event ID: 7[0m
+[0;32mI (5104) esp_netif_handlers: sta ip: 192.168.2.17, mask: 255.255.255.0, gw: 192.168.2.253[0m
+[0;32mI (5264) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (5444) MQTT: Event ID: 7[0m
+[0;32mI (5464) wifi:<ba-add>idx:1 (ifx:0, e0:b6:68:22:70:2b), tid:0, ssn:1, winSize:64[0m
+[0;32mI (5944) MQTT: Event ID: 7[0m
+[0;32mI (6014) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (6024) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (6024) MQTT: Subscribed to RPC requests[0m
+[0;32mI (6024) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (6024) MQTT: Subscribed to RPC requests[0m
+[0;32mI (6024) MQTT: Subscribed to RPC requests[0m
+[0;31mE (6024) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (6034) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (6044) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;31mE (6054) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (6064) MQTT: Event ID: 0[0m
+[0;32mI (6064) MQTT: Event ID: 0[0m
+[0;31mE (6074) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;31mE (6074) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (6084) MQTT: Event ID: 2[0m
+[0;32mI (6094) MQTT: Event ID: 2[0m
+[0;32mI (6324) MQTT: Event ID: 3[0m
+[0;32mI (6444) MQTT: Event ID: 7[0m
+[0;32mI (6464) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (6474) MQTT: Subscribed to RPC requests[0m
+[0;31mE (6474) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (6474) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (6484) MQTT: Event ID: 0[0m
+[0;31mE (6484) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (6494) MQTT: Event ID: 2[0m
+[0;32mI (6714) MQTT: Event ID: 3[0m
+[0;32mI (6944) MQTT: Event ID: 7[0m
+[0;31mE (6964) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;32mI (6974) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;31mE (6974) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (6974) MQTT: Subscribed to RPC requests[0m
+[0;32mI (6984) MQTT: Event ID: 0[0m
+[0;31mE (6984) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (6994) MQTT: Event ID: 2[0m
+[0;32mI (7224) MQTT: Event ID: 3[0m
+[0;32mI (7444) MQTT: Event ID: 7[0m
+[0;32mI (7454) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;31mE (7454) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (7454) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (7454) MQTT: Subscribed to RPC requests[0m
+[0;32mI (7464) MQTT: Event ID: 0[0m
+[0;31mE (7474) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (7484) MQTT: Event ID: 2[0m
+[0;32mI (7494) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (7694) MQTT: Event ID: 3[0m
+[0;32mI (7944) MQTT: Event ID: 7[0m
+[0;31mE (7964) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (7964) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (7964) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (7964) MQTT: Event ID: 0[0m
+[0;32mI (7974) MQTT: Subscribed to RPC requests[0m
+[0;31mE (7974) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (7994) MQTT: Event ID: 2[0m
+[0;32mI (8234) MQTT: Event ID: 3[0m
+[0;32mI (8444) MQTT: Event ID: 7[0m
+[0;32mI (8474) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (8474) MQTT: Subscribed to RPC requests[0m
+[0;31mE (8474) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (8474) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (8484) MQTT: Event ID: 0[0m
+[0;31mE (8494) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (8504) MQTT: Event ID: 2[0m
+[0;32mI (8714) MQTT: Event ID: 3[0m
+[0;32mI (8944) MQTT: Event ID: 7[0m
+[0;32mI (8954) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (8954) MQTT: Subscribed to RPC requests[0m
+[0;31mE (8964) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (8964) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (8964) MQTT: Event ID: 0[0m
+[0;31mE (8974) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (8984) MQTT: Event ID: 2[0m
+[0;32mI (9194) MQTT: Event ID: 3[0m
+[0;32mI (9444) MQTT: Event ID: 7[0m
+[0;31mE (9454) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (9454) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (9454) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (9464) MQTT: Event ID: 0[0m
+[0;32mI (9474) MQTT: Subscribed to RPC requests[0m
+[0;31mE (9474) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (9484) MQTT: Event ID: 2[0m
+[0;32mI (9714) MQTT: Event ID: 3[0m
+[0;32mI (9724) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (9944) MQTT: Event ID: 7[0m
+[0;32mI (9944) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (9944) MQTT: Subscribed to RPC requests[0m
+[0;31mE (9954) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (9954) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (9964) MQTT: Event ID: 0[0m
+[0;31mE (9964) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (9974) MQTT: Event ID: 2[0m
+[0;32mI (10224) MQTT: Event ID: 3[0m
+[0;32mI (10444) MQTT: Event ID: 7[0m
+[0;32mI (10464) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;31mE (10474) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (10474) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (10474) MQTT: Subscribed to RPC requests[0m
+[0;32mI (10474) MQTT: Event ID: 0[0m
+[0;31mE (10484) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (10494) MQTT: Event ID: 2[0m
+[0;32mI (10744) MQTT: Event ID: 3[0m

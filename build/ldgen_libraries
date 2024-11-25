@@ -64,8 +64,5 @@ D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/gpio_lib/libgpio_lib.a
 D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/user_data/libuser_data.a
 D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/uart_lib/libuart_lib.a
 D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/wifi_config/libwifi_config.a
-D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/handle_password/libhandle_password.a
-D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/handle_fingerprint/libhandle_fingerprint.a
-D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/mqtt_method/libmqtt_method.a
 D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/http_method/libhttp_method.a
 D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/main/libmain.a

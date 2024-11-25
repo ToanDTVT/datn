@@ -1,0 +1,585 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Nov 21 2024 21:08:18[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2838ch (164748) map[0m
+[0;32mI (166) esp_image: segment 1: paddr=000383b4 vaddr=3ffb0000 size=03d28h ( 15656) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=0003c0e4 vaddr=40080000 size=03f34h ( 16180) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a7844h (686148) map[0m
+[0;32mI (428) esp_image: segment 4: paddr=000e786c vaddr=40083f34 size=135e0h ( 79328) load[0m
+[0;32mI (473) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (473) boot: Disabling RNG early entropy source...[0m
+[0;32mI (485) cpu_start: Multicore app[0m
+[0;32mI (486) cpu_start: Pro cpu up.[0m
+[0;32mI (486) cpu_start: Starting app cpu, entry point is 0x40081484[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (505) cpu_start: Pro cpu start user code[0m
+[0;32mI (505) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (505) cpu_start: Application information:[0m
+[0;32mI (510) cpu_start: Project name:     datn[0m
+[0;32mI (515) cpu_start: App version:      48da8ca-dirty[0m
+[0;32mI (520) cpu_start: Compile time:     Nov 25 2024 03:44:25[0m
+[0;32mI (526) cpu_start: ELF file SHA256:  5a1cd03c1c93f97c...[0m
+[0;32mI (532) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (537) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (542) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (547) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (552) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (559) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (565) heap_init: At 3FFBE4D0 len 00021B30 (134 KiB): DRAM[0m
+[0;32mI (571) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (578) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (584) heap_init: At 40097514 len 00008AEC (34 KiB): IRAM[0m
+[0;32mI (592) spi_flash: detected chip: generic[0m
+[0;32mI (595) spi_flash: flash io: dio[0m
+[0;32mI (600) app_start: Starting scheduler on CPU0[0m
+[0;32mI (604) app_start: Starting scheduler on CPU1[0m
+[0;32mI (604) main_task: Started on CPU0[0m
+[0;32mI (614) main_task: Calling app_main()[0m
+[0;32mI (614) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (624) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (634) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (644) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (654) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (664) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (664) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (674) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (724) wifi:wifi driver task: 3ffc7c98, prio:23, stack:6656, core=0[0m
+[0;32mI (734) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (734) wifi:wifi certification version: v7.0[0m
+[0;32mI (734) wifi:config NVS flash: enabled[0m
+[0;32mI (734) wifi:config nano formating: disabled[0m
+[0;32mI (744) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (744) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (744) wifi:Init management short buffer num: 32[0m
+[0;32mI (754) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (754) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (764) wifi:Init static rx buffer num: 10[0m
+[0;32mI (764) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (774) wifi_init: rx ba win: 6[0m
+[0;32mI (774) wifi_init: tcpip mbox: 32[0m
+[0;32mI (774) wifi_init: udp mbox: 6[0m
+[0;32mI (784) wifi_init: tcp mbox: 6[0m
+[0;32mI (784) wifi_init: tcp tx win: 5760[0m
+[0;32mI (784) wifi_init: tcp rx win: 5760[0m
+[0;32mI (794) wifi_init: tcp mss: 1440[0m
+[0;32mI (794) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (804) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (804) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (894) wifi:mode : sta (cc:7b:5c:28:c2:a8)[0m
+[0;32mI (894) wifi:enable tsf[0m
+[0;32mI (1904) MQTT: Event ID: 7[0m
+[0;31mE (1904) esp-tls: couldn't get hostname for :demo.thingsboard.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1914) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1914) mqtt_client: Error transport connect[0m
+[0;32mI (1914) MQTT: Event ID: 0[0m
+[0;32mI (1924) MQTT: Event ID: 2[0m
+[0;32mI (1904) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1934) wifi:state: init -> auth (b0)[0m
+[0;32mI (1944) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1964) wifi:state: assoc -> run (10)[0m
+[0;32mI (2074) wifi:connected with BaPhuQuy, aid = 1, channel 1, BW20, bssid = e0:b6:68:22:70:2b[0m
+[0;32mI (2074) wifi:security: WPA2-PSK, phy: bgn, rssi: -50[0m
+[0;32mI (2074) wifi:pm start, type: 1[0m
+
+[0;32mI (2074) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2224) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;31mE (2944) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2944) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2944) HTTP_CLIENT: Connection failed, sock < 0[0m
+Password: 
+[0;32mI (2954) main_task: Returned from app_main()[0m
+[0;32mI (4184) wifi:<ba-add>idx:0 (ifx:0, e0:b6:68:22:70:2b), tid:6, ssn:2, winSize:64[0m
+[0;32mI (5084) esp_netif_handlers: sta ip: 192.168.2.17, mask: 255.255.255.0, gw: 192.168.2.253[0m
+[0;32mI (5234) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (7464) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (8074) wifi:<ba-add>idx:1 (ifx:0, e0:b6:68:22:70:2b), tid:0, ssn:1, winSize:64[0m
+[0;32mI (8114) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (8234) HTTP_CLIENT: Stored student: [0m
+[0;32mI (8234) HTTP_CLIENT: Stored student: [0m
+[0;32mI (8234) HTTP_CLIENT: Stored student: [0m
+[0;32mI (8244) HTTP_CLIENT: Stored student: [0m
+[0;32mI (8244) HTTP_CLIENT: Stored student: [0m
+[0;32mI (9694) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (11924) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (11934) MQTT: Event ID: 7[0m
+[0;32mI (12544) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (12544) MQTT: Subscribed to RPC requests[0m
+[0;32mI (12804) MQTT: Event ID: 3[0m
+[0;32mI (13314) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (13424) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (13424) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (13434) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (13444) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (13444) HTTP_CLIENT: Stored student: [0m
+[0;32mI (14154) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (16384) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (18504) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (18614) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (18614) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (18624) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (18624) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (18634) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (18634) HTTP_CLIENT: Stored student: [0m
+[0;32mI (20854) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (23084) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (23664) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (23774) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (23784) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (23784) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (23794) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (23804) HTTP_CLIENT: Stored student: [0m
+[0;32mI (25314) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (27544) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (28824) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (28944) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (28944) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (28954) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (28954) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (28964) HTTP_CLIENT: Stored student: [0m
+[0;32mI (29774) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (32004) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (34074) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (34184) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (34194) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (34194) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (34204) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (34204) HTTP_CLIENT: Stored student: [0m
+[0;32mI (34234) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (36464) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (38694) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (39234) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (39354) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (39354) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (39364) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (39364) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (39374) HTTP_CLIENT: Stored student: [0m
+[0;32mI (40924) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (43154) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (44404) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (44514) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (44514) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (44524) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (44524) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (44534) HTTP_CLIENT: Stored student: [0m
+[0;32mI (45384) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (47614) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (49564) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (49674) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (49684) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (49684) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (49694) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (49704) HTTP_CLIENT: Stored student: [0m
+[0;32mI (49844) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (52074) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (54304) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (54734) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (54844) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (54854) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (54854) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (54864) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (54874) HTTP_CLIENT: Stored student: [0m
+[0;32mI (56534) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (58764) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (59894) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (60014) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (60014) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (60024) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (60024) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (60034) HTTP_CLIENT: Stored student: [0m
+[0;32mI (60994) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (63224) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (65054) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (65174) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (65174) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (65174) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (65184) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (65194) HTTP_CLIENT: Stored student: [0m
+[0;32mI (65454) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (67684) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (69914) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (70214) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (70334) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (70334) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (70344) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (70344) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (70354) HTTP_CLIENT: Stored student: [0m
+[0;32mI (72144) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (74374) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (75384) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (75494) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (75504) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (75504) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (75514) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (75514) HTTP_CLIENT: Stored student: [0m
+[0;32mI (76604) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (78834) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (80574) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (80684) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (80694) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (80694) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (80704) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (80704) HTTP_CLIENT: Stored student: [0m
+[0;32mI (81064) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (83294) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (85524) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (85734) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (85854) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (85854) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (85864) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (85864) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (85874) HTTP_CLIENT: Stored student: [0m
+[0;32mI (87754) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (89984) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (90924) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (91034) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (91034) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (91044) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (91044) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (91054) HTTP_CLIENT: Stored student: [0m
+[0;32mI (92214) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (94444) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (96094) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (96204) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (96204) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (96214) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (96214) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (96224) HTTP_CLIENT: Stored student: [0m
+[0;32mI (96674) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (98904) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (101134) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (101264) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (101374) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (101374) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (101384) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (101384) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (101394) HTTP_CLIENT: Stored student: [0m
+[0;32mI (103364) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (105594) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (106474) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (106584) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (106584) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (106594) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (106594) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (106604) HTTP_CLIENT: Stored student: [0m
+[0;32mI (107824) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (110054) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (111644) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (111754) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (111754) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (111764) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (111764) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (111774) HTTP_CLIENT: Stored student: [0m
+[0;32mI (112284) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (114514) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (116744) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (116804) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (116914) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (116924) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (116924) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (116934) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (116944) HTTP_CLIENT: Stored student: [0m
+[0;32mI (118974) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (121204) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (121964) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (122074) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (122074) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (122084) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (122094) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (122094) HTTP_CLIENT: Stored student: [0m
+[0;32mI (123434) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (125664) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (127124) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (127234) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (127244) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (127244) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (127254) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (127264) HTTP_CLIENT: Stored student: [0m
+[0;32mI (127894) UART: PS_SEARCH: Fingerprint not found.
+[0m
+1 
+[0;32mI (130124) UART: PS_SEARCH: Fingerprint not found.
+[0m
+1 
+1 
+[0;32mI (132294) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (132354) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (132404) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (132414) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (132424) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (132424) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (132434) HTTP_CLIENT: Stored student: [0m
+1 
+
+=========================================== 
+SUCCESSFUL!! OPEN THE DOOR! 
+id: 0 
+=========================================== 
+[0;32mI (134744) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (137614) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (137734) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (137734) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (137744) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (137744) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (137754) HTTP_CLIENT: Stored student: [0m
+Password: 
+[0;32mI (142784) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (142904) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (142904) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (142914) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (142914) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (142924) HTTP_CLIENT: Stored student: [0m
+[0;32mI (143034) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (145264) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (147494) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (147964) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (148074) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (148074) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (148084) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (148084) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (148094) HTTP_CLIENT: Stored student: [0m
+[0;32mI (149724) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (151954) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (153154) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (153264) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (153274) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (153274) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (153284) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (153294) HTTP_CLIENT: Stored student: [0m
+[0;32mI (154184) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (156414) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (158314) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (158424) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (158434) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (158434) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (158444) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (158454) HTTP_CLIENT: Stored student: [0m
+[0;32mI (158654) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (160884) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (163114) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (163484) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (163594) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (163604) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (163604) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (163614) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (163624) HTTP_CLIENT: Stored student: [0m
+[0;32mI (165344) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (167584) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (168644) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (168754) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (168764) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (168764) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (168774) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (168774) HTTP_CLIENT: Stored student: [0m
+[0;32mI (169814) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (172044) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (173804) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (173914) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (173924) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (173924) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (173934) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (173934) HTTP_CLIENT: Stored student: [0m
+[0;32mI (174274) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (176514) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (178744) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (178974) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (179084) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (179084) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (179094) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (179104) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (179104) HTTP_CLIENT: Stored student: [0m
+[0;32mI (180974) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (183204) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (184134) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (184244) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (184254) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (184254) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (184264) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (184274) HTTP_CLIENT: Stored student: [0m
+[0;32mI (185434) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (187664) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (189294) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (189404) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (189414) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (189414) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (189424) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (189434) HTTP_CLIENT: Stored student: [0m
+[0;32mI (189894) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (192124) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (194354) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (194464) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (194574) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (194574) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (194584) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (194584) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (194594) HTTP_CLIENT: Stored student: [0m
+[0;32mI (196584) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (198814) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (199634) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (199754) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (199754) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (199764) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (199764) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (199774) HTTP_CLIENT: Stored student: [0m
+[0;32mI (201044) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (203274) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (204804) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (204914) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (204924) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (204924) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (204934) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (204944) HTTP_CLIENT: Stored student: [0m
+[0;32mI (205504) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (207734) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (209964) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (209984) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (210094) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (210094) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (210104) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (210114) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (210114) HTTP_CLIENT: Stored student: [0m
+[0;32mI (212194) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (214424) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (215154) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (215264) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (215264) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (215274) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (215274) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (215284) HTTP_CLIENT: Stored student: [0m
+[0;32mI (216654) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (218884) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (220324) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (220434) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (220434) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (220444) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (220454) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (220454) HTTP_CLIENT: Stored student: [0m
+[0;32mI (221114) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (223344) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (225494) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-24T19:00:51.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-24T19:00:24.000Z"}][0m
+[0;32mI (225574) UART: PS_SEARCH: Fingerprint not found.
+[0m
+[0;32mI (225604) HTTP_CLIENT: Stored student: Nguyễn Tiến Nhật[0m
+[0;32mI (225614) HTTP_CLIENT: Stored student: Trịnh Tự Minh[0m
+[0;32mI (225614) HTTP_CLIENT: Stored student: Trần Anh Tú[0m
+[0;32mI (225624) HTTP_CLIENT: Stored student: Đặng Phước Cường [0m
+[0;32mI (225634) HTTP_CLIENT: Stored student: [0m
+[0;32mI (227954) UART: PS_SEARCH: Fingerprint not found.
+[0m

@@ -20,10 +20,10 @@
 #define RX_PIN_2 GPIO_NUM_5
 
 void uart_init();
-void uart2_init();
+// void uart2_init();
 
 
-void send_data_to_rasp(void);
+// void send_data_to_rasp(void);
 
 // uint16_t calculate_checksum(uint8_t *packet, int length);
 // void send_command(uint8_t command, uint8_t *data, int data_len);

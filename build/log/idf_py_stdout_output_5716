@@ -1,0 +1,700 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Nov 21 2024 21:08:18[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25c54h (154708) map[0m
+[0;32mI (163) esp_image: segment 1: paddr=00035c7c vaddr=3ffb0000 size=03c58h ( 15448) load[0m
+[0;32mI (169) esp_image: segment 2: paddr=000398dc vaddr=40080000 size=0673ch ( 26428) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a276ch (665452) map[0m
+[0;32mI (421) esp_image: segment 4: paddr=000e2794 vaddr=4008673c size=10c84h ( 68740) load[0m
+[0;32mI (461) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (461) boot: Disabling RNG early entropy source...[0m
+[0;32mI (473) cpu_start: Multicore app[0m
+[0;32mI (474) cpu_start: Pro cpu up.[0m
+[0;32mI (474) cpu_start: Starting app cpu, entry point is 0x40081480[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (491) cpu_start: Pro cpu start user code[0m
+[0;32mI (491) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (491) cpu_start: Application information:[0m
+[0;32mI (496) cpu_start: Project name:     datn[0m
+[0;32mI (500) cpu_start: App version:      48da8ca-dirty[0m
+[0;32mI (506) cpu_start: Compile time:     Nov 25 2024 03:44:25[0m
+[0;32mI (512) cpu_start: ELF file SHA256:  1aca5d5a9c5ac548...[0m
+[0;32mI (518) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (523) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (528) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (533) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (538) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (545) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (551) heap_init: At 3FFB8960 len 000276A0 (157 KiB): DRAM[0m
+[0;32mI (557) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (563) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (570) heap_init: At 400973C0 len 00008C40 (35 KiB): IRAM[0m
+[0;32mI (578) spi_flash: detected chip: generic[0m
+[0;32mI (581) spi_flash: flash io: dio[0m
+[0;32mI (585) app_start: Starting scheduler on CPU0[0m
+[0;32mI (590) app_start: Starting scheduler on CPU1[0m
+[0;32mI (590) main_task: Started on CPU0[0m
+[0;32mI (600) main_task: Calling app_main()[0m
+[0;32mI (600) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (610) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (620) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (630) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (640) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (650) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (650) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (660) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (710) wifi:wifi driver task: 3ffc15b4, prio:23, stack:6656, core=0[0m
+[0;32mI (720) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (720) wifi:wifi certification version: v7.0[0m
+[0;32mI (720) wifi:config NVS flash: enabled[0m
+[0;32mI (720) wifi:config nano formating: disabled[0m
+[0;32mI (730) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (730) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (730) wifi:Init management short buffer num: 32[0m
+[0;32mI (740) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (740) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (750) wifi:Init static rx buffer num: 10[0m
+[0;32mI (750) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (760) wifi_init: rx ba win: 6[0m
+[0;32mI (760) wifi_init: tcpip mbox: 32[0m
+[0;32mI (760) wifi_init: udp mbox: 6[0m
+[0;32mI (770) wifi_init: tcp mbox: 6[0m
+[0;32mI (770) wifi_init: tcp tx win: 5760[0m
+[0;32mI (770) wifi_init: tcp rx win: 5760[0m
+[0;32mI (780) wifi_init: tcp mss: 1440[0m
+[0;32mI (780) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (790) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (790) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;33mW (880) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (940) wifi:mode : sta (cc:7b:5c:28:c2:a8)[0m
+[0;32mI (940) wifi:enable tsf[0m
+[0;33mW (1940) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (1940) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;32mI (1950) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1950) wifi:state: init -> auth (b0)[0m
+[0;32mI (1960) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1970) wifi:state: assoc -> run (10)[0m
+[0;32mI (2070) wifi:connected with BaPhuQuy, aid = 4, channel 1, BW20, bssid = e0:b6:68:22:70:2b[0m
+[0;32mI (2070) wifi:security: WPA2-PSK, phy: bgn, rssi: -52[0m
+[0;32mI (2070) wifi:pm start, type: 1[0m
+
+[0;32mI (2070) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2130) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;31mE (2940) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2940) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2940) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (4180) wifi:<ba-add>idx:0 (ifx:0, e0:b6:68:22:70:2b), tid:6, ssn:2, winSize:64[0m
+[0;32mI (5080) esp_netif_handlers: sta ip: 192.168.2.17, mask: 255.255.255.0, gw: 192.168.2.253[0m
+[0;32mI (7970) wifi:<ba-add>idx:1 (ifx:0, e0:b6:68:22:70:2b), tid:0, ssn:1, winSize:64[0m
+[0;33mW (12980) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (23000) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (33020) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;32mI (38040) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-25T04:40:20.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-25T20:14:13.000Z"}][0m
+[0;32mI (38160) HTTP_CLIENT: Stored student: [0m
+[0;32mI (38160) HTTP_CLIENT: Stored student: [0m
+[0;32mI (38160) HTTP_CLIENT: Stored student: [0m
+[0;32mI (38170) HTTP_CLIENT: Stored student: [0m
+[0;32mI (38170) HTTP_CLIENT: Stored student: [0m
+[0;33mW (48210) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (58230) HTTP_CLIENT: Connection timed out before data was ready![0m
+--NHẬP MÃ SỐ SINH VIÊN-- 
+[0;33mW (68300) HTTP_CLIENT: Connection timed out before data was ready![0m
+1 
+2 
+1 
+1 
+* 
+--NHẬP MÃ SỐ SINH VIÊN-- 
+[0;33mW (78330) HTTP_CLIENT: Connection timed out before data was ready![0m
+2 
+0 
+1 
+4 
+7 
+8 
+[0;33mW (88350) HTTP_CLIENT: Connection timed out before data was ready![0m
+5 
+* 
+--THÔNG TIN SINH VIÊN--id: 1 
+name: Trần Quốc Toàn 
+mssv: 2014785 
+position: sinh viên 
+--NHẬP MẬT KHẨU-- 
+3 
+[0;33mW (98370) HTTP_CLIENT: Connection timed out before data was ready![0m
+1 
+1 
+2 
+0 
+2 
+[0;33mW (108390) HTTP_CLIENT: Connection timed out before data was ready![0m
+* 
+[0;32mI (109150) main: NHẬP MẬT KHẨU THÀNH CÔNG !![0m
+[0;31mE (114140) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (114140) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (114140) task_wdt: Tasks currently running:[0m
+[0;31mE (114140) task_wdt: CPU 0: main[0m
+[0;31mE (114140) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (114140) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DCE07:0x3FFB1BD0 0x400DD1D4:0x3FFB1BF0 0x40082F05:0x3FFB1C20 0x400D6FB5:0x3FFBAC40 0x401705B3:0x3FFBAC60 0x4008CB05:0x3FFBAC90
+
+[0;33mW (118460) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;31mE (119140) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (119140) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (119140) task_wdt: Tasks currently running:[0m
+[0;31mE (119140) task_wdt: CPU 0: main[0m
+[0;31mE (119140) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (119140) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DCE07:0x3FFB1BD0 0x400DD1D4:0x3FFB1BF0 0x40082F05:0x3FFB1C20 0x400D6FB5:0x3FFBAC40 0x401705B3:0x3FFBAC60 0x4008CB05:0x3FFBAC90
+
+[0;31mE (124140) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (124140) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (124140) task_wdt: Tasks currently running:[0m
+[0;31mE (124140) task_wdt: CPU 0: main[0m
+[0;31mE (124140) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (124140) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DCE07:0x3FFB1BD0 0x400DD1D4:0x3FFB1BF0 0x40082F05:0x3FFB1C20 0x400D6F8E:0x3FFBAC40 0x401705B3:0x3FFBAC60 0x4008CB05:0x3FFBAC90
+
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Nov 21 2024 21:08:18[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25c54h (154708) map[0m
+[0;32mI (163) esp_image: segment 1: paddr=00035c7c vaddr=3ffb0000 size=03c58h ( 15448) load[0m
+[0;32mI (169) esp_image: segment 2: paddr=000398dc vaddr=40080000 size=0673ch ( 26428) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a276ch (665452) map[0m
+[0;32mI (421) esp_image: segment 4: paddr=000e2794 vaddr=4008673c size=10c84h ( 68740) load[0m
+[0;32mI (461) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (461) boot: Disabling RNG early entropy source...[0m
+[0;32mI (473) cpu_start: Multicore app[0m
+[0;32mI (474) cpu_start: Pro cpu up.[0m
+[0;32mI (474) cpu_start: Starting app cpu, entry point is 0x40081480[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (491) cpu_start: Pro cpu start user code[0m
+[0;32mI (491) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (491) cpu_start: Application information:[0m
+[0;32mI (496) cpu_start: Project name:     datn[0m
+[0;32mI (500) cpu_start: App version:      48da8ca-dirty[0m
+[0;32mI (506) cpu_start: Compile time:     Nov 25 2024 03:44:25[0m
+[0;32mI (512) cpu_start: ELF file SHA256:  1aca5d5a9c5ac548...[0m
+[0;32mI (518) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (523) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (528) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (533) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (538) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (545) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (551) heap_init: At 3FFB8960 len 000276A0 (157 KiB): DRAM[0m
+[0;32mI (557) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (563) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (570) heap_init: At 400973C0 len 00008C40 (35 KiB): IRAM[0m
+[0;32mI (578) spi_flash: detected chip: generic[0m
+[0;32mI (581) spi_flash: flash io: dio[0m
+[0;32mI (585) app_start: Starting scheduler on CPU0[0m
+[0;32mI (590) app_start: Starting scheduler on CPU1[0m
+[0;32mI (590) main_task: Started on CPU0[0m
+[0;32mI (600) main_task: Calling app_main()[0m
+[0;32mI (600) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (610) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (620) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (630) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (640) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (650) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (650) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (660) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (710) wifi:wifi driver task: 3ffc15b4, prio:23, stack:6656, core=0[0m
+[0;32mI (720) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (720) wifi:wifi certification version: v7.0[0m
+[0;32mI (720) wifi:config NVS flash: enabled[0m
+[0;32mI (720) wifi:config nano formating: disabled[0m
+[0;32mI (730) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (730) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (730) wifi:Init management short buffer num: 32[0m
+[0;32mI (740) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (740) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (750) wifi:Init static rx buffer num: 10[0m
+[0;32mI (750) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (760) wifi_init: rx ba win: 6[0m
+[0;32mI (760) wifi_init: tcpip mbox: 32[0m
+[0;32mI (760) wifi_init: udp mbox: 6[0m
+[0;32mI (770) wifi_init: tcp mbox: 6[0m
+[0;32mI (770) wifi_init: tcp tx win: 5760[0m
+[0;32mI (770) wifi_init: tcp rx win: 5760[0m
+[0;32mI (780) wifi_init: tcp mss: 1440[0m
+[0;32mI (780) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (790) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (790) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (880) wifi:mode : sta (cc:7b:5c:28:c2:a8)[0m
+[0;32mI (880) wifi:enable tsf[0m
+[0;33mW (1880) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (1880) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;32mI (1880) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1890) wifi:state: init -> auth (b0)[0m
+[0;32mI (1900) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1910) wifi:state: assoc -> run (10)[0m
+[0;31mE (2880) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2880) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2880) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (7890) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (7890) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (7890) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (11020) wifi:state: run -> init (fc0)[0m
+[0;32mI (11030) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;33mW (12900) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (12900) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (13900) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (13900) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (14900) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (14900) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (15900) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (15900) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (16900) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (16900) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (17900) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (17900) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (18900) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (18900) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (19900) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (19900) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (20900) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (20900) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (21900) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (21900) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Nov 21 2024 21:08:18[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25c54h (154708) map[0m
+[0;32mI (162) esp_image: segment 1: paddr=00035c7c vaddr=3ffb0000 size=03c58h ( 15448) load[0m
+[0;32mI (169) esp_image: segment 2: paddr=000398dc vaddr=40080000 size=0673ch ( 26428) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a276ch (665452) map[0m
+[0;32mI (421) esp_image: segment 4: paddr=000e2794 vaddr=4008673c size=10c84h ( 68740) load[0m
+[0;32mI (461) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (461) boot: Disabling RNG early entropy source...[0m
+[0;32mI (473) cpu_start: Multicore app[0m
+[0;32mI (474) cpu_start: Pro cpu up.[0m
+[0;32mI (474) cpu_start: Starting app cpu, entry point is 0x40081480[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (491) cpu_start: Pro cpu start user code[0m
+[0;32mI (491) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (491) cpu_start: Application information:[0m
+[0;32mI (496) cpu_start: Project name:     datn[0m
+[0;32mI (500) cpu_start: App version:      48da8ca-dirty[0m
+[0;32mI (506) cpu_start: Compile time:     Nov 25 2024 03:44:25[0m
+[0;32mI (512) cpu_start: ELF file SHA256:  1aca5d5a9c5ac548...[0m
+[0;32mI (518) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (523) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (528) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (533) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (538) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (545) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (551) heap_init: At 3FFB8960 len 000276A0 (157 KiB): DRAM[0m
+[0;32mI (557) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (563) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (570) heap_init: At 400973C0 len 00008C40 (35 KiB): IRAM[0m
+[0;32mI (578) spi_flash: detected chip: generic[0m
+[0;32mI (581) spi_flash: flash io: dio[0m
+[0;32mI (585) app_start: Starting scheduler on CPU0[0m
+[0;32mI (590) app_start: Starting scheduler on CPU1[0m
+[0;32mI (590) main_task: Started on CPU0[0m
+[0;32mI (600) main_task: Calling app_main()[0m
+[0;32mI (600) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (610) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (620) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (630) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (640) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (650) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (650) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (660) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (710) wifi:wifi driver task: 3ffc15b4, prio:23, stack:6656, core=0[0m
+[0;32mI (720) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (720) wifi:wifi certification version: v7.0[0m
+[0;32mI (720) wifi:config NVS flash: enabled[0m
+[0;32mI (720) wifi:config nano formating: disabled[0m
+[0;32mI (730) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (730) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (730) wifi:Init management short buffer num: 32[0m
+[0;32mI (740) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (740) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (750) wifi:Init static rx buffer num: 10[0m
+[0;32mI (750) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (760) wifi_init: rx ba win: 6[0m
+[0;32mI (760) wifi_init: tcpip mbox: 32[0m
+[0;32mI (760) wifi_init: udp mbox: 6[0m
+[0;32mI (770) wifi_init: tcp mbox: 6[0m
+[0;32mI (770) wifi_init: tcp tx win: 5760[0m
+[0;32mI (770) wifi_init: tcp rx win: 5760[0m
+[0;32mI (780) wifi_init: tcp mss: 1440[0m
+[0;32mI (780) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (790) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (790) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;33mW (880) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (900) wifi:mode : sta (cc:7b:5c:28:c2:a8)[0m
+[0;32mI (900) wifi:enable tsf[0m
+[0;33mW (1910) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (1910) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;32mI (1910) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1920) wifi:state: init -> auth (b0)[0m
+[0;32mI (1930) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1940) wifi:state: assoc -> run (10)[0m
+[0;32mI (2040) wifi:connected with BaPhuQuy, aid = 4, channel 1, BW20, bssid = e0:b6:68:22:70:2b[0m
+[0;32mI (2040) wifi:security: WPA2-PSK, phy: bgn, rssi: -53[0m
+[0;32mI (2050) wifi:pm start, type: 1[0m
+
+[0;32mI (2050) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2090) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;31mE (2910) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2910) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2910) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (4140) wifi:<ba-add>idx:0 (ifx:0, e0:b6:68:22:70:2b), tid:6, ssn:2, winSize:64[0m
+[0;32mI (5060) esp_netif_handlers: sta ip: 192.168.2.17, mask: 255.255.255.0, gw: 192.168.2.253[0m
+[0;32mI (7970) wifi:<ba-add>idx:1 (ifx:0, e0:b6:68:22:70:2b), tid:0, ssn:1, winSize:64[0m
+[0;33mW (12980) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (23010) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;32mI (28040) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-25T04:40:20.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-25T20:14:13.000Z"}][0m
+[0;32mI (28150) HTTP_CLIENT: Stored student: [0m
+[0;32mI (28150) HTTP_CLIENT: Stored student: [0m
+[0;32mI (28160) HTTP_CLIENT: Stored student: [0m
+[0;32mI (28160) HTTP_CLIENT: Stored student: [0m
+[0;32mI (28160) HTTP_CLIENT: Stored student: [0m
+--NHẬP MÃ SỐ SINH VIÊN-- 
+[0;33mW (38200) HTTP_CLIENT: Connection timed out before data was ready![0m
+2 
+0 
+1 
+4 
+7 
+8 
+5 
+* 
+--THÔNG TIN SINH VIÊN--id: 1 
+name: Trần Quốc Toàn 
+mssv: 2014785 
+position: sinh viên 
+--NHẬP MẬT KHẨU-- 
+[0;33mW (48220) HTTP_CLIENT: Connection timed out before data was ready![0m
+3 
+1 
+1 
+2 
+0 
+2 
+[0;33mW (58240) HTTP_CLIENT: Connection timed out before data was ready![0m
+* 
+[0;32mI (60220) main: NHẬP MẬT KHẨU THÀNH CÔNG !![0m
+[0;31mE (65210) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (65210) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (65210) task_wdt: Tasks currently running:[0m
+[0;31mE (65210) task_wdt: CPU 0: main[0m
+[0;31mE (65210) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (65210) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DCE07:0x3FFB1BD0 0x400DD1D4:0x3FFB1BF0 0x40082F05:0x3FFB1C20 0x400D6FB5:0x3FFBAC40 0x401705B3:0x3FFBAC60 0x4008CB05:0x3FFBAC90
+
+[0;33mW (68270) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;31mE (70210) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (70210) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (70210) task_wdt: Tasks currently running:[0m
+[0;31mE (70210) task_wdt: CPU 0: main[0m
+[0;31mE (70210) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (70210) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DCE07:0x3FFB1BD0 0x400DD1D4:0x3FFB1BF0 0x40082F05:0x3FFB1C20 0x400D6FAF:0x3FFBAC40 0x401705B3:0x3FFBAC60 0x4008CB05:0x3FFBAC90
+
+[0;31mE (75210) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (75210) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (75210) task_wdt: Tasks currently running:[0m
+[0;31mE (75210) task_wdt: CPU 0: main[0m
+[0;31mE (75210) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (75210) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DCE07:0x3FFB1BD0 0x400DD1D4:0x3FFB1BF0 0x40082F05:0x3FFB1C20 0x400D6F94:0x3FFBAC40 0x401705B3:0x3FFBAC60 0x4008CB05:0x3FFBAC90
+
+[0;33mW (78300) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;31mE (80210) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (80210) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (80210) task_wdt: Tasks currently running:[0m
+[0;31mE (80210) task_wdt: CPU 0: main[0m
+[0;31mE (80210) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (80210) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DCE07:0x3FFB1BD0 0x400DD1D4:0x3FFB1BF0 0x40082F05:0x3FFB1C20 0x400D6FB5:0x3FFBAC40 0x401705B3:0x3FFBAC60 0x4008CB05:0x3FFBAC90
+
+[0;31mE (85210) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (85210) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (85210) task_wdt: Tasks currently running:[0m
+[0;31mE (85210) task_wdt: CPU 0: main[0m
+[0;31mE (85210) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (85210) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DCE07:0x3FFB1BD0 0x400DD1D4:0x3FFB1BF0 0x40082F05:0x3FFB1C20 0x400D6FAF:0x3FFBAC40 0x401705B3:0x3FFBAC60 0x4008CB05:0x3FFBAC90
+
+[0;33mW (88320) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;31mE (90210) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (90210) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (90210) task_wdt: Tasks currently running:[0m
+[0;31mE (90210) task_wdt: CPU 0: main[0m
+[0;31mE (90210) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (90210) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DCE07:0x3FFB1BD0 0x400DD1D4:0x3FFB1BF0 0x40082F05:0x3FFB1C20 0x400D6FB5:0x3FFBAC40 0x401705B3:0x3FFBAC60 0x4008CB05:0x3FFBAC90
+
+[0;31mE (95210) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (95210) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (95210) task_wdt: Tasks currently running:[0m
+[0;31mE (95210) task_wdt: CPU 0: main[0m
+[0;31mE (95210) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (95210) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DCE07:0x3FFB1BD0 0x400DD1D4:0x3FFB1BF0 0x40082F05:0x3FFB1C20 0x400D6FB5:0x3FFBAC40 0x401705B3:0x3FFBAC60 0x4008CB05:0x3FFBAC90
+
+[0;33mW (98340) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;31mE (100210) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (100210) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (100210) task_wdt: Tasks currently running:[0m
+[0;31mE (100210) task_wdt: CPU 0: main[0m
+[0;31mE (100210) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (100210) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DCE07:0x3FFB1BD0 0x400DD1D4:0x3FFB1BF0 0x40082F05:0x3FFB1C20 0x400D6FB5:0x3FFBAC40 0x401705B3:0x3FFBAC60 0x4008CB05:0x3FFBAC90
+
+[0;31mE (105210) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (105210) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (105210) task_wdt: Tasks currently running:[0m
+[0;31mE (105210) task_wdt: CPU 0: main[0m
+[0;31mE (105210) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (105210) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DCE07:0x3FFB1BD0 0x400DD1D4:0x3FFB1BF0 0x40082F05:0x3FFB1C20 0x400D6F8E:0x3FFBAC40 0x401705B3:0x3FFBAC60 0x4008CB05:0x3FFBAC90
+
+[0;33mW (108360) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;31mE (110210) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (110210) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (110210) task_wdt: Tasks currently running:[0m
+[0;31mE (110210) task_wdt: CPU 0: main[0m
+[0;31mE (110210) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (110210) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DCE07:0x3FFB1BD0 0x400DD1D4:0x3FFB1BF0 0x40082F05:0x3FFB1C20 0x400D6FB5:0x3FFBAC40 0x401705B3:0x3FFBAC60 0x4008CB05:0x3FFBAC90
+
+[0;31mE (115210) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (115210) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (115210) task_wdt: Tasks currently running:[0m
+[0;31mE (115210) task_wdt: CPU 0: main[0m
+[0;31mE (115210) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (115210) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DCE07:0x3FFB1BD0 0x400DD1D4:0x3FFB1BF0 0x40082F05:0x3FFB1C20 0x400D6FB5:0x3FFBAC40 0x401705B3:0x3FFBAC60 0x4008CB05:0x3FFBAC90
+
+[0;33mW (118380) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;31mE (120210) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (120210) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (120210) task_wdt: Tasks currently running:[0m
+[0;31mE (120210) task_wdt: CPU 0: main[0m
+[0;31mE (120210) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (120210) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DCE07:0x3FFB1BD0 0x400DD1D4:0x3FFB1BF0 0x40082F05:0x3FFB1C20 0x400D6FAF:0x3FFBAC40 0x401705B3:0x3FFBAC60 0x4008CB05:0x3FFBAC90
+
+[0;31mE (125210) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (125210) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (125210) task_wdt: Tasks currently running:[0m
+[0;31mE (125210) task_wdt: CPU 0: main[0m
+[0;31mE (125210) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (125210) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DCE07:0x3FFB1BD0 0x400DD1D4:0x3FFB1BF0 0x40082F05:0x3FFB1C20 0x400D6FB5:0x3FFBAC40 0x401705B3:0x3FFBAC60 0x4008CB05:0x3FFBAC90
+
+[0;33mW (128400) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;31mE (130210) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (130210) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (130210) task_wdt: Tasks currently running:[0m
+[0;31mE (130210) task_wdt: CPU 0: main[0m
+[0;31mE (130210) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (130210) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DCE07:0x3FFB1BD0 0x400DD1D4:0x3FFB1BF0 0x40082F05:0x3FFB1C20 0x400D6FB5:0x3FFBAC40 0x401705B3:0x3FFBAC60 0x4008CB05:0x3FFBAC90
+
+[0;31mE (135210) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (135210) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (135210) task_wdt: Tasks currently running:[0m
+[0;31mE (135210) task_wdt: CPU 0: main[0m
+[0;31mE (135210) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (135210) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DCE07:0x3FFB1BD0 0x400DD1D4:0x3FFB1BF0 0x40082F05:0x3FFB1C20 0x400D6F94:0x3FFBAC40 0x401705B3:0x3FFBAC60 0x4008CB05:0x3FFBAC90
+
+[0;33mW (138420) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;31mE (140210) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (140210) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (140210) task_wdt: Tasks currently running:[0m
+[0;31mE (140210) task_wdt: CPU 0: main[0m
+[0;31mE (140210) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (140210) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DCE07:0x3FFB1BD0 0x400DD1D4:0x3FFB1BF0 0x40082F05:0x3FFB1C20 0x400D6FB5:0x3FFBAC40 0x401705B3:0x3FFBAC60 0x4008CB05:0x3FFBAC90
+
+[0;31mE (145210) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (145210) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (145210) task_wdt: Tasks currently running:[0m
+[0;31mE (145210) task_wdt: CPU 0: main[0m
+[0;31mE (145210) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (145210) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DCE07:0x3FFB1BD0 0x400DD1D4:0x3FFB1BF0 0x40082F05:0x3FFB1C20 0x400D6FB5:0x3FFBAC40 0x401705B3:0x3FFBAC60 0x4008CB05:0x3FFBAC90
+
+[0;33mW (148450) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;31mE (150210) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (150210) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (150210) task_wdt: Tasks currently running:[0m
+[0;31mE (150210) task_wdt: CPU 0: main[0m
+[0;31mE (150210) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (150210) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DCE07:0x3FFB1BD0 0x400DD1D4:0x3FFB1BF0 0x40082F05:0x3FFB1C20 0x400D6FAF:0x3FFBAC40 0x401705B3:0x3FFBAC60 0x4008CB05:0x3FFBAC90
+
+[0;31mE (155210) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (155210) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (155210) task_wdt: Tasks currently running:[0m
+[0;31mE (155210) task_wdt: CPU 0: main[0m
+[0;31mE (155210) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (155210) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DCE07:0x3FFB1BD0 0x400DD1D4:0x3FFB1BF0 0x40082F05:0x3FFB1C20 0x400D6FB5:0x3FFBAC40 0x401705B3:0x3FFBAC60 0x4008CB05:0x3FFBAC90
+
+[0;33mW (158510) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;31mE (160210) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (160210) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (160210) task_wdt: Tasks currently running:[0m
+[0;31mE (160210) task_wdt: CPU 0: main[0m
+[0;31mE (160210) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (160210) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DCE07:0x3FFB1BD0 0x400DD1D4:0x3FFB1BF0 0x40082F05:0x3FFB1C20 0x400D6F9D:0x3FFBAC40 0x401705B3:0x3FFBAC60 0x4008CB05:0x3FFBAC90
+
+[0;31mE (165210) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (165210) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (165210) task_wdt: Tasks currently running:[0m
+[0;31mE (165210) task_wdt: CPU 0: main[0m
+[0;31mE (165210) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (165210) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DCE07:0x3FFB1BD0 0x400DD1D4:0x3FFB1BF0 0x40082F05:0x3FFB1C20 0x400D6FAF:0x3FFBAC40 0x401705B3:0x3FFBAC60 0x4008CB05:0x3FFBAC90
+
+[0;33mW (168530) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;31mE (170210) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (170210) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (170210) task_wdt: Tasks currently running:[0m
+[0;31mE (170210) task_wdt: CPU 0: main[0m
+[0;31mE (170210) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (170210) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DCE07:0x3FFB1BD0 0x400DD1D4:0x3FFB1BF0 0x40082F05:0x3FFB1C20 0x400D6FAF:0x3FFBAC40 0x401705B3:0x3FFBAC60 0x4008CB05:0x3FFBAC90
+
+[0;31mE (175210) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (175210) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (175210) task_wdt: Tasks currently running:[0m
+[0;31mE (175210) task_wdt: CPU 0: main[0m
+[0;31mE (175210) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (175210) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DCE07:0x3FFB1BD0 0x400DD1D4:0x3FFB1BF0 0x40082F05:0x3FFB1C20 0x400D6FB5:0x3FFBAC40 0x401705B3:0x3FFBAC60 0x4008CB05:0x3FFBAC90
+

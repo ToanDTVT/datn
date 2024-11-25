@@ -21,48 +21,48 @@ void uart_init() {
 }
 
 
-void uart2_init() {
-    const uart_config_t uart_config = {
-        .baud_rate = 57600,
-        .data_bits = UART_DATA_8_BITS,
-        .parity = UART_PARITY_DISABLE,
-        .stop_bits = UART_STOP_BITS_1,
-        .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,
-    };
+// void uart2_init() {
+//     const uart_config_t uart_config = {
+//         .baud_rate = 57600,
+//         .data_bits = UART_DATA_8_BITS,
+//         .parity = UART_PARITY_DISABLE,
+//         .stop_bits = UART_STOP_BITS_1,
+//         .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,
+//     };
     
-    // Cấu hình UART
-    ESP_ERROR_CHECK(uart_param_config(UART_NUM2, &uart_config));
-    ESP_ERROR_CHECK(uart_set_pin(UART_NUM2, TX_PIN_2, RX_PIN_2, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE));
-    ESP_ERROR_CHECK(uart_driver_install(UART_NUM2, BUF_SIZE * 2, 0, 0, NULL, 0));
-}
+//     // Cấu hình UART
+//     ESP_ERROR_CHECK(uart_param_config(UART_NUM2, &uart_config));
+//     ESP_ERROR_CHECK(uart_set_pin(UART_NUM2, TX_PIN_2, RX_PIN_2, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE));
+//     ESP_ERROR_CHECK(uart_driver_install(UART_NUM2, BUF_SIZE * 2, 0, 0, NULL, 0));
+// }
 
-void send_data_to_rasp(void) {
-    DataPacket command;  // Initialize the structure (add actual data if needed)
-    command.id = 0;
-    command.fingerprint_enable = 1;
-    command.password_enable = 1;
-
-
-    for (int i = 0; i < 6; i++) {
-        for (int j = 0; j < 139; j++) {
-            command.user_fingerprint[i][j] = 3;  // Giá trị ngẫu nhiên từ 0 đến 255
-        }
-    }
+// void send_data_to_rasp(void) {
+//     DataPacket command;  // Initialize the structure (add actual data if needed)
+//     command.id = 0;
+//     command.fingerprint_enable = 1;
+//     command.password_enable = 1;
 
 
-    for (int i = 0; i < SIZE_OF_PASSWORD - 1; i++) {
-        command.user_password[i] = 7;  // Ký tự ngẫu nhiên từ 'A' đến 'Z'
-    }
-    command.user_password[SIZE_OF_PASSWORD - 1] = '\0';
+//     for (int i = 0; i < 6; i++) {
+//         for (int j = 0; j < 139; j++) {
+//             command.user_fingerprint[i][j] = 3;  // Giá trị ngẫu nhiên từ 0 đến 255
+//         }
+//     }
 
 
-    size_t packet_size = sizeof(command);  // Get the size of the structure
+//     for (int i = 0; i < SIZE_OF_PASSWORD - 1; i++) {
+//         command.user_password[i] = 7;  // Ký tự ngẫu nhiên từ 'A' đến 'Z'
+//     }
+//     command.user_password[SIZE_OF_PASSWORD - 1] = '\0';
+
+
+//     size_t packet_size = sizeof(command);  // Get the size of the structure
     
-    uint8_t buffer[packet_size];
-    memcpy(buffer, &command, packet_size);  // Copy the structure data into the buffer
+//     uint8_t buffer[packet_size];
+//     memcpy(buffer, &command, packet_size);  // Copy the structure data into the buffer
     
-    uart_write_bytes(UART_NUM2, (const char*) buffer, packet_size);  // Send buffer over UART
-}
+//     uart_write_bytes(UART_NUM2, (const char*) buffer, packet_size);  // Send buffer over UART
+// }
 
 bool verify_password_of_AS608(){
     uint8_t command[] = {

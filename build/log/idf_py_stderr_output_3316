@@ -1,0 +1,101 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081484: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400dbf68: esp_mqtt_client_register_event at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/mqtt/esp-mqtt/mqtt_client.c:2233
+[0m
+[0;33m--- 0x400d882c: mqtt_event_handler at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/mqtt_method/mqtt_method.c:55
+[0m
+[0;33m--- 0x400d882c: mqtt_event_handler at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/mqtt_method/mqtt_method.c:55
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400dbf65: esp_mqtt_client_register_event at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/mqtt/esp-mqtt/mqtt_client.c:2233
+0x400d881b: mqtt_app_start at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/mqtt_method/mqtt_method.c:114 (discriminator 1)
+0x4008cb09: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081484: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40081afa: panic_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/panic.c:466
+0x4008a2c1: esp_system_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/esp_system_chip.c:84
+0x4008ce3a: vApplicationStackOverflowHook at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:582
+0x4008ba83: vTaskSwitchContext at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/tasks.c:3840
+0x4008cf88: _frxt_dispatch at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:450
+0x4008cf3a: _frxt_int_exit at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:245
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081484: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400dbf68: esp_mqtt_client_register_event at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/mqtt/esp-mqtt/mqtt_client.c:2233
+[0m
+[0;33m--- 0x400d882c: mqtt_event_handler at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/mqtt_method/mqtt_method.c:55
+[0m
+[0;33m--- 0x400d882c: mqtt_event_handler at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/mqtt_method/mqtt_method.c:55
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400dbf65: esp_mqtt_client_register_event at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/mqtt/esp-mqtt/mqtt_client.c:2233
+0x400d881b: mqtt_app_start at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/mqtt_method/mqtt_method.c:114 (discriminator 1)
+0x4008cb09: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081484: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400f04a4: esp_http_client_perform at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1244
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400f04a1: esp_http_client_perform at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_http_client/esp_http_client.c:1244
+0x400d89ef: http_get_task at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/http_method/http_method.c:145
+0x4008cb09: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081484: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400dbf68: esp_mqtt_client_register_event at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/mqtt/esp-mqtt/mqtt_client.c:2233
+[0m
+[0;33m--- 0x400d882c: mqtt_event_handler at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/mqtt_method/mqtt_method.c:55
+[0m
+[0;33m--- 0x400d882c: mqtt_event_handler at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/mqtt_method/mqtt_method.c:55
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400dbf65: esp_mqtt_client_register_event at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/mqtt/esp-mqtt/mqtt_client.c:2233
+0x400d881b: mqtt_app_start at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/mqtt_method/mqtt_method.c:114 (discriminator 1)
+0x4008cb09: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081484: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400dbf68: esp_mqtt_client_register_event at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/mqtt/esp-mqtt/mqtt_client.c:2233
+[0m
+[0;33m--- 0x400d882c: mqtt_event_handler at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/mqtt_method/mqtt_method.c:55
+[0m
+[0;33m--- 0x400d882c: mqtt_event_handler at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/mqtt_method/mqtt_method.c:55
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400dbf65: esp_mqtt_client_register_event at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/mqtt/esp-mqtt/mqtt_client.c:2233
+0x400d881b: mqtt_app_start at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/mqtt_method/mqtt_method.c:114 (discriminator 1)
+0x4008cb09: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081484: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0m
