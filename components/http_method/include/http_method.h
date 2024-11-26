@@ -13,6 +13,7 @@ extern Student students[MAX_STUDENTS];
 
 //void http_get_task();
 void create_http_task(void);
+void send_login_request(int student_x);
 void func6 (void);
 
 #endif //HTTP_METHOD_H

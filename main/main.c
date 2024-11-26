@@ -131,7 +131,9 @@ void app_main(void)
                         currentstate = STATE_LOG_IN;
                         break;
                     }
-                }        
+                } else {
+                    ESP_LOGW(TAG, "MẬT KHẨU KHÔNG HỢP LỆ");
+                }       
             break;
 
             case STATE_HANDLE_FINGERPRINT:
@@ -139,6 +141,7 @@ void app_main(void)
             break;
 
             case STATE_LOG_IN:
+                send_login_request(student_x);
                 open_door();
                 vTaskDelay(1000/portTICK_PERIOD_MS);
                 currentstate = STATE_IDLE;

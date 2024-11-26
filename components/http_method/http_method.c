@@ -167,12 +167,16 @@ void create_http_task(void) {
 
 
 
-void send_login_request(const char *student_id, const char *password) {
-    char post_data[128];
-    snprintf(post_data, sizeof(post_data), "{\"student_id\":\"%s\",\"password\":\"%s\"}", student_id, password);
+void send_login_request(int student_x) {
+    char post_data[256];
+    snprintf(post_data, sizeof(post_data), "{\"full_name\":\"%s\",\"student_id\":\"%s\",\"position\":\"%s\"}",
+                                             students[student_x].full_name, 
+                                             students[student_x].student_id,
+                                             students[student_x].position);
 
     esp_http_client_config_t config = {
         .url = "http://192.168.2.15:3000/api/get-esp32",
+        .cert_pem = NULL,
         .method = HTTP_METHOD_POST,
     };
 
@@ -181,32 +185,33 @@ void send_login_request(const char *student_id, const char *password) {
     esp_http_client_set_header(client, "Content-Type", "application/json");
     esp_http_client_set_post_field(client, post_data, strlen(post_data));
 
-    esp_err_t err = esp_http_client_perform(client);
-    if (err == ESP_OK) {
-        int content_length = esp_http_client_get_content_length(client);
-        char *response_buffer = malloc(content_length + 1);
+    // esp_err_t err = esp_http_client_perform(client);
+    // if (err == ESP_OK) {
+    //     int content_length = esp_http_client_get_content_length(client);
+    //     char *response_buffer = malloc(content_length + 1);
 
-        if (response_buffer) {
-            int data_read = esp_http_client_read(client, response_buffer, content_length);
-            if (data_read > 0) {
-                response_buffer[data_read] = '\0';
-                ESP_LOGI(TAG, "Server Response: %s", response_buffer);
+    //     if (response_buffer) {
+    //         int data_read = esp_http_client_read(client, response_buffer, content_length);
+    //         if (data_read > 0) {
+    //             response_buffer[data_read] = '\0';
+    //             ESP_LOGI(TAG, "Server Response: %s", response_buffer);
 
-                // Kiểm tra kết quả
-                if (strstr(response_buffer, "\"status\":\"success\"")) {
-                    ESP_LOGI(TAG, "Login successful!");
-                } else {
-                    ESP_LOGI(TAG, "Login failed!");
-                }
-            }
-            free(response_buffer);
-        } else {
-            ESP_LOGE(TAG, "Failed to allocate memory for response buffer");
-        }
-    } else {
-        ESP_LOGE(TAG, "HTTP POST request failed: %s", esp_err_to_name(err));
-    }
+    //             // Kiểm tra kết quả
+    //             if (strstr(response_buffer, "\"status\":\"success\"")) {
+    //                 ESP_LOGI(TAG, "Login successful!");
+    //             } else {
+    //                 ESP_LOGI(TAG, "Login failed!");
+    //             }
+    //         }
+    //         free(response_buffer);
+    //     } else {
+    //         ESP_LOGE(TAG, "Failed to allocate memory for response buffer");
+    //     }
+    // } else {
+    //     ESP_LOGE(TAG, "HTTP POST request failed: %s", esp_err_to_name(err));
+    // }
 
+    esp_http_client_perform(client);
     esp_http_client_cleanup(client);
 }
 
