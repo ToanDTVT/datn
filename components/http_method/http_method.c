@@ -183,7 +183,7 @@ void send_login_request(int student_x) {
     esp_http_client_handle_t client = esp_http_client_init(&config);
 
     esp_http_client_set_header(client, "Content-Type", "application/json");
-    esp_http_client_set_post_field(client, post_data, strlen(post_data));
+    esp_http_client_set_post_field(client, post_data, strlen(post_data)); 
 
     // esp_err_t err = esp_http_client_perform(client);
     // if (err == ESP_OK) {
@@ -217,6 +217,66 @@ void send_login_request(int student_x) {
 
 
 
+
+
+
+
+
+// void send_infor_register_fingerprint(int student_x) {
+//     char post_data[256];
+//     snprintf(post_data, sizeof(post_data), "{\"full_name\":\"%s\",\"student_id\":\"%s\",\"position\":\"%s\"}",
+//                                              students[student_x].full_name, 
+//                                              students[student_x].student_id,
+//                                              students[student_x].position);
+
+//     esp_http_client_config_t config = {
+//         .url = "http://192.168.2.15:3000/api/get-esp32",
+//         .cert_pem = NULL,
+//         .method = HTTP_METHOD_POST,
+//     };
+
+//     esp_http_client_handle_t client = esp_http_client_init(&config);
+
+//     esp_http_client_set_header(client, "Content-Type", "application/json");
+//     esp_http_client_set_post_field(client, post_data, strlen(post_data)); 
+
+//     esp_http_client_perform(client);
+//     esp_http_client_cleanup(client);
+// }
+
+
+
+
+
+
+
+
+
+void fetch_access_time(const char *student_id) {
+    char url[256];
+    snprintf(url, sizeof(url), "http://192.168.2.15:3000/api/getAccessTime?student_id=%s", student_id);
+
+    esp_http_client_config_t config = {
+        .url = url,
+    };
+    esp_http_client_handle_t client = esp_http_client_init(&config);
+
+    esp_err_t err = esp_http_client_perform(client);
+    if (err == ESP_OK) {
+        int content_length = esp_http_client_get_content_length(client);
+        char *buffer = malloc(content_length + 1);
+        if (buffer) {
+            esp_http_client_read(client, buffer, content_length);
+            buffer[content_length] = '\0';
+            printf("Access time data: %s\n", buffer);
+            free(buffer);
+        }
+    } else {
+        printf("HTTP request failed: %s\n", esp_err_to_name(err));
+    }
+
+    esp_http_client_cleanup(client);
+}
 
 void func6 (void) {
 

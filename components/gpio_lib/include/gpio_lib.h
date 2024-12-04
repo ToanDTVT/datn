@@ -3,6 +3,7 @@
 
 #include <string.h>
 #include <stdbool.h>
+#include <time.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "freertos/event_groups.h"
@@ -18,6 +19,7 @@
 #include "esp_system.h"
 
 #include "esp_wifi.h"
+#include "esp_sntp.h"
 #include "esp_event.h"
 #include "mqtt_client.h"
 #include "nvs_flash.h"

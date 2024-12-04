@@ -5,6 +5,7 @@
 
 #include "wifi_config.h"
 #include "http_method.h"
+#include "mqtt_method.h"
 
 // DataPacket USER[MAX_USERS];
 // Data_send_server data;
@@ -31,10 +32,12 @@ void app_main(void)
     gpio_init();
     uart_init();
     keypad_init();
-
+    func8();
     //nvs_flash_init();
     task_wifi_init();
+    //obtain_time();
     create_http_task();
+    mqtt_app_start();
     
     verify_password_of_AS608();
 
@@ -74,7 +77,7 @@ void app_main(void)
 
                 for(int x = 0; x <= MAX_STUDENTS; x++){
                     if((strcmp(MSSV, students[x].student_id) == 0) && (students[x].id != 0)) {
-                        printf("--THÔNG TIN SINH VIÊN--");
+                        printf("--THÔNG TIN SINH VIÊN-- \n");
                         printf("id: %d \n", students[x].id);
                         printf("name: %s \n", students[x].full_name);
                         printf("mssv: %s \n", students[x].student_id);
@@ -89,17 +92,24 @@ void app_main(void)
                         ESP_LOGW(TAG, "THỬ LẠI");
                     }
                 }
+
             break;
 
             case STATE_CHECK_INFOR:
-                if((students[student_x].pass_en == 1) && (students[student_x].fing_en == 1)) {currentstate = STATE_HANDLE_PASSWORD; break;}
-                if((students[student_x].pass_en == 1) && (students[student_x].fing_en == 0)) {currentstate = STATE_HANDLE_PASSWORD; break;}
-                if((students[student_x].pass_en == 0) && (students[student_x].fing_en == 1)) {currentstate = STATE_HANDLE_FINGERPRINT; break;}
-                if((students[student_x].pass_en == 0) && (students[student_x].fing_en == 0)) {
-                    currentstate = STATE_MSSV; 
-                    ESP_LOGW(TAG, "SINH VIÊN %s KHÔNG ĐƯỢC VÀO", students[student_x].student_id);
-                    break;
-                }
+                // fetch_access_time(students[student_x].student_id);
+                // if (is_access_allowed(students[student_x].allowed_days, students[student_x].start_time, students[student_x].end_time)) {
+                    if((students[student_x].pass_en == 1) && (students[student_x].fing_en == 1)) {currentstate = STATE_HANDLE_PASSWORD; break;}
+                    if((students[student_x].pass_en == 1) && (students[student_x].fing_en == 0)) {currentstate = STATE_HANDLE_PASSWORD; break;}
+                    if((students[student_x].pass_en == 0) && (students[student_x].fing_en == 1)) {currentstate = STATE_HANDLE_FINGERPRINT; break;}
+                    if((students[student_x].pass_en == 0) && (students[student_x].fing_en == 0)) {
+                        currentstate = STATE_MSSV; 
+                        ESP_LOGW(TAG, "SINH VIÊN %s KHÔNG ĐƯỢC VÀO", students[student_x].student_id);
+                        break;
+                    }
+                // } else {
+                //     printf("Access denied.\n");
+                // }
+                
             break;
 
             case STATE_HANDLE_PASSWORD:
@@ -137,6 +147,23 @@ void app_main(void)
             break;
 
             case STATE_HANDLE_FINGERPRINT:
+                uint8_t status;
+                //ESP_LOGW(TAG, "Place your finger on the sensor.");
+                do {
+                    status = PS_GetImage();
+                } while (status != 0x00); // Chờ lấy ảnh thành công
+                status = PS_GenChar(1); // Tạo đặc trưng ở buffer 1
+                if (status != 0x00) {
+                //    ESP_LOGE(TAG, "PS_GENCHAR_1: Failed to generate character from image. Error: %d\n", status);
+                }
+
+                uint8_t x = PS_Search(1, 0, 160); 
+                if(x == students[student_x].id){
+                    ESP_LOGI(TAG, "PS_SEARCH: Fingerprint found at position: %d\n", x);
+                    currentstate = STATE_LOG_IN;
+                } else {
+                    ESP_LOGW(TAG, "Thất bại!! Thử lại!!");
+                }
                 vTaskDelay(1000/portTICK_PERIOD_MS);
             break;
 
@@ -145,6 +172,14 @@ void app_main(void)
                 open_door();
                 vTaskDelay(1000/portTICK_PERIOD_MS);
                 currentstate = STATE_IDLE;
+            break;
+
+            case STATE_SIGN_IN:
+                PS_Enroll(students[student_x].id);
+                ESP_LOGI(TAG, "Đăng ký vân tay thành công !!");
+
+                currentstate = STATE_IDLE;
+                vTaskDelay(1000/portTICK_PERIOD_MS);
             break;
         }
 

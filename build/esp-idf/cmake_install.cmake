@@ -434,6 +434,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/mqtt_method/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/main/cmake_install.cmake")
 endif()
 

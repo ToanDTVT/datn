@@ -35,8 +35,8 @@ void task_wifi_init(){
 
     wifi_config_t sta_cfg = {
         .sta = {
-            .ssid = "BaPhuQuy",                    //BaPhuQuy           TP-LINK_4550AA
-            .password = "BaTrpTNMT62",                        //BaTrpTNMT62            61924666
+            .ssid = "BaPhuQuy",                    //BaPhuQuy           TP-LINK_4550AA      Ds Place guest          QT3112
+            .password = "BaTrpTNMT62",                        //BaTrpTNMT62            61924666        88888888      12345678
             .threshold.authmode = WIFI_AUTH_WPA2_PSK,
         }
     };
@@ -48,3 +48,54 @@ void task_wifi_init(){
 }
 
 
+
+
+void initialize_sntp() {
+    printf("Initializing SNTP...\n");
+    sntp_setoperatingmode(SNTP_OPMODE_POLL);
+    sntp_setservername(0, "pool.ntp.org");
+    sntp_init();
+}
+
+void obtain_time() {
+    initialize_sntp();
+
+    // Đợi thời gian được đồng bộ
+    time_t now = 0;
+    struct tm timeinfo = { 0 };
+    int retry = 0;
+    const int retry_count = 10;
+    while (timeinfo.tm_year < (2024 - 1900) && ++retry < retry_count) {
+        printf("Waiting for system time to be set... (%d/%d)\n", retry, retry_count);
+        vTaskDelay(2000 / portTICK_PERIOD_MS);
+        time(&now);
+        localtime_r(&now, &timeinfo);
+    }
+
+    if (timeinfo.tm_year > (2024 - 1900)) {
+        printf("Time synchronized: %s", asctime(&timeinfo));
+    } else {
+        printf("Failed to synchronize time.\n");
+    }
+}
+
+
+
+
+bool is_access_allowed(char *allowed_days, char *start_time, char *end_time) {
+    time_t now;
+    struct tm timeinfo;
+    time(&now);
+    localtime_r(&now, &timeinfo);
+
+    char current_day[10];
+    strftime(current_day, sizeof(current_day), "%A", &timeinfo);
+
+    if (strstr(allowed_days, current_day)) {
+        char current_time[6];
+        strftime(current_time, sizeof(current_time), "%H:%M", &timeinfo);
+
+        return strcmp(current_time, start_time) >= 0 && strcmp(current_time, end_time) <= 0;
+    }
+    return false;
+}

@@ -1,0 +1,340 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Nov 21 2024 21:08:18[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25d2ch (154924) map[0m
+[0;32mI (163) esp_image: segment 1: paddr=00035d54 vaddr=3ffb0000 size=03c58h ( 15448) load[0m
+[0;32mI (169) esp_image: segment 2: paddr=000399b4 vaddr=40080000 size=06664h ( 26212) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a2910h (665872) map[0m
+[0;32mI (421) esp_image: segment 4: paddr=000e2938 vaddr=40086664 size=10d5ch ( 68956) load[0m
+[0;32mI (461) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (461) boot: Disabling RNG early entropy source...[0m
+[0;32mI (473) cpu_start: Multicore app[0m
+[0;32mI (474) cpu_start: Pro cpu up.[0m
+[0;32mI (474) cpu_start: Starting app cpu, entry point is 0x40081480[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (491) cpu_start: Pro cpu start user code[0m
+[0;32mI (491) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (491) cpu_start: Application information:[0m
+[0;32mI (496) cpu_start: Project name:     datn[0m
+[0;32mI (501) cpu_start: App version:      35f03a1-dirty[0m
+[0;32mI (506) cpu_start: Compile time:     Nov 27 2024 15:12:51[0m
+[0;32mI (512) cpu_start: ELF file SHA256:  22b160d1e50f5885...[0m
+[0;32mI (518) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (524) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (528) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (533) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (538) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (545) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (551) heap_init: At 3FFB8960 len 000276A0 (157 KiB): DRAM[0m
+[0;32mI (557) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (564) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (570) heap_init: At 400973C0 len 00008C40 (35 KiB): IRAM[0m
+[0;32mI (578) spi_flash: detected chip: generic[0m
+[0;32mI (581) spi_flash: flash io: dio[0m
+[0;32mI (586) app_start: Starting scheduler on CPU0[0m
+[0;32mI (590) app_start: Starting scheduler on CPU1[0m
+[0;32mI (590) main_task: Started on CPU0[0m
+[0;32mI (600) main_task: Calling app_main()[0m
+[0;32mI (600) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (610) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (620) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (630) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (640) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (650) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (650) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (660) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (710) wifi:wifi driver task: 3ffc15b4, prio:23, stack:6656, core=0[0m
+[0;32mI (720) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (720) wifi:wifi certification version: v7.0[0m
+[0;32mI (720) wifi:config NVS flash: enabled[0m
+[0;32mI (720) wifi:config nano formating: disabled[0m
+[0;32mI (730) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (730) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (730) wifi:Init management short buffer num: 32[0m
+[0;32mI (740) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (740) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (750) wifi:Init static rx buffer num: 10[0m
+[0;32mI (750) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (760) wifi_init: rx ba win: 6[0m
+[0;32mI (760) wifi_init: tcpip mbox: 32[0m
+[0;32mI (760) wifi_init: udp mbox: 6[0m
+[0;32mI (770) wifi_init: tcp mbox: 6[0m
+[0;32mI (770) wifi_init: tcp tx win: 5760[0m
+[0;32mI (770) wifi_init: tcp rx win: 5760[0m
+[0;32mI (780) wifi_init: tcp mss: 1440[0m
+[0;32mI (780) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (790) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (790) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (880) wifi:mode : sta (cc:7b:5c:28:c2:a8)[0m
+[0;32mI (880) wifi:enable tsf[0m
+[0;33mW (1890) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (1890) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;32mI (1900) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (1900) wifi:state: init -> auth (b0)[0m
+[0;32mI (1910) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1920) wifi:state: assoc -> run (10)[0m
+[0;32mI (1920) wifi:<ba-add>idx:0 (ifx:0, 72:85:c4:8e:12:42), tid:5, ssn:0, winSize:64[0m
+[0;32mI (2020) wifi:<ba-add>idx:1 (ifx:0, 72:85:c4:8e:12:42), tid:0, ssn:1, winSize:64[0m
+[0;32mI (2030) wifi:connected with Ds Place guest, aid = 1, channel 11, BW20, bssid = 72:85:c4:8e:12:42[0m
+[0;32mI (2030) wifi:security: WPA2-PSK, phy: bgn, rssi: -68[0m
+[0;32mI (2040) wifi:pm start, type: 1[0m
+
+[0;32mI (2040) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2060) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;31mE (2890) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (2890) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2900) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (3050) esp_netif_handlers: sta ip: 192.168.2.50, mask: 255.255.255.0, gw: 192.168.2.1[0m
+[0;31mE (12900) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (12900) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (12910) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (22910) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (22910) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (22920) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (32920) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (32920) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (32930) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (42930) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (42930) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (42940) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (52940) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (52940) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (52950) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (62950) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (62950) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (62960) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (72960) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (72960) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (72970) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (82970) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (82970) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (82970) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (92980) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (92980) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (92990) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (102990) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (102990) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (103000) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (113000) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (113000) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (113010) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (123010) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (123010) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (123020) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (133020) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (133020) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (133030) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (143030) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (143030) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (143040) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (153040) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (153040) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (153050) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (163050) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (163050) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (163060) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (173060) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (173060) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (173070) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (183070) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (183070) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (183080) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (193080) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (193080) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (193090) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (203090) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (203090) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (203100) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (213100) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (213100) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (213110) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (223110) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (223110) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (223120) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (233120) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (233120) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (233130) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (243130) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (243130) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (243140) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (253140) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (253140) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (253150) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (263150) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (263150) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (263160) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (273160) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (273160) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (273170) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (283170) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (283170) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (283180) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (293180) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (293180) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (293190) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (303190) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (303190) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (303200) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (313200) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (313200) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (313210) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (323210) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (323210) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (323220) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (333220) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (333220) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (333230) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (343230) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (343230) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (343240) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (353240) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (353240) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (353250) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (363250) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (363250) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (363260) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (373260) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (373270) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (373270) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (383270) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (383270) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (383280) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (393280) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (393280) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (393290) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (403290) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (403290) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (403300) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (413300) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (413300) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (413310) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (423310) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (423310) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (423320) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (433320) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (433320) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (433330) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (443330) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (443330) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (443340) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (453350) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (453350) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (453350) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (463360) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (463360) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (463370) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (473370) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (473370) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (473380) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (483380) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (483380) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (483390) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (493390) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (493390) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (493400) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (503400) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (503400) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (503410) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (513410) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (513410) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (513420) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (523420) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (523420) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (523430) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (533430) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (533430) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (533440) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (543440) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (543440) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (543450) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (553450) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (553450) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (553460) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (563460) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (563460) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (563470) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (573470) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (573470) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (573480) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (583480) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (583480) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (583490) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (593490) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (593490) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (593500) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (603500) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (603500) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (603510) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (613510) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (613510) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (613520) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (623520) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (623520) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (623530) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (633530) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (633530) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (633540) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (643540) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (643540) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (643550) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (653550) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (653550) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (653560) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (663560) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (663560) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (663570) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (673570) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (673570) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (673580) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (683580) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (683580) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (683590) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (693590) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (693590) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (693600) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (703600) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (703600) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (703610) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (713610) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (713610) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (713620) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (723620) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (723620) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (723630) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (733630) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (733630) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (733640) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (743640) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (743640) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (743650) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (753650) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (753650) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (753660) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (763660) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (763660) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (763670) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (773670) esp-tls: [sock=54] delayed connect

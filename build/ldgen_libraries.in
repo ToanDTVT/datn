@@ -65,4 +65,5 @@ $<TARGET_FILE:__idf_user_data>
 $<TARGET_FILE:__idf_uart_lib>
 $<TARGET_FILE:__idf_wifi_config>
 $<TARGET_FILE:__idf_http_method>
+$<TARGET_FILE:__idf_mqtt_method>
 $<TARGET_FILE:__idf_main>

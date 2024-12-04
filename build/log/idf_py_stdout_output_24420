@@ -1,0 +1,494 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Nov 21 2024 21:08:18[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=260dch (155868) map[0m
+[0;32mI (163) esp_image: segment 1: paddr=00036104 vaddr=3ffb0000 size=03c58h ( 15448) load[0m
+[0;32mI (169) esp_image: segment 2: paddr=00039d64 vaddr=40080000 size=062b4h ( 25268) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a2cc8h (666824) map[0m
+[0;32mI (421) esp_image: segment 4: paddr=000e2cf0 vaddr=400862b4 size=1110ch ( 69900) load[0m
+[0;32mI (462) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (462) boot: Disabling RNG early entropy source...[0m
+[0;32mI (474) cpu_start: Multicore app[0m
+[0;32mI (475) cpu_start: Pro cpu up.[0m
+[0;32mI (475) cpu_start: Starting app cpu, entry point is 0x40081480[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (492) cpu_start: Pro cpu start user code[0m
+[0;32mI (492) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (492) cpu_start: Application information:[0m
+[0;32mI (497) cpu_start: Project name:     datn[0m
+[0;32mI (501) cpu_start: App version:      35f03a1-dirty[0m
+[0;32mI (507) cpu_start: Compile time:     Nov 27 2024 17:42:54[0m
+[0;32mI (513) cpu_start: ELF file SHA256:  59a4a868cc4dd847...[0m
+[0;32mI (519) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (524) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (529) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (534) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (539) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (546) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (552) heap_init: At 3FFB8960 len 000276A0 (157 KiB): DRAM[0m
+[0;32mI (558) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (564) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (571) heap_init: At 400973C0 len 00008C40 (35 KiB): IRAM[0m
+[0;32mI (579) spi_flash: detected chip: generic[0m
+[0;32mI (582) spi_flash: flash io: dio[0m
+[0;32mI (586) app_start: Starting scheduler on CPU0[0m
+[0;32mI (591) app_start: Starting scheduler on CPU1[0m
+[0;32mI (591) main_task: Started on CPU0[0m
+[0;32mI (601) main_task: Calling app_main()[0m
+[0;32mI (601) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (611) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (621) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (631) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (641) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (651) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (651) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (661) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (711) wifi:wifi driver task: 3ffc15b4, prio:23, stack:6656, core=0[0m
+[0;32mI (721) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (721) wifi:wifi certification version: v7.0[0m
+[0;32mI (721) wifi:config NVS flash: enabled[0m
+[0;32mI (721) wifi:config nano formating: disabled[0m
+[0;32mI (731) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (731) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (731) wifi:Init management short buffer num: 32[0m
+[0;32mI (741) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (741) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (751) wifi:Init static rx buffer num: 10[0m
+[0;32mI (751) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (761) wifi_init: rx ba win: 6[0m
+[0;32mI (761) wifi_init: tcpip mbox: 32[0m
+[0;32mI (761) wifi_init: udp mbox: 6[0m
+[0;32mI (771) wifi_init: tcp mbox: 6[0m
+[0;32mI (771) wifi_init: tcp tx win: 5760[0m
+[0;32mI (771) wifi_init: tcp rx win: 5760[0m
+[0;32mI (781) wifi_init: tcp mss: 1440[0m
+[0;32mI (781) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (791) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (791) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (881) wifi:mode : sta (cc:7b:5c:28:c2:a8)[0m
+[0;32mI (881) wifi:enable tsf[0m
+[0;33mW (1891) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (1891) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;32mI (1901) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1911) wifi:state: init -> auth (b0)[0m
+[0;32mI (1921) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1961) wifi:state: assoc -> run (10)[0m
+[0;32mI (2061) wifi:connected with BaPhuQuy, aid = 2, channel 1, BW20, bssid = e0:b6:68:22:70:2b[0m
+[0;32mI (2061) wifi:security: WPA2-PSK, phy: bgn, rssi: -50[0m
+[0;32mI (2061) wifi:pm start, type: 1[0m
+
+[0;32mI (2061) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2081) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;31mE (2891) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2891) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2891) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (4231) wifi:<ba-add>idx:0 (ifx:0, e0:b6:68:22:70:2b), tid:6, ssn:2, winSize:64[0m
+[0;32mI (5071) esp_netif_handlers: sta ip: 192.168.2.17, mask: 255.255.255.0, gw: 192.168.2.253[0m
+[0;32mI (8031) wifi:<ba-add>idx:1 (ifx:0, e0:b6:68:22:70:2b), tid:0, ssn:1, winSize:64[0m
+[0;33mW (13041) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (23071) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (33101) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;32mI (38131) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-25T04:40:20.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-27T14:01:44.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-23T18:15:43.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":null,"pass_en":0,"fing_en":0,"created_at":"2024-11-23T18:15:43.000Z","updated_at":"2024-11-27T11:18:40.000Z"},{"id":7,"full_name":"Đặng Phước Cường ","student_id":"2014666","position":"sinh viên","email":"dp.cuong@hcmut.edu.vn","password":"030802","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-24T18:59:51.000Z","updated_at":"2024-11-27T11:23:31.000Z"},{"id":9,"full_name":"Đỗ Trí Thắng ","student_id":"2013677","position":"sinh viên","email":"dt.thang@hcmut.edu.vn","password":"300102","fingerprint":null,"pass_en":1,"fing_en":0,"created_at":"2024-11-27T14:19:14.000Z","updated_at":"2024-11-27T14:48:11.000Z"}][0m
+[0;32mI (38271) HTTP_CLIENT: Stored student: [0m
+[0;32mI (38271) HTTP_CLIENT: Stored student: [0m
+[0;32mI (38271) HTTP_CLIENT: Stored student: [0m
+[0;32mI (38281) HTTP_CLIENT: Stored student: [0m
+[0;32mI (38281) HTTP_CLIENT: Stored student: [0m
+[0;32mI (38291) HTTP_CLIENT: Stored student: [0m
+[0;33mW (48331) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (58361) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (68401) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (78471) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (88491) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (98641) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (108781) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (118811) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (128861) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (138881) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (148911) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (158931) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (168961) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (178991) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (189051) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (199071) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (209231) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (219301) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (229381) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (239401) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (249451) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (259481) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (269511) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (279551) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (289571) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (299621) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (309811) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (319951) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (330071) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (340091) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (350241) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (360391) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (370521) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (380551) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (390601) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (400721) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (410761) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (420931) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (431031) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (441131) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (451161) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (461211) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (471391) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (481431) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (491551) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (501581) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (511601) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (521761) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (531781) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (541931) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (552071) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (562091) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (572241) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (582261) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (592291) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (602321) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (612351) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (622391) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (632561) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (642601) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (652631) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (662661) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (672681) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (682721) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (693421) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (703531) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (713661) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (723791) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (733961) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (744071) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (754211) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (764241) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (774391) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (784531) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (794571) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (804601) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (814731) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (824761) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (834781) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (844941) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (854971) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (865231) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (875351) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (885461) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (895631) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (905761) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (915791) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (925821) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (935841) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (946111) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (956241) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (966381) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (976401) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (986591) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (996611) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1006731) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1016941) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1026971) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1037011) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1047211) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1057341) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1067451) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1077591) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1087771) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1097831) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1107851) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1118241) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1128491) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1138651) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1148801) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1158861) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1168901) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1178981) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1189101) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1199241) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1209381) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1219521) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1229541) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1239691) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1249831) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1259971) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1270011) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1280141) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1290181) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1300201) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1310351) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1320491) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1330621) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1340761) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1350901) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1360921) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1370941) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1381101) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1391241) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1401381) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1411401) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1421551) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1431691) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1441861) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1451881) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1462011) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1472141) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1482281) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1492431) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1502551) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1512691) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1522711) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1532861) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1543001) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1553141) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1563271) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1573381) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1583521) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1593691) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1603851) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1613931) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1623961) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1634001) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1644171) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1654321) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1664351) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1674521) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1684591) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1694611) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1704671) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1714831) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1724851) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1735311) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1745471) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1755501) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1765721) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1775741) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1785791) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1795941) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1806071) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1816311) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1826481) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1836601) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1846721) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1856751) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1866891) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1876921) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1886981) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1897121) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1907141) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1917271) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1927411) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1937441) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1947601) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1957731) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1967861) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1978031) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1988071) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (1998091) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2008111) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2018261) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2028381) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2038401) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2048551) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2058571) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2068591) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2078611) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2088661) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2098851) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2108921) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2118971) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2129241) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2139261) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2149281) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2159321) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2169491) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2179531) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2189551) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2199591) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2209781) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2219971) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2230031) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2240251) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2250381) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2260531) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2270661) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2280801) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2290931) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2301081) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2311211) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2321251) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2331381) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2341531) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2351651) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2361791) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2371811) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2381961) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2392311) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2402451) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2412521) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2422551) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2432581) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2442691) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2452831) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2462971) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2473311) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2483331) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2493491) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2503531) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2513681) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2523791) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2533961) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2544101) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2554171) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2564211) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2574381) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2584511) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2594531) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2604561) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2614591) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2624621) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2634791) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2644931) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2655011) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2665051) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2675111) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2685281) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2695411) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2705431) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2715461) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2725631) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2735661) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2745821) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2755931) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2766071) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2776211) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2786251) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2796381) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2806401) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2816441) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2826461) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2836481) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2846501) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2856531) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2866591) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2876651) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2886671) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2896701) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2906721) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2916751) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2926781) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2936801) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2946821) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2956841) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2966861) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2976881) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2986911) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (2996941) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3006961) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3016991) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3028371) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3038401) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3048421) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3058451) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3068471) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3078521) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3088561) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3098581) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3108611) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3118641) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3128681) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3138721) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3148761) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3158801) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3168831) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3178851) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3188951) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3199991) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3210031) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3220121) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3230361) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3240391) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3250411) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3260441) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3270471) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3280631) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3290681) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3300701) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3310721) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3320751) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3330781) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3340801) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3350821) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3360861) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3371051) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3381091) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3391111) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3401131) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3411151) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3421171) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3431211) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3441241) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3451271) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3461291) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3471321) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3481341) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3491401) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3501451) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3511471) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3521491) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3531521) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3541541) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3551561) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3561621) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3571651) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3581671) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3591701) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3601731) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3611781) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3621811) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3631841) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3641871) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3651901) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3661921) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3672181) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3682271) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3692291) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3702321) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3712351) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3722371) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3732391) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3742411) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3752431) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3762451) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3772471) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3782501) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3792521) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (3802541) HTTP_CLIENT: Connection timed out before data was ready![0m

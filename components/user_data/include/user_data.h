@@ -46,7 +46,8 @@ enum statemachine {
 	STATE_CHECK_INFOR,
 	STATE_HANDLE_PASSWORD,
 	STATE_HANDLE_FINGERPRINT,
-	STATE_LOG_IN
+	STATE_LOG_IN,
+	STATE_SIGN_IN
 };
 
 
@@ -58,6 +59,9 @@ typedef struct {
     char position[20];
     char email[50];
 	char password[10];
+	char allowed_days[50];
+	char start_time[5];
+	char end_time[5];
 	int pass_en;
 	int fing_en;
 } Student;
