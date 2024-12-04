@@ -27,10 +27,11 @@ void process_json_data(const char *json_data) {
         cJSON *position = cJSON_GetObjectItem(item, "position");
         cJSON *email = cJSON_GetObjectItem(item, "email");
         cJSON *password = cJSON_GetObjectItem(item, "password");
+        cJSON *fingerprint = cJSON_GetObjectItem(item, "fingerprint");
         cJSON *pass_en = cJSON_GetObjectItem(item, "pass_en");
         cJSON *fing_en = cJSON_GetObjectItem(item, "fing_en");
 
-        if (!id || !full_name || !student_id || !position || !email || !password || !pass_en || !fing_en) {
+        if (!id || !full_name || !student_id || !position || !email || !password || !fingerprint || !pass_en || !fing_en) {
             ESP_LOGE(TAG, "Missing fields in JSON object");
             continue;
         }
@@ -42,6 +43,7 @@ void process_json_data(const char *json_data) {
         strncpy(students[student_count].position, position->valuestring, sizeof(students[student_count].position) - 1);
         strncpy(students[student_count].email, email->valuestring, sizeof(students[student_count].email) - 1);
         strncpy(students[student_count].password, password->valuestring, sizeof(students[student_count].password) - 1);
+        students[student_count].fingerprint = fingerprint->valueint;
         students[student_count].pass_en = pass_en->valueint;
         students[student_count].fing_en = fing_en->valueint;
         
@@ -55,11 +57,12 @@ void process_json_data(const char *json_data) {
             char key[20];
             snprintf(key, sizeof(key), "student_%d", students[student_count].id);
             char value[200];
-            snprintf(value, sizeof(value), "%s|%s|%s|%s|%s|%d|%d",  students[student_count].full_name, 
+            snprintf(value, sizeof(value), "%s|%s|%s|%s|%s|%d|%d|%d",  students[student_count].full_name, 
                                                                     students[student_count].student_id, 
                                                                     students[student_count].position, 
                                                                     students[student_count].email, 
                                                                     students[student_count].password, 
+                                                                    students[student_count].fingerprint,
                                                                     students[student_count].pass_en, 
                                                                     students[student_count].fing_en);
 

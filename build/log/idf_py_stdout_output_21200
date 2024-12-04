@@ -1,0 +1,135 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Nov 21 2024 21:08:18[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=27ef8h (163576) map[0m
+[0;32mI (166) esp_image: segment 1: paddr=00037f20 vaddr=3ffb0000 size=03c68h ( 15464) load[0m
+[0;32mI (172) esp_image: segment 2: paddr=0003bb90 vaddr=40080000 size=04488h ( 17544) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a7674h (685684) map[0m
+[0;32mI (427) esp_image: segment 4: paddr=000e769c vaddr=40084488 size=1308ch ( 77964) load[0m
+[0;32mI (472) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (472) boot: Disabling RNG early entropy source...[0m
+[0;32mI (483) cpu_start: Multicore app[0m
+[0;32mI (484) cpu_start: Pro cpu up.[0m
+[0;32mI (485) cpu_start: Starting app cpu, entry point is 0x40081484[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (502) cpu_start: Pro cpu start user code[0m
+[0;32mI (502) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (502) cpu_start: Application information:[0m
+[0;32mI (506) cpu_start: Project name:     datn[0m
+[0;32mI (511) cpu_start: App version:      d92b173-dirty[0m
+[0;32mI (517) cpu_start: Compile time:     Dec  4 2024 12:51:57[0m
+[0;32mI (523) cpu_start: ELF file SHA256:  42f46539e36ea63e...[0m
+[0;32mI (529) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (534) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (539) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (544) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (549) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (556) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (562) heap_init: At 3FFB8BF8 len 00027408 (157 KiB): DRAM[0m
+[0;32mI (568) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (574) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (581) heap_init: At 40097514 len 00008AEC (34 KiB): IRAM[0m
+[0;32mI (588) spi_flash: detected chip: generic[0m
+[0;32mI (591) spi_flash: flash io: dio[0m
+[0;32mI (596) app_start: Starting scheduler on CPU0[0m
+[0;32mI (601) app_start: Starting scheduler on CPU1[0m
+[0;32mI (601) main_task: Started on CPU0[0m
+[0;32mI (611) main_task: Calling app_main()[0m
+[0;32mI (611) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (621) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (631) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (641) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (651) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (661) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (661) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (671) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (731) wifi:wifi driver task: 3ffc184c, prio:23, stack:6656, core=0[0m
+[0;32mI (741) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (741) wifi:wifi certification version: v7.0[0m
+[0;32mI (741) wifi:config NVS flash: enabled[0m
+[0;32mI (741) wifi:config nano formating: disabled[0m
+[0;32mI (751) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (751) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (751) wifi:Init management short buffer num: 32[0m
+[0;32mI (761) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (761) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (771) wifi:Init static rx buffer num: 10[0m
+[0;32mI (771) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (781) wifi_init: rx ba win: 6[0m
+[0;32mI (781) wifi_init: tcpip mbox: 32[0m
+[0;32mI (781) wifi_init: udp mbox: 6[0m
+[0;32mI (791) wifi_init: tcp mbox: 6[0m
+[0;32mI (791) wifi_init: tcp tx win: 5760[0m
+[0;32mI (791) wifi_init: tcp rx win: 5760[0m
+[0;32mI (801) wifi_init: tcp mss: 1440[0m
+[0;32mI (801) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (811) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (811) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;33mW (901) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (921) wifi:mode : sta (cc:7b:5c:28:c2:a8)[0m
+[0;32mI (921) wifi:enable tsf[0m
+[0;33mW (1931) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (1931) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;32mI (1931) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1941) wifi:state: init -> auth (b0)[0m
+[0;31mE (1941) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1951) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1951) mqtt_client: Error transport connect[0m
+[0;32mI (1961) wifi:state: auth -> assoc (0)[0m
+[0;32mI (2001) wifi:state: assoc -> run (10)[0m
+[0;32mI (2151) wifi:connected with BaPhuQuy, aid = 1, channel 1, BW20, bssid = e0:b6:68:22:70:2b[0m
+[0;32mI (2151) wifi:security: WPA2-PSK, phy: bgn, rssi: -51[0m
+[0;32mI (2151) wifi:pm start, type: 1[0m
+
+[0;32mI (2161) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2231) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;31mE (2931) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2931) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2931) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (4281) wifi:<ba-add>idx:0 (ifx:0, e0:b6:68:22:70:2b), tid:6, ssn:2, winSize:64[0m
+[0;32mI (5171) esp_netif_handlers: sta ip: 192.168.2.17, mask: 255.255.255.0, gw: 192.168.2.253[0m
+[0;32mI (8001) wifi:<ba-add>idx:1 (ifx:0, e0:b6:68:22:70:2b), tid:0, ssn:1, winSize:64[0m
+[0;33mW (13011) HTTP_CLIENT: Connection timed out before data was ready![0m
+Connected to MQTT Broker
+[0;33mW (23061) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (33081) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (43101) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (53131) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (63151) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (73181) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (83201) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (93271) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (103301) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (113351) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (123371) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (133391) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (143421) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (153461) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (163491) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (173521) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (183551) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (193581) HTTP_CLIENT: Connection timed out before data was ready![0m

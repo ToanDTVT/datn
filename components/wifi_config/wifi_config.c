@@ -35,7 +35,7 @@ void task_wifi_init(){
 
     wifi_config_t sta_cfg = {
         .sta = {
-            .ssid = "BaPhuQuy",                    //BaPhuQuy           TP-LINK_4550AA      Ds Place guest          QT3112
+            .ssid = "BaPhuQuy",                               //BaPhuQuy           TP-LINK_4550AA      Ds Place guest          QT3112
             .password = "BaTrpTNMT62",                        //BaTrpTNMT62            61924666        88888888      12345678
             .threshold.authmode = WIFI_AUTH_WPA2_PSK,
         }

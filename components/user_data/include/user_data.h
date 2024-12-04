@@ -59,6 +59,7 @@ typedef struct {
     char position[20];
     char email[50];
 	char password[10];
+	int fingerprint;
 	char allowed_days[50];
 	char start_time[5];
 	char end_time[5];

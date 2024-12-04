@@ -2,6 +2,8 @@
 
 #define BROKER_URI "mqtt://broker.hivemq.com:1883" // IP máy chạy MQTT Broker
 #define COMMAND_TOPIC "esp32/command"
+#define OPENDOOR_TOPIC "esp32/command/opendoor"
+#define REGISTER_FINGERPRINT_TOPIC "esp32/command/registerfingerprint"
 #define RESPONSE_TOPIC "esp32/response"
 
 void func8 (void) {
@@ -17,6 +19,8 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
         case MQTT_EVENT_CONNECTED:
             printf("Connected to MQTT Broker\n");
             esp_mqtt_client_subscribe(mqtt_client, COMMAND_TOPIC, 0);
+            esp_mqtt_client_subscribe(mqtt_client, OPENDOOR_TOPIC, 0);
+            esp_mqtt_client_subscribe(mqtt_client, REGISTER_FINGERPRINT_TOPIC, 0);
             break;
 
         case MQTT_EVENT_DATA:
@@ -24,12 +28,19 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
                    event->data_len, event->data,
                    event->topic_len, event->topic);
 
-            // Giả lập thực hiện nhiệm vụ
-            if (strncmp(event->data, "{\"action\":\"start_task\"}", event->data_len) == 0) {
-                printf("Task started...\n");
-                vTaskDelay(2000 / portTICK_PERIOD_MS); // Giả lập nhiệm vụ mất 2 giây
+
+            if (strncmp(event->topic, OPENDOOR_TOPIC, event->topic_len) == 0) {
+                printf("Task open door started...\n");
+                open_door();
+                vTaskDelay(1000/portTICK_PERIOD_MS);
+                esp_mqtt_client_publish(mqtt_client, RESPONSE_TOPIC, "Task completed", 0, 0, 0);
+            } else if (strncmp(event->topic, REGISTER_FINGERPRINT_TOPIC, event->topic_len) == 0) {
+                printf("Task register fingerprint started...\n");
+                open_door();
+                vTaskDelay(1000/portTICK_PERIOD_MS);
                 esp_mqtt_client_publish(mqtt_client, RESPONSE_TOPIC, "Task completed", 0, 0, 0);
             }
+            
             break;
 
         default:
