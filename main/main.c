@@ -158,7 +158,7 @@ void app_main(void)
                 }
 
                 uint8_t x = PS_Search(1, 0, 160); 
-                if(x == students[student_x].id){
+                if(x == students[student_x].fingerprint){
                     ESP_LOGI(TAG, "PS_SEARCH: Fingerprint found at position: %d\n", x);
                     currentstate = STATE_LOG_IN;
                 } else {

@@ -6,6 +6,8 @@
 #define REGISTER_FINGERPRINT_TOPIC "esp32/command/registerfingerprint"
 #define RESPONSE_TOPIC "esp32/response"
 
+static const char* TAG = "mqtt";
+
 void func8 (void) {
 
 }
@@ -30,15 +32,37 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
 
 
             if (strncmp(event->topic, OPENDOOR_TOPIC, event->topic_len) == 0) {
+
                 printf("Task open door started...\n");
                 open_door();
                 vTaskDelay(1000/portTICK_PERIOD_MS);
                 esp_mqtt_client_publish(mqtt_client, RESPONSE_TOPIC, "Task completed", 0, 0, 0);
+
             } else if (strncmp(event->topic, REGISTER_FINGERPRINT_TOPIC, event->topic_len) == 0) {
-                printf("Task register fingerprint started...\n");
-                open_door();
-                vTaskDelay(1000/portTICK_PERIOD_MS);
-                esp_mqtt_client_publish(mqtt_client, RESPONSE_TOPIC, "Task completed", 0, 0, 0);
+                // printf("Task register fingerprint started...\n");
+                // open_door();
+                // vTaskDelay(1000/portTICK_PERIOD_MS);
+                // esp_mqtt_client_publish(mqtt_client, RESPONSE_TOPIC, "Task completed", 0, 0, 0);
+
+                char payload[100];
+                char MSSV_mqtt[20];
+                strncpy(payload, event->data, event->data_len);
+                payload[event->data_len] = '\0';
+                // Parse JSON data
+                cJSON *json = cJSON_Parse(payload);
+                cJSON *mssv = cJSON_GetObjectItem(json, "mssv");
+                strncpy(MSSV_mqtt, mssv->valuestring, sizeof(MSSV_mqtt) - 1);
+                for(int i = 0; i <= MAX_STUDENTS; i++) {
+                    if((strcmp(MSSV_mqtt, students[i].student_id) == 0) && (students[i].id != 0)) {
+                        PS_Enroll(students[i].fingerprint);
+                        ESP_LOGI(TAG, "Đăng ký vân tay thành công !!");
+                        esp_mqtt_client_publish(mqtt_client, RESPONSE_TOPIC, "Task completed", 0, 0, 0);
+                        memset(MSSV_mqtt, 0, sizeof(MSSV_mqtt));
+                        vTaskDelay(1000/portTICK_PERIOD_MS);
+                        break;
+                    }
+                }
+
             }
             
             break;

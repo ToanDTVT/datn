@@ -525,7 +525,7 @@ void PS_Delete(uint16_t page_id, uint16_t num) {
         ((num >> 8) & 0xFF), (num & 0xFF),                  // Số lượng PageID xóa dần từ PageID bắt đầu (2 bytes)
         ((checksum >> 8) & 0xFF), (checksum & 0xFF)         // Checksum (2 bytes)
     };
-                     // | Header   | Address               | PI  | Length    | Cmmd| page_id                                  | num                              | Checksum                                   |
+
     uart_write_bytes(UART_NUM, (const char*) command, sizeof(command));
 
     uint8_t ACK_packet[12];
