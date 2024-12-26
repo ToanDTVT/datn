@@ -1,0 +1,200 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Nov 21 2024 21:08:18[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28640h (165440) map[0m
+[0;32mI (166) esp_image: segment 1: paddr=00038668 vaddr=3ffb0000 size=03c98h ( 15512) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=0003c308 vaddr=40080000 size=03d10h ( 15632) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a8dc0h (691648) map[0m
+[0;32mI (430) esp_image: segment 4: paddr=000e8de8 vaddr=40083d10 size=13each ( 81580) load[0m
+[0;32mI (476) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (476) boot: Disabling RNG early entropy source...[0m
+[0;32mI (488) cpu_start: Multicore app[0m
+[0;32mI (489) cpu_start: Pro cpu up.[0m
+[0;32mI (489) cpu_start: Starting app cpu, entry point is 0x400814bc[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (506) cpu_start: Pro cpu start user code[0m
+[0;32mI (506) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (506) cpu_start: Application information:[0m
+[0;32mI (511) cpu_start: Project name:     datn[0m
+[0;32mI (516) cpu_start: App version:      d3d9c82-dirty[0m
+[0;32mI (521) cpu_start: Compile time:     Dec  6 2024 12:28:26[0m
+[0;32mI (527) cpu_start: ELF file SHA256:  1ec417f5d9061268...[0m
+[0;32mI (533) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (539) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (543) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (548) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (553) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (560) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (566) heap_init: At 3FFB8C30 len 000273D0 (156 KiB): DRAM[0m
+[0;32mI (572) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (579) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (585) heap_init: At 40097BBC len 00008444 (33 KiB): IRAM[0m
+[0;32mI (593) spi_flash: detected chip: generic[0m
+[0;32mI (596) spi_flash: flash io: dio[0m
+[0;32mI (601) app_start: Starting scheduler on CPU0[0m
+[0;32mI (605) app_start: Starting scheduler on CPU1[0m
+[0;32mI (605) main_task: Started on CPU0[0m
+[0;32mI (615) main_task: Calling app_main()[0m
+[0;32mI (615) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (625) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (635) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (645) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (655) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (665) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (665) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (675) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (735) wifi:wifi driver task: 3ffc19c8, prio:23, stack:6656, core=0[0m
+[0;32mI (745) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (745) wifi:wifi certification version: v7.0[0m
+[0;32mI (745) wifi:config NVS flash: enabled[0m
+[0;32mI (745) wifi:config nano formating: disabled[0m
+[0;32mI (755) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (755) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (755) wifi:Init management short buffer num: 32[0m
+[0;32mI (765) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (765) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (775) wifi:Init static rx buffer num: 10[0m
+[0;32mI (775) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (785) wifi_init: rx ba win: 6[0m
+[0;32mI (785) wifi_init: tcpip mbox: 32[0m
+[0;32mI (785) wifi_init: udp mbox: 6[0m
+[0;32mI (795) wifi_init: tcp mbox: 6[0m
+[0;32mI (795) wifi_init: tcp tx win: 5760[0m
+[0;32mI (795) wifi_init: tcp rx win: 5760[0m
+[0;32mI (805) wifi_init: tcp mss: 1440[0m
+[0;32mI (805) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (815) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (815) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (905) wifi:mode : sta (cc:7b:5c:28:c2:a8)[0m
+[0;32mI (905) wifi:enable tsf[0m
+[0;33mW (1915) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (1915) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (1915) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1925) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1925) mqtt_client: Error transport connect[0m
+[0;32mI (1925) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1945) wifi:state: init -> auth (b0)[0m
+[0;32mI (1955) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1995) wifi:state: assoc -> run (10)[0m
+[0;32mI (2095) wifi:connected with BaPhuQuy, aid = 1, channel 1, BW20, bssid = e0:b6:68:22:70:2b[0m
+[0;32mI (2095) wifi:security: WPA2-PSK, phy: bgn, rssi: -54[0m
+[0;32mI (2095) wifi:pm start, type: 1[0m
+
+[0;32mI (2095) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2165) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;31mE (2915) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2915) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2915) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (4225) wifi:<ba-add>idx:0 (ifx:0, e0:b6:68:22:70:2b), tid:6, ssn:2, winSize:64[0m
+[0;32mI (5115) esp_netif_handlers: sta ip: 192.168.2.17, mask: 255.255.255.0, gw: 192.168.2.253[0m
+[0;32mI (7945) wifi:[0;31mE (7945) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m[0m
+<ba-add>idx:1 (ifx:0, e0:b6:68:22:70:2b), tid:0, ssn:0, winSize:64
+[0;31mE (7945) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (7955) HTTP_CLIENT: Connection failed, sock < 0[0m
+Connected to MQTT Broker
+[0;31mE (12975) esp-tls: [sock=55] delayed connect error: Connection reset by peer[0m
+[0;31mE (12975) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (12975) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (18005) esp-tls: [sock=55] delayed connect error: Connection reset by peer[0m
+[0;31mE (18005) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (18005) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (23025) esp-tls: [sock=55] delayed connect error: Connection reset by peer[0m
+[0;31mE (23025) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (23025) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (28055) esp-tls: [sock=55] delayed connect error: Connection reset by peer[0m
+[0;31mE (28055) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (28055) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (33075) esp-tls: [sock=55] delayed connect error: Connection reset by peer[0m
+[0;31mE (33085) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (33085) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (38095) esp-tls: [sock=55] delayed connect error: Connection reset by peer[0m
+[0;31mE (38095) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (38095) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (43115) esp-tls: [sock=55] delayed connect error: Connection reset by peer[0m
+[0;31mE (43125) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (43125) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (48135) esp-tls: [sock=55] delayed connect error: Connection reset by peer[0m
+[0;31mE (48135) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (48135) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (53175) esp-tls: [sock=55] delayed connect error: Connection reset by peer[0m
+[0;31mE (53175) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (53185) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (58205) esp-tls: [sock=55] delayed connect error: Connection reset by peer[0m
+[0;31mE (58205) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (58215) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (63235) esp-tls: [sock=55] delayed connect error: Connection reset by peer[0m
+[0;31mE (63235) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (63235) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (68255) esp-tls: [sock=55] delayed connect error: Connection reset by peer[0m
+[0;31mE (68255) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (68265) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (73275) esp-tls: [sock=55] delayed connect error: Connection reset by peer[0m
+[0;31mE (73275) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (73275) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (78295) esp-tls: [sock=55] delayed connect error: Connection reset by peer[0m
+[0;31mE (78295) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (78295) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (88345) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (98375) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (108395) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;32mI (113425) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":3,"pass_en":1,"fing_en":0,"allowed_days":"","start_time":"00:00:00","end_time":"00:00:00","created_at":"2024-11-28T13:20:09.000Z","updated_at":"2024-12-08T23:36:10.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"55555","fingerprint":6,"pass_en":0,"fing_en":0,"allowed_days":"","start_time":"00:00:00","end_time":"00:00:00","created_at":"2024-11-28T13:20:09.000Z","updated_at":"2024-12-08T23:54:16.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":0,"pass_en":1,"fing_en":0,"allowed_days":"","start_time":"00:00:00","end_time":"00:00:00","created_at":"2024-11-28T13:20:09.000Z","updated_at":"2024-12-01T21:02:24.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":0,"pass_en":1,"fing_en":0,"allowed_days":"","start_time":"00:00:00","end_time":"00:00:00","created_at":"2024-11-28T13:20:09.000Z","updated_at":"2024-12-02T15:29:28.000Z"},{"id":5,"full_name":"Đặng Phước Cường","student_id":"2014664","position":"sinh viên","email":"dang.cuong@hcmut.edu.vn","password":"030802","fingerprint":0,"pass_en":1,"fing_en":0,"allowed_days":"","start_time":"00:00:00","end_time":"00:00:00","created_at":"2024-11-28T13:20:09.000Z","updated_at":"2024-12-01T20:50:15.000Z"},{"id":8,"full_name":"Nguyễn Văn Linh ","student_id":"2011540","position":"sinh viên","email":"linh.n@hcmut.edu.vn","password":"123","fingerprint":7,"pass_en":1,"fing_en":1,"allowed_days":"","start_time":"00:00:00","end_time":"00:00:00","created_at":"2024-12-10T06:44:59.000Z","updated_at":"2024-12-10T06:49:29.000Z"},{"id":11,"full_name":"Trần Văn B","student_id":"2014999","position":"sinh viên","email":"trmp@hcmut.edu.vn","password":"6666","fingerprint":4,"pass_en":0,"fing_en":0,"allowed_days":"","start_time":"00:00:00","end_time":"00:00:00","created_at":"2024-12-10T08:51:41.000Z","updated_at":"2024-12-19T14:49:40.000Z"}][0m
+[0;32mI (113615) HTTP_CLIENT: Stored student: [0m
+[0;32mI (113615) HTTP_CLIENT: Stored student: [0m
+[0;32mI (113625) HTTP_CLIENT: Stored student: [0m
+[0;32mI (113625) HTTP_CLIENT: Stored student: [0m
+[0;32mI (113635) HTTP_CLIENT: Stored student: [0m
+[0;32mI (113635) HTTP_CLIENT: Stored student: [0m
+[0;32mI (113635) HTTP_CLIENT: Stored student: [0m
+[0;33mW (123665) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (133685) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (143705) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (153745) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (163775) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (173835) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (184965) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (194985) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (205005) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (215165) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (225225) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (235275) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (245325) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (255365) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (265385) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (275485) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (285525) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (295555) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (305585) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (315605) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (325625) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (335655) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (345675) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (355695) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (365735) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (375775) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (385805) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (395825) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (405875) HTTP_CLIENT: Connection timed out before data was ready![0m

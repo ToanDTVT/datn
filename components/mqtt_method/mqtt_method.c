@@ -5,6 +5,8 @@
 #define OPENDOOR_TOPIC "esp32/command/opendoor"
 #define REGISTER_FINGERPRINT_TOPIC "esp32/command/registerfingerprint"
 #define RESPONSE_TOPIC "esp32/response"
+#define ESP32_CAM_MSSV_ENTER_TOPIC "esp32cam/mssv_enter"
+#define ESP32_CAM_DISPLAY_INFOR_TOPIC "esp32cam/display_infor"
 
 static const char* TAG = "mqtt";
 
@@ -85,4 +87,12 @@ void mqtt_app_start(){
     mqtt_client = esp_mqtt_client_init(&mqtt_cfg);
     esp_mqtt_client_register_event(mqtt_client, ESP_EVENT_ANY_ID, mqtt_event_handler, NULL);
     esp_mqtt_client_start(mqtt_client);
+}
+
+void esp32_pub_for_esp32cam_sub_MSSV_ENTER() {
+    esp_mqtt_client_publish(mqtt_client, ESP32_CAM_MSSV_ENTER_TOPIC, "STATE_MSSV", 0, 0, 0);
+}
+
+void esp32_pub_for_esp32cam_sub_DISPLAY_INFOR(char *MSSV) {
+    esp_mqtt_client_publish(mqtt_client, ESP32_CAM_DISPLAY_INFOR_TOPIC, MSSV, 0, 0, 0);
 }

@@ -1,0 +1,832 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Nov 21 2024 21:08:18[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28800h (165888) map[0m
+[0;32mI (167) esp_image: segment 1: paddr=00038828 vaddr=3ffb0000 size=03c98h ( 15512) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=0003c4c8 vaddr=40080000 size=03b50h ( 15184) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a9188h (692616) map[0m
+[0;32mI (431) esp_image: segment 4: paddr=000e91b0 vaddr=40083b50 size=1406ch ( 82028) load[0m
+[0;32mI (477) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (477) boot: Disabling RNG early entropy source...[0m
+[0;32mI (489) cpu_start: Multicore app[0m
+[0;32mI (490) cpu_start: Pro cpu up.[0m
+[0;32mI (490) cpu_start: Starting app cpu, entry point is 0x400814bc[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (507) cpu_start: Pro cpu start user code[0m
+[0;32mI (507) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (507) cpu_start: Application information:[0m
+[0;32mI (512) cpu_start: Project name:     datn[0m
+[0;32mI (516) cpu_start: App version:      d3d9c82-dirty[0m
+[0;32mI (522) cpu_start: Compile time:     Dec  6 2024 12:28:26[0m
+[0;32mI (528) cpu_start: ELF file SHA256:  66eec0d30c0cd8cd...[0m
+[0;32mI (534) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (539) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (544) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (549) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (554) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (561) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (567) heap_init: At 3FFB8C30 len 000273D0 (156 KiB): DRAM[0m
+[0;32mI (573) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (579) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (586) heap_init: At 40097BBC len 00008444 (33 KiB): IRAM[0m
+[0;32mI (594) spi_flash: detected chip: generic[0m
+[0;32mI (597) spi_flash: flash io: dio[0m
+[0;32mI (601) app_start: Starting scheduler on CPU0[0m
+[0;32mI (606) app_start: Starting scheduler on CPU1[0m
+[0;32mI (606) main_task: Started on CPU0[0m
+[0;32mI (616) main_task: Calling app_main()[0m
+[0;32mI (616) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (626) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (636) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (646) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (656) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (666) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (666) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (676) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (786) wifi:wifi driver task: 3ffc1a4c, prio:23, stack:6656, core=0[0m
+[0;32mI (796) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (796) wifi:wifi certification version: v7.0[0m
+[0;32mI (796) wifi:config NVS flash: enabled[0m
+[0;32mI (796) wifi:config nano formating: disabled[0m
+[0;32mI (796) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (806) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (806) wifi:Init management short buffer num: 32[0m
+[0;32mI (816) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (816) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (826) wifi:Init static rx buffer num: 10[0m
+[0;32mI (826) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (826) wifi_init: rx ba win: 6[0m
+[0;32mI (836) wifi_init: tcpip mbox: 32[0m
+[0;32mI (836) wifi_init: udp mbox: 6[0m
+[0;32mI (846) wifi_init: tcp mbox: 6[0m
+[0;32mI (846) wifi_init: tcp tx win: 5760[0m
+[0;32mI (846) wifi_init: tcp rx win: 5760[0m
+[0;32mI (856) wifi_init: tcp mss: 1440[0m
+[0;32mI (856) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (866) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (866) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (956) wifi:mode : sta (cc:7b:5c:28:c2:a8)[0m
+[0;32mI (956) wifi:enable tsf[0m
+[0;33mW (1956) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (1956) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;32mI (1966) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1966) wifi:state: init -> auth (b0)[0m
+[0;31mE (1966) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1976) transport_base: Failed to open a new connection: 32769[0m
+[0;32mI (1976) wifi:[0;31mE (1976) mqtt_client: Error transport connect[0m[0m
+state: auth -> assoc (0)
+[0;32mI (1996) wifi:state: assoc -> run (10)[0m
+[0;31mE (2956) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2956) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2956) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (7966) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (7966) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (7966) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (11106) wifi:state: run -> init (fc0)[0m
+[0;32mI (11116) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;33mW (12976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (12976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (13976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (13976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (14976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (14976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (15976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (15976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (16976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (16976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (16986) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (16986) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (16986) mqtt_client: Error transport connect[0m
+[0;33mW (17976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (17976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (18976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (18976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (19976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (19976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (20976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (20976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (21976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (21976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (22976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (22976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (23976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (23976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (24976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (24976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (25976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (25976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (26976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (26976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (27976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (27976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (28976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (28976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (29976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (29976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (30976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (30976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (31976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (31976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (31996) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (31996) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (31996) mqtt_client: Error transport connect[0m
+[0;33mW (32976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (32976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (33976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (33976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (34976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (34976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (35976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (35976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (36976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (36976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (37976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (37976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (38976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (38976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (39976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (39976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (40976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (40976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (41976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (41976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (42976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (42976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (43976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (43976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (44976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (44976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (45976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (45976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (46976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (46976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (47006) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (47006) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (47006) mqtt_client: Error transport connect[0m
+[0;33mW (47976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (47976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (48976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (48976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (49976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (49976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (50976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (50976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (51976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (51976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (52976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (52976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (53976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (53976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (54976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (54976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (55976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (55976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (56976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (56976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (57976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (57976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (58976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (58976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (59976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (59976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (60976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (60976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (61976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (61976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (62016) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (62016) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (62016) mqtt_client: Error transport connect[0m
+[0;33mW (62976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (62976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (63976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (63976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (64976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (64976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (65976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (65976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (66976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (66976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (67976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (67976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (68976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (68976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (69976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (69976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (70976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (70976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (71976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (71976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (72976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (72976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (73976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (73976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (74976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (74976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (75976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (75976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (76976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (76976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (77026) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (77026) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (77026) mqtt_client: Error transport connect[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Nov 21 2024 21:08:18[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28800h (165888) map[0m
+[0;32mI (167) esp_image: segment 1: paddr=00038828 vaddr=3ffb0000 size=03c98h ( 15512) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=0003c4c8 vaddr=40080000 size=03b50h ( 15184) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a9188h (692616) map[0m
+[0;32mI (431) esp_image: segment 4: paddr=000e91b0 vaddr=40083b50 size=1406ch ( 82028) load[0m
+[0;32mI (477) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (477) boot: Disabling RNG early entropy source...[0m
+[0;32mI (489) cpu_start: Multicore app[0m
+[0;32mI (490) cpu_start: Pro cpu up.[0m
+[0;32mI (490) cpu_start: Starting app cpu, entry point is 0x400814bc[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (507) cpu_start: Pro cpu start user code[0m
+[0;32mI (507) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (507) cpu_start: Application information:[0m
+[0;32mI (512) cpu_start: Project name:     datn[0m
+[0;32mI (516) cpu_start: App version:      d3d9c82-dirty[0m
+[0;32mI (522) cpu_start: Compile time:     Dec  6 2024 12:28:26[0m
+[0;32mI (528) cpu_start: ELF file SHA256:  66eec0d30c0cd8cd...[0m
+[0;32mI (534) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (539) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (544) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (549) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (554) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (561) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (567) heap_init: At 3FFB8C30 len 000273D0 (156 KiB): DRAM[0m
+[0;32mI (573) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (579) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (586) heap_init: At 40097BBC len 00008444 (33 KiB): IRAM[0m
+[0;32mI (594) spi_flash: detected chip: generic[0m
+[0;32mI (597) spi_flash: flash io: dio[0m
+[0;32mI (601) app_start: Starting scheduler on CPU0[0m
+[0;32mI (606) app_start: Starting scheduler on CPU1[0m
+[0;32mI (606) main_task: Started on CPU0[0m
+[0;32mI (616) main_task: Calling app_main()[0m
+[0;32mI (616) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (626) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (636) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (646) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (656) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (666) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (666) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (676) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (786) wifi:wifi driver task: 3ffc1a4c, prio:23, stack:6656, core=0[0m
+[0;32mI (796) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (796) wifi:wifi certification version: v7.0[0m
+[0;32mI (796) wifi:config NVS flash: enabled[0m
+[0;32mI (796) wifi:config nano formating: disabled[0m
+[0;32mI (796) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (806) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (806) wifi:Init management short buffer num: 32[0m
+[0;32mI (816) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (816) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (826) wifi:Init static rx buffer num: 10[0m
+[0;32mI (826) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (826) wifi_init: rx ba win: 6[0m
+[0;32mI (836) wifi_init: tcpip mbox: 32[0m
+[0;32mI (836) wifi_init: udp mbox: 6[0m
+[0;32mI (846) wifi_init: tcp mbox: 6[0m
+[0;32mI (846) wifi_init: tcp tx win: 5760[0m
+[0;32mI (846) wifi_init: tcp rx win: 5760[0m
+[0;32mI (856) wifi_init: tcp mss: 1440[0m
+[0;32mI (856) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (866) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (866) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;33mW (956) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (976) wifi:mode : sta (cc:7b:5c:28:c2:a8)[0m
+[0;32mI (976) wifi:enable tsf[0m
+[0;33mW (1976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (1976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;32mI (1976) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1986) wifi:state: init -> auth (b0)[0m
+[0;31mE (1986) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1996) transport_base: Failed to open a new connection: 32769[0m
+[0;32mI (1996) wifi:[0;31mE (1996) mqtt_client: Error transport connect[0m[0m
+state: auth -> assoc (0)
+[0;32mI (2016) wifi:state: assoc -> run (10)[0m
+[0;31mE (2976) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2976) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2976) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (7986) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (7986) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (7986) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (11126) wifi:state: run -> init (fc0)[0m
+[0;32mI (11136) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;33mW (12996) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (12996) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Nov 21 2024 21:08:18[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28800h (165888) map[0m
+[0;32mI (167) esp_image: segment 1: paddr=00038828 vaddr=3ffb0000 size=03c98h ( 15512) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=0003c4c8 vaddr=40080000 size=03b50h ( 15184) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a9188h (692616) map[0m
+[0;32mI (431) esp_image: segment 4: paddr=000e91b0 vaddr=40083b50 size=1406ch ( 82028) load[0m
+[0;32mI (477) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (477) boot: Disabling RNG early entropy source...[0m
+[0;32mI (489) cpu_start: Multicore app[0m
+[0;32mI (490) cpu_start: Pro cpu up.[0m
+[0;32mI (490) cpu_start: Starting app cpu, entry point is 0x400814bc[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (507) cpu_start: Pro cpu start user code[0m
+[0;32mI (507) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (507) cpu_start: Application information:[0m
+[0;32mI (512) cpu_start: Project name:     datn[0m
+[0;32mI (516) cpu_start: App version:      d3d9c82-dirty[0m
+[0;32mI (522) cpu_start: Compile time:     Dec  6 2024 12:28:26[0m
+[0;32mI (528) cpu_start: ELF file SHA256:  66eec0d30c0cd8cd...[0m
+[0;32mI (534) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (539) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (544) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (549) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (554) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (561) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (567) heap_init: At 3FFB8C30 len 000273D0 (156 KiB): DRAM[0m
+[0;32mI (573) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (579) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (586) heap_init: At 40097BBC len 00008444 (33 KiB): IRAM[0m
+[0;32mI (594) spi_flash: detected chip: generic[0m
+[0;32mI (597) spi_flash: flash io: dio[0m
+[0;32mI (601) app_start: Starting scheduler on CPU0[0m
+[0;32mI (606) app_start: Starting scheduler on CPU1[0m
+[0;32mI (606) main_task: Started on CPU0[0m
+[0;32mI (616) main_task: Calling app_main()[0m
+[0;32mI (616) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (626) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (636) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (646) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (656) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (666) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (666) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (676) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (786) wifi:wifi driver task: 3ffc19c8, prio:23, stack:6656, core=0[0m
+[0;32mI (796) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (796) wifi:wifi certification version: v7.0[0m
+[0;32mI (796) wifi:config NVS flash: enabled[0m
+[0;32mI (796) wifi:config nano formating: disabled[0m
+[0;32mI (796) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (806) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (806) wifi:Init management short buffer num: 32[0m
+[0;32mI (816) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (816) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (826) wifi:Init static rx buffer num: 10[0m
+[0;32mI (826) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (826) wifi_init: rx ba win: 6[0m
+[0;32mI (836) wifi_init: tcpip mbox: 32[0m
+[0;32mI (836) wifi_init: udp mbox: 6[0m
+[0;32mI (846) wifi_init: tcp mbox: 6[0m
+[0;32mI (846) wifi_init: tcp tx win: 5760[0m
+[0;32mI (846) wifi_init: tcp rx win: 5760[0m
+[0;32mI (856) wifi_init: tcp mss: 1440[0m
+[0;32mI (856) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (866) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (866) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;33mW (956) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (1026) wifi:mode : sta (cc:7b:5c:28:c2:a8)[0m
+[0;32mI (1026) wifi:enable tsf[0m
+[0;33mW (2026) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (2026) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (2026) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (2036) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (2036) mqtt_client: Error transport connect[0m
+[0;32mI (2036) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (2056) wifi:state: init -> auth (b0)[0m
+[0;32mI (2066) wifi:state: auth -> assoc (0)[0m
+[0;32mI (2076) wifi:state: assoc -> run (10)[0m
+[0;32mI (2176) wifi:connected with BaPhuQuy, aid = 2, channel 1, BW20, bssid = e0:b6:68:22:70:2b[0m
+[0;32mI (2176) wifi:security: WPA2-PSK, phy: bgn, rssi: -52[0m
+[0;32mI (2186) wifi:pm start, type: 1[0m
+
+[0;32mI (2186) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2266) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;31mE (3026) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (3026) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (3026) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (4256) wifi:<ba-add>idx:0 (ifx:0, e0:b6:68:22:70:2b), tid:6, ssn:3, winSize:64[0m
+[0;32mI (5196) esp_netif_handlers: sta ip: 192.168.2.17, mask: 255.255.255.0, gw: 192.168.2.253[0m
+[0;32mI (8226) wifi:<ba-add>idx:1 (ifx:0, e0:b6:68:22:70:2b), tid:0, ssn:1, winSize:64[0m
+[0;32mI (10526) LCD_I2C: Error no. -1 in command[0m
+[0;32mI (10526) LCD_I2C: Error no. -1 in command[0m
+[0;32mI (10526) LCD_I2C: Error no. -1 in data[0m
+[0;32mI (10526) LCD_I2C: Error no. -1 in data[0m
+[0;32mI (10536) LCD_I2C: Error no. -1 in data[0m
+[0;32mI (10536) LCD_I2C: Error no. -1 in data[0m
+[0;32mI (10536) LCD_I2C: Error no. -1 in data[0m
+[0;32mI (10546) LCD_I2C: Error no. -1 in data[0m
+[0;32mI (10546) LCD_I2C: Error no. -1 in data[0m
+[0;32mI (10556) LCD_I2C: Error no. -1 in data[0m
+[0;32mI (10556) LCD_I2C: Error no. -1 in data[0m
+[0;32mI (10566) LCD_I2C: Error no. -1 in data[0m
+[0;32mI (10566) LCD_I2C: Error no. -1 in data[0m
+[0;32mI (10576) LCD_I2C: Error no. -1 in data[0m
+[0;32mI (10576) LCD_I2C: Error no. -1 in data[0m
+[0;32mI (10586) LCD_I2C: Error no. -1 in data[0m
+[0;32mI (10586) LCD_I2C: Error no. -1 in command[0m
+[0;32mI (10586) LCD_I2C: Error no. -1 in data[0m
+[0;32mI (10596) LCD_I2C: Error no. -1 in data[0m
+[0;32mI (10596) LCD_I2C: Error no. -1 in data[0m
+[0;32mI (10606) LCD_I2C: Error no. -1 in data[0m
+[0;32mI (10606) LCD_I2C: Error no. -1 in data[0m
+[0;32mI (10616) LCD_I2C: Error no. -1 in data[0m
+����������������������������������������������������������������nnected to MQTT Broker
+[0;33mW (13236) HTTP_CLIENT: Connection timed out before data was ready![0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Nov 21 2024 21:08:18[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28800h (165888) map[0m
+[0;32mI (167) esp_image: segment 1: paddr=00038828 vaddr=3ffb0000 size=03c98h ( 15512) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=0003c4c8 vaddr=40080000 size=03b50h ( 15184) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a9188h (692616) map[0m
+[0;32mI (431) esp_image: segment 4: paddr=000e91b0 vaddr=40083b50 size=1406ch ( 82028) load[0m
+[0;32mI (477) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (477) boot: Disabling RNG early entropy source...[0m
+[0;32mI (489) cpu_start: Multicore app[0m
+[0;32mI (490) cpu_start: Pro cpu up.[0m
+[0;32mI (490) cpu_start: Starting app cpu, entry point is 0x400814bc[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (507) cpu_start: Pro cpu start user code[0m
+[0;32mI (507) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (507) cpu_start: Application information:[0m
+[0;32mI (512) cpu_start: Project name:     datn[0m
+[0;32mI (516) cpu_start: App version:      d3d9c82-dirty[0m
+[0;32mI (522) cpu_start: Compile time:     Dec  6 2024 12:28:26[0m
+[0;32mI (528) cpu_start: ELF file SHA256:  66eec0d30c0cd8cd...[0m
+[0;32mI (534) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (539) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (544) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (549) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (554) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (561) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (567) heap_init: At 3FFB8C30 len 000273D0 (156 KiB): DRAM[0m
+[0;32mI (573) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (579) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (586) heap_init: At 40097BBC len 00008444 (33 KiB): IRAM[0m
+[0;32mI (594) spi_flash: detected chip: generic[0m
+[0;32mI (597) spi_flash: flash io: dio[0m
+[0;32mI (601) app_start: Starting scheduler on CPU0[0m
+[0;32mI (606) app_start: Starting scheduler on CPU1[0m
+[0;32mI (606) main_task: Started on CPU0[0m
+[0;32mI (616) main_task: Calling app_main()[0m
+[0;32mI (616) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (626) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (636) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (646) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (656) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (666) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (666) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (676) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (786) wifi:wifi driver task: 3ffc1a4c, prio:23, stack:6656, core=0[0m
+[0;32mI (796) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (796) wifi:wifi certification version: v7.0[0m
+[0;32mI (796) wifi:config NVS flash: enabled[0m
+[0;32mI (796) wifi:config nano formating: disabled[0m
+[0;32mI (796) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (806) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (806) wifi:Init management short buffer num: 32[0m
+[0;32mI (816) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (816) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (826) wifi:Init static rx buffer num: 10[0m
+[0;32mI (826) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (826) wifi_init: rx ba win: 6[0m
+[0;32mI (836) wifi_init: tcpip mbox: 32[0m
+[0;32mI (836) wifi_init: udp mbox: 6[0m
+[0;32mI (846) wifi_init: tcp mbox: 6[0m
+[0;32mI (846) wifi_init: tcp tx win: 5760[0m
+[0;32mI (846) wifi_init: tcp rx win: 5760[0m
+[0;32mI (856) wifi_init: tcp mss: 1440[0m
+[0;32mI (856) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (866) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (866) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (956) wifi:mode : sta (cc:7b:5c:28:c2:a8)[0m
+[0;32mI (956) wifi:enable tsf[0m
+[0;33mW (1956) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (1956) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;32mI (1966) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1966) wifi:state: init -> auth (b0)[0m
+[0;31mE (1966) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1976) transport_base: Failed to open a new connection: 32769[0m
+[0;32mI (1976) wifi:[0;31mE (1976) mqtt_client: Error transport connect[0m[0m
+state: auth -> assoc (0)
+[0;32mI (2016) wifi:state: assoc -> run (10)[0m
+[0;32mI (2116) wifi:connected with BaPhuQuy, aid = 2, channel 1, BW20, bssid = e0:b6:68:22:70:2b[0m
+[0;32mI (2116) wifi:security: WPA2-PSK, phy: bgn, rssi: -55[0m
+[0;32mI (2126) wifi:pm start, type: 1[0m
+
+[0;32mI (2126) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2216) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;31mE (2956) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2956) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2956) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (4196) wifi:<ba-add>idx:0 (ifx:0, e0:b6:68:22:70:2b), tid:6, ssn:3, winSize:64[0m
+[0;32mI (5136) esp_netif_handlers: sta ip: 192.168.2.17, mask: 255.255.255.0, gw: 192.168.2.253[0m
+[0;32mI (7996) wifi:<ba-add>idx:1 (ifx:0, e0:b6:68:22:70:2b), tid:0, ssn:1, winSize:64[0m
+[0;33mW (13006) HTTP_CLIENT: Connection timed out before data was ready![0m
+Connected to MQTT Broker
+[0;33mW (23026) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;32mI (28046) HTTP_CLIENT: HTTP Response: [{"id":1,"full_name":"Trần Quốc Toàn","student_id":"2014785","position":"sinh viên","email":"toan.tran3112@hcmut.edu.vn","password":"311202","fingerprint":3,"pass_en":1,"fing_en":0,"allowed_days":"","start_time":"00:00:00","end_time":"00:00:00","created_at":"2024-11-28T13:20:09.000Z","updated_at":"2024-12-08T23:36:10.000Z"},{"id":2,"full_name":"Nguyễn Tiến Nhật","student_id":"2014846","position":"sinh viên","email":"nhat.nguyen@hcmut.edu.vn","password":"55555","fingerprint":6,"pass_en":0,"fing_en":0,"allowed_days":"","start_time":"00:00:00","end_time":"00:00:00","created_at":"2024-11-28T13:20:09.000Z","updated_at":"2024-12-08T23:54:16.000Z"},{"id":3,"full_name":"Trịnh Tự Minh","student_id":"2014113","position":"sinh viên","email":"tu.minh3@hcmut.edu.vn","password":"","fingerprint":0,"pass_en":1,"fing_en":0,"allowed_days":"","start_time":"00:00:00","end_time":"00:00:00","created_at":"2024-11-28T13:20:09.000Z","updated_at":"2024-12-01T21:02:24.000Z"},{"id":4,"full_name":"Trần Anh Tú","student_id":"2014742","position":"sinh viên","email":"tu.anh@hcmut.edu.vn","password":"","fingerprint":0,"pass_en":1,"fing_en":0,"allowed_days":"","start_time":"00:00:00","end_time":"00:00:00","created_at":"2024-11-28T13:20:09.000Z","updated_at":"2024-12-02T15:29:28.000Z"},{"id":5,"full_name":"Đặng Phước Cường","student_id":"2014664","position":"sinh viên","email":"dang.cuong@hcmut.edu.vn","password":"030802","fingerprint":0,"pass_en":1,"fing_en":0,"allowed_days":"","start_time":"00:00:00","end_time":"00:00:00","created_at":"2024-11-28T13:20:09.000Z","updated_at":"2024-12-01T20:50:15.000Z"},{"id":8,"full_name":"Nguyễn Văn Linh ","student_id":"2011540","position":"sinh viên","email":"linh.n@hcmut.edu.vn","password":"123","fingerprint":7,"pass_en":1,"fing_en":1,"allowed_days":"","start_time":"00:00:00","end_time":"00:00:00","created_at":"2024-12-10T06:44:59.000Z","updated_at":"2024-12-10T06:49:29.000Z"},{"id":11,"full_name":"Trần Văn B","student_id":"2014999","position":"sinh viên","email":"trmp@hcmut.edu.vn","password":"6666","fingerprint":4,"pass_en":0,"fing_en":0,"allowed_days":"","start_time":"00:00:00","end_time":"00:00:00","created_at":"2024-12-10T08:51:41.000Z","updated_at":"2024-12-19T14:49:40.000Z"}][0m
+[0;32mI (28246) HTTP_CLIENT: Stored student: [0m
+[0;32mI (28246) HTTP_CLIENT: Stored student: [0m
+[0;32mI (28246) HTTP_CLIENT: Stored student: [0m
+[0;32mI (28256) HTTP_CLIENT: Stored student: [0m
+[0;32mI (28256) HTTP_CLIENT: Stored student: [0m
+[0;32mI (28266) HTTP_CLIENT: Stored student: [0m
+[0;32mI (28266) HTTP_CLIENT: Stored student: [0m
+--NHẬP MÃ SỐ SINH VIÊN-- 
+7 
+* 
+[0;33mW (37116) main: SINH VIÊN KHÔNG TỒN TẠI[0m
+[0;33mW (37116) main: THỬ LẠI[0m
+[0;33mW (38296) HTTP_CLIENT: Connection timed out before data was ready![0m
+--NHẬP MÃ SỐ SINH VIÊN-- 
+2 
+0 
+1 
+[0;33mW (48316) HTTP_CLIENT: Connection timed out before data was ready![0m
+4 
+7 
+8 
+5 
+* 
+--THÔNG TIN SINH VIÊN-- 
+id: 1 
+name: Trần Quốc Toàn 
+mssv: 2014785 
+position: sinh viên 
+[0;33mW (58336) HTTP_CLIENT: Connection timed out before data was ready![0m
+--NHẬP MẬT KHẨU-- 
+[0;33mW (68376) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (78406) HTTP_CLIENT: Connection timed out before data was ready![0m
+3 
+1 
+1 
+2 
+0 
+2 
+* 
+[0;33mW (88446) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;32mI (88526) main: NHẬP MẬT KHẨU THÀNH CÔNG !![0m
+[0;33mW (98476) HTTP_CLIENT: Connection timed out before data was ready![0m
+--NHẬP MÃ SỐ SINH VIÊN-- 
+2 
+[0;33mW (108506) HTTP_CLIENT: Connection timed out before data was ready![0m
+0 
+1 
+4 
+7 
+8 
+5 
+* 
+--THÔNG TIN SINH VIÊN-- 
+id: 1 
+name: Trần Quốc Toàn 
+mssv: 2014785 
+position: sinh viên 
+[0;33mW (118546) HTTP_CLIENT: Connection timed out before data was ready![0m
+--NHẬP MẬT KHẨU-- 
+[0;33mW (128576) HTTP_CLIENT: Connection timed out before data was ready![0m
+3 
+7 
+7 
+7 
+* 
+[0;33mW (138366) main: MẬT KHẨU KHÔNG HỢP LỆ[0m
+--NHẬP MẬT KHẨU-- 
+[0;33mW (138596) HTTP_CLIENT: Connection timed out before data was ready![0m
+3 
+1 
+1 
+2 
+0 
+2 
+* 
+[0;32mI (148596) main: NHẬP MẬT KHẨU THÀNH CÔNG !![0m
+[0;33mW (148656) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (158676) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (168696) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (178716) HTTP_CLIENT: Connection timed out before data was ready![0m
+����������������������������������������������������������������[0;33mW (188736) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (198756) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (208786) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (218806) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (228836) HTTP_CLIENT: Connection timed out before data was ready![0m
+����������������������������������������������������������������[0;33mW (238886) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (248906) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (258936) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (268966) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (279116) HTTP_CLIENT: Connection timed out before data was ready![0m
+--NHẬP MÃ SỐ SINH VIÊN-- 
+[0;33mW (289146) HTTP_CLIENT: Connection timed out before data was ready![0m
+2 
+0 
+1 
+4 
+8 
+* 
+[0;33mW (298066) main: SINH VIÊN KHÔNG TỒN TẠI[0m
+[0;33mW (298066) main: THỬ LẠI[0m
+[0;33mW (299186) HTTP_CLIENT: Connection timed out before data was ready![0m
+--NHẬP MÃ SỐ SINH VIÊN-- 
+[0;33mW (309216) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (319246) HTTP_CLIENT: Connection timed out before data was ready![0m
+2 
+1 
+* 
+[0;33mW (326596) main: SINH VIÊN KHÔNG TỒN TẠI[0m
+[0;33mW (326596) main: THỬ LẠI[0m
+[0;33mW (329316) HTTP_CLIENT: Connection timed out before data was ready![0m
+--NHẬP MÃ SỐ SINH VIÊN-- 
+[0;33mW (339336) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (349376) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (359396) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (369436) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (379476) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (389526) HTTP_CLIENT: Connection timed out before data was ready![0m
+2 
+0 
+1 
+4 
+7 
+8 
+5 
+* 
+--THÔNG TIN SINH VIÊN-- 
+id: 1 
+name: Trần Quốc Toàn 
+mssv: 2014785 
+position: sinh viên 
+[0;33mW (399546) HTTP_CLIENT: Connection timed out before data was ready![0m
+--NHẬP MẬT KHẨU-- 
+[0;33mW (409566) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (419596) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (429626) HTTP_CLIENT: Connection timed out before data was ready![0m
+8 
+8 
+* 
+[0;33mW (439206) main: MẬT KHẨU KHÔNG HỢP LỆ[0m
+--NHẬP MẬT KHẨU-- 
+[0;33mW (439646) HTTP_CLIENT: Connection timed out before data was ready![0m
+9 
+9 
+* 
+[0;33mW (444036) main: MẬT KHẨU KHÔNG HỢP LỆ[0m
+--NHẬP MẬT KHẨU-- 
+3 
+1 
+1 
+2 
+0 
+2 
+[0;33mW (449676) HTTP_CLIENT: Connection timed out before data was ready![0m
+* 
+[0;32mI (452466) main: NHẬP MẬT KHẨU THÀNH CÔNG !![0m
+[0;33mW (459696) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (469716) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (479736) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (489766) HTTP_CLIENT: Connection timed out before data was ready![0m
+����������������������������������������������������������������;33mW (499786) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (509816) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (519846) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (529866) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (539886) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (549906) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (559926) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (569946) HTTP_CLIENT: Connection timed out before data was ready![0m
+����������������������������������������������������������������[0;33mW (579976) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (589996) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (600016) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (610036) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (620056) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (630076) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (640096) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (650116) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (660146) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (670176) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (680196) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (690216) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (700256) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (710286) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (720316) HTTP_CLIENT: Connection timed out before data was ready![0m
+����������������������������������������������������������������0;33mW (730336) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (740366) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (750406) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (760426) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (770446) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (780466) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (790496) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (800516) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (810536) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (820556) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (830576) HTTP_CLIENT: Connection timed out before data was ready![0m
+����������������������������������������������������������������;33mW (840596) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (850616) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (860646) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (870666) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (880686) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (890716) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (900736) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (910756) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (920776) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (930796) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (940826) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (950856) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (960876) HTTP_CLIENT: Connection timed out before data was ready![0m

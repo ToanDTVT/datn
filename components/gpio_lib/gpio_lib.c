@@ -20,6 +20,15 @@ void gpio_init(){
     io_conf_col_keypad.pull_down_en = 1;                                                                  // kéo xuống
     io_conf_col_keypad.pull_up_en = 0;                                                                    // Không kéo lên
     gpio_config(&io_conf_col_keypad);
+
+    // /*Config GPIO for RingRing*/
+    // gpio_config_t ring_button;
+    // ring_button.intr_type = GPIO_INTR_DISABLE;
+    // ring_button.mode = GPIO_MODE_INPUT;
+    // ring_button.pin_bit_mask = (1ULL << GPIO_NUM_19);
+    // ring_button.pull_down_en = 1;
+    // ring_button.pull_up_en = 0;
+    // gpio_config(&ring_button);
 }
 
 

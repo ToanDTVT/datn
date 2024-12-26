@@ -38,6 +38,7 @@ D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/cmock/libcmock.a
 D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/console/libconsole.a
 D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/http_parser/libhttp_parser.a
 D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/esp-tls/libesp-tls.a
+D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/esp32-camera/libesp32-camera.a
 D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/esp_adc/libesp_adc.a
 D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/esp_eth/libesp_eth.a
 D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/esp_gdbstub/libesp_gdbstub.a
@@ -66,4 +67,5 @@ D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/uart_lib/libuart_lib.a
 D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/wifi_config/libwifi_config.a
 D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/http_method/libhttp_method.a
 D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/mqtt_method/libmqtt_method.a
+D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/i2c_lib/libi2c_lib.a
 D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/main/libmain.a

@@ -264,6 +264,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/esp32-camera/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/esp_adc/cmake_install.cmake")
 endif()
 
@@ -435,6 +440,11 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
   include("D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/mqtt_method/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/i2c_lib/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

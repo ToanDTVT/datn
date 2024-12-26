@@ -431,6 +431,13 @@ D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/esp-tls/CMakeFiles/list_
 D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/esp-tls/CMakeFiles/install.dir
 D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/esp-tls/CMakeFiles/install/local.dir
 D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/esp-tls/CMakeFiles/install/strip.dir
+D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/esp32-camera/CMakeFiles/__idf_esp32-camera.dir
+D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/esp32-camera/CMakeFiles/edit_cache.dir
+D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/esp32-camera/CMakeFiles/rebuild_cache.dir
+D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/esp32-camera/CMakeFiles/list_install_components.dir
+D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/esp32-camera/CMakeFiles/install.dir
+D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/esp32-camera/CMakeFiles/install/local.dir
+D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/esp32-camera/CMakeFiles/install/strip.dir
 D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir
 D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/esp_adc/CMakeFiles/edit_cache.dir
 D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/esp_adc/CMakeFiles/rebuild_cache.dir
@@ -669,6 +676,13 @@ D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/mqtt_method/CMakeFiles/l
 D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/mqtt_method/CMakeFiles/install.dir
 D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/mqtt_method/CMakeFiles/install/local.dir
 D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/mqtt_method/CMakeFiles/install/strip.dir
+D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/i2c_lib/CMakeFiles/__idf_i2c_lib.dir
+D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/i2c_lib/CMakeFiles/edit_cache.dir
+D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/i2c_lib/CMakeFiles/rebuild_cache.dir
+D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/i2c_lib/CMakeFiles/list_install_components.dir
+D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/i2c_lib/CMakeFiles/install.dir
+D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/i2c_lib/CMakeFiles/install/local.dir
+D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/i2c_lib/CMakeFiles/install/strip.dir
 D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/main/CMakeFiles/__idf_main.dir
 D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/main/CMakeFiles/edit_cache.dir
 D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/esp-idf/main/CMakeFiles/rebuild_cache.dir

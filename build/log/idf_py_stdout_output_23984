@@ -1,0 +1,112 @@
+[1/12] Building C object esp-idf/wifi_config/CMakeFiles/__idf_wifi_config.dir/wifi_config.c.obj
+D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c: In function 'initialize_sntp':
+D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:55:5: warning: 'sntp_setoperatingmode' is deprecated: use esp_sntp_setoperatingmode() instead [-Wdeprecated-declarations]
+   55 |     sntp_setoperatingmode(SNTP_OPMODE_POLL);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+In file included from D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/gpio_lib/include/gpio_lib.h:22,
+                 from D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/include/wifi_config.h:5,
+                 from D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:1:
+D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/lwip/include/apps/esp_sntp.h:249:6: note: declared here
+  249 | void sntp_setoperatingmode(u8_t operating_mode)
+      |      ^~~~~~~~~~~~~~~~~~~~~
+D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:56:5: warning: 'sntp_setservername' is deprecated: use esp_sntp_setservername() instead [-Wdeprecated-declarations]
+   56 |     sntp_setservername(0, "pool.ntp.org");
+      |     ^~~~~~~~~~~~~~~~~~
+D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/lwip/include/apps/esp_sntp.h:263:6: note: declared here
+  263 | void sntp_setservername(u8_t idx, const char *server)
+      |      ^~~~~~~~~~~~~~~~~~
+D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:57:5: warning: 'sntp_init' is deprecated: use esp_sntp_init() instead [-Wdeprecated-declarations]
+   57 |     sntp_init();
+      |     ^~~~~~~~~
+D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/lwip/include/apps/esp_sntp.h:269:6: note: declared here
+  269 | void sntp_init(void)
+      |      ^~~~~~~~~
+[2/12] Building C object esp-idf/http_method/CMakeFiles/__idf_http_method.dir/http_method.c.obj
+[3/12] Linking C static library esp-idf\wifi_config\libwifi_config.a
+[4/12] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D "D:\ESP\ESP_v5.1.5\ESP project v5.1.5\datn\build\bootloader\esp-idf\esptool_py" && D:\ESP\ESP_v5.1.5\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[5/12] Linking C static library esp-idf\http_method\libhttp_method.a
+[6/12] No install step for 'bootloader'
+[7/12] Completed 'bootloader'
+[8/12] Generating ld/sections.ld
+[9/12] Linking CXX executable datn.elf
+[10/12] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 27 ELF sections
+Successfully created esp32 image.
+Generated D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/datn.bin
+[11/12] C:\WINDOWS\system32\cmd.exe /C "cd /D "D:\ESP\ESP_v5.1.5\ESP project v5.1.5\datn\build\esp-idf\esptool_py" && D:\ESP\ESP_v5.1.5\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/partition_table/partition-table.bin" "D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build/datn.bin""
+datn.bin binary size 0xea850 bytes. Smallest app partition is 0x100000 bytes. 0x157b0 bytes (8%) free.
+[11/12] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\ESP\ESP_v5.1.5\Espressif\frameworks\esp-idf-v5.1.5\components\esptool_py && D:\ESP\ESP_v5.1.5\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5 -D SERIAL_TOOL=D:/ESP/ESP_v5.1.5/Espressif/python_env/idf5.1_py3.11_env/Scripts/python.exe;;D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/build" -P D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM5 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 datn.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM5
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: cc:7b:5c:28:c2:a8
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000fafff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26720 bytes to 16733...
+Writing at 0x00001000... (50 %)
+Writing at 0x000076a1... (100 %)
+Wrote 26720 bytes (16733 compressed) at 0x00001000 in 0.8 seconds (effective 283.2 kbit/s)...
+Hash of data verified.
+Compressed 960592 bytes to 617597...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001c6d5... (5 %)
+Writing at 0x00027241... (7 %)
+Writing at 0x0002bf6b... (10 %)
+Writing at 0x00034728... (13 %)
+Writing at 0x0003e5e4... (15 %)
+Writing at 0x000444c6... (18 %)
+Writing at 0x00049d5b... (21 %)
+Writing at 0x0004f9f3... (23 %)
+Writing at 0x00055472... (26 %)
+Writing at 0x0005a9c5... (28 %)
+Writing at 0x00060363... (31 %)
+Writing at 0x00065a9d... (34 %)
+Writing at 0x0006b3f8... (36 %)
+Writing at 0x0007170c... (39 %)
+Writing at 0x000774f0... (42 %)
+Writing at 0x0007cc0b... (44 %)
+Writing at 0x0008283b... (47 %)
+Writing at 0x00088b52... (50 %)
+Writing at 0x0008e748... (52 %)
+Writing at 0x00093e56... (55 %)
+Writing at 0x00098fb7... (57 %)
+Writing at 0x0009e3b8... (60 %)
+Writing at 0x000a3ab6... (63 %)
+Writing at 0x000a9339... (65 %)
+Writing at 0x000ae5fb... (68 %)
+Writing at 0x000b3e6d... (71 %)
+Writing at 0x000b9ab7... (73 %)
+Writing at 0x000bf012... (76 %)
+Writing at 0x000c4bdd... (78 %)
+Writing at 0x000ca6a1... (81 %)
+Writing at 0x000cfcaf... (84 %)
+Writing at 0x000d958d... (86 %)
+Writing at 0x000e03cc... (89 %)
+Writing at 0x000e5e67... (92 %)
+Writing at 0x000ebaf2... (94 %)
+Writing at 0x000f15c3... (97 %)
+Writing at 0x000f6b08... (100 %)
+Wrote 960592 bytes (617597 compressed) at 0x00010000 in 15.1 seconds (effective 510.1 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 518.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

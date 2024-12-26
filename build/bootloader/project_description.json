@@ -447,6 +447,18 @@
             "managed_priv_reqs": [],
             "include_dirs": [ ".", "esp-tls-crypto" ]
         },
+        "esp32-camera": {
+            "alias": "idf::esp32-camera",
+            "target": "___idf_esp32-camera",
+            "prefix": "idf",
+            "dir": "D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp32-camera",
+            "lib": "__idf_esp32-camera",
+            "reqs": [ "driver" ],
+            "priv_reqs": [ "freertos", "nvs_flash", "esp_timer" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "include_dirs": [ "driver/include", "conversions/include" ]
+        },
         "esp_adc": {
             "alias": "idf::esp_adc",
             "target": "___idf_esp_adc",

@@ -3,6 +3,7 @@ source "D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/bt/Kcon
 source "D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/driver/Kconfig"
 source "D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/efuse/Kconfig"
 source "D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp-tls/Kconfig"
+source "D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp32-camera/Kconfig"
 source "D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_adc/Kconfig"
 source "D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_coex/Kconfig"
 source "D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_common/Kconfig"
