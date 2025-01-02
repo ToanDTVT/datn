@@ -8,7 +8,7 @@
 
 // #define MAX_USERS 10
 // #define SIZE_OF_PASSWORD 5
-#define MAX_STUDENTS 10
+#define MAX_STUDENTS 20
 
 // typedef struct {
 // 	uint8_t en;

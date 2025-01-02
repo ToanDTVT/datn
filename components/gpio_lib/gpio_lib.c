@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "gpio_lib.h"
 
+// static const char *TAG = "GPIO";
 
 void gpio_init(){
 
@@ -8,7 +9,7 @@ void gpio_init(){
     gpio_config_t io_conf_row_keypad;
     io_conf_row_keypad.intr_type = GPIO_INTR_DISABLE;                                                     // Không có ngắt
     io_conf_row_keypad.mode = GPIO_MODE_OUTPUT;                                                           // Chế độ đầu ra
-    io_conf_row_keypad.pin_bit_mask = (1ULL << ROW_1)|(1ULL << ROW_2)|(1ULL << ROW_3)|(1ULL << ROW_4)|(1ULL << RELAY);    // Chọn chân GPIO
+    io_conf_row_keypad.pin_bit_mask = (1ULL << ROW_1)|(1ULL << ROW_2)|(1ULL << ROW_3)|(1ULL << ROW_4)|(1ULL << RELAY)|(1ULL << DOORBELL);    // Chọn chân GPIO
     io_conf_row_keypad.pull_down_en = 1;                                                                  // kéo xuống
     io_conf_row_keypad.pull_up_en = 0;                                                                    // Không kéo lên
     gpio_config(&io_conf_row_keypad); 
@@ -16,7 +17,7 @@ void gpio_init(){
     gpio_config_t io_conf_col_keypad;
     io_conf_col_keypad.intr_type = GPIO_INTR_DISABLE;                                                     // Không có ngắt
     io_conf_col_keypad.mode = GPIO_MODE_INPUT;                                                            // Chế độ đầu vào 
-    io_conf_col_keypad.pin_bit_mask = (1ULL << COL_1)|(1ULL << COL_2)|(1ULL << COL_3);                    // Chọn chân GPIO
+    io_conf_col_keypad.pin_bit_mask = (1ULL << COL_1)|(1ULL << COL_2)|(1ULL << COL_3)|(1ULL << DOORBELL_BUTTON);                    // Chọn chân GPIO
     io_conf_col_keypad.pull_down_en = 1;                                                                  // kéo xuống
     io_conf_col_keypad.pull_up_en = 0;                                                                    // Không kéo lên
     gpio_config(&io_conf_col_keypad);
@@ -92,6 +93,9 @@ void keypad_init(){
     gpio_set_level(COL_1, 0);
     gpio_set_level(COL_2, 0);
     gpio_set_level(COL_3, 0);
+
+    gpio_set_level(DOORBELL_BUTTON, 0);
+    gpio_set_level(DOORBELL, 0);
 }
 
 
@@ -100,6 +104,10 @@ void open_door(void){
     vTaskDelay(5000 / portTICK_PERIOD_MS);
     gpio_set_level(RELAY, 0);
 }
+
+
+
+
 
 
 void func1(void)

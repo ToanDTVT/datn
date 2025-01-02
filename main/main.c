@@ -26,6 +26,30 @@ int student_x;
 // char enter_password[SIZE_OF_PASSWORD];
 // int number_fail = 0;
 
+
+// void gpio_task(void *pvParameters) {
+//     gpio_set_level(DOORBELL_BUTTON, 0);
+//     gpio_set_level(DOORBELL, 0);
+//     char press = 0;
+//     while(1) {
+//         press = keypad_get_char();
+//         if(gpio_get_level(DOORBELL_BUTTON) == 1) {
+//             gpio_set_level(DOORBELL, 1);
+//             vTaskDelay(1000 / portTICK_PERIOD_MS);
+//             gpio_set_level(DOORBELL, 0);
+//             vTaskDelay(500 / portTICK_PERIOD_MS);
+//             gpio_set_level(DOORBELL, 1);
+//             vTaskDelay(1000 / portTICK_PERIOD_MS);
+//             gpio_set_level(DOORBELL, 0);
+//         }
+//         if(press == '#'){
+//             currentstate = STATE_IDLE;
+//         }
+//     }
+// }
+
+
+
 static esp_err_t i2c_master_init(void)
 {
 
@@ -45,7 +69,7 @@ static esp_err_t i2c_master_init(void)
 
 void app_main(void)
 {
-
+    init_nvs();
     gpio_init();
     uart_init();
     i2c_master_init();
@@ -58,6 +82,8 @@ void app_main(void)
     create_http_task();
     mqtt_app_start();
     
+    load_students_from_flash(students, MAX_STUDENTS);
+
     verify_password_of_AS608();
 
     char press_keypad = 0;
@@ -66,10 +92,26 @@ void app_main(void)
 
         switch(currentstate) {
             case STATE_IDLE:
+                vTaskDelay(300/portTICK_PERIOD_MS);
+                press_keypad = 0;
                 // Đợi nút nhấn bất kì
-                lcd_clear();  
-                lcd_put_cur(1, 3); lcd_send_string("ACCESS CONTROL");
-                lcd_put_cur(2, 5); lcd_send_string("    SYSTEM");
+                if(is_wifi_connected() == true){
+                    lcd_clear();  
+                    lcd_put_cur(1, 3); lcd_send_string("ACCESS CONTROL");
+                    lcd_put_cur(2, 5); lcd_send_string("    SYSTEM");
+                }
+                if(is_wifi_connected() == false){
+                    lcd_clear();  
+                    //lcd_put_cur(0, 0); lcd_send_string("WIFI IS NOT CONNECTED!!");
+                    lcd_put_cur(1, 3); lcd_send_string("WIFI IS NOT");
+                    lcd_put_cur(2, 5); lcd_send_string("    CONNECTED!!");
+                    // ESP_ERROR_CHECK(esp_wifi_start());
+                    // vTaskDelay(pdMS_TO_TICKS(1000));
+                    // ESP_ERROR_CHECK(esp_wifi_connect());
+                }
+                // lcd_clear();  
+                // lcd_put_cur(1, 3); lcd_send_string("ACCESS CONTROL");
+                // lcd_put_cur(2, 5); lcd_send_string("    SYSTEM");
                 press_keypad = keypad_get_char();
                 if(press_keypad != 0) {
                     esp32_pub_for_esp32cam_sub_MSSV_ENTER();
@@ -91,6 +133,7 @@ void app_main(void)
                 lcd_put_cur(2, 3);
                 while(1) {
                     press_keypad = keypad_get_char();
+                    
                     if((press_keypad != 0) && (press_keypad != '*') && (press_keypad != '#')){
                         printf("%c \n", press_keypad);
                         MSSV[i] = press_keypad;
@@ -104,8 +147,10 @@ void app_main(void)
                         vTaskDelay(300/portTICK_PERIOD_MS);
                         break;
                     }
+                    if(press_keypad == '#') {currentstate = STATE_IDLE; press_keypad = 0; break;}
                     vTaskDelay(300/portTICK_PERIOD_MS);
                 }
+                if(currentstate == STATE_IDLE) {break;}
 
                 for(int x = 0; x <= MAX_STUDENTS; x++){
                     if((strcmp(MSSV, students[x].student_id) == 0) && (students[x].id != 0)) {
@@ -141,6 +186,7 @@ void app_main(void)
             break;
 
             case STATE_CHECK_INFOR:
+                if(press_keypad == '#') {currentstate = STATE_IDLE; press_keypad = 0; break;}
                 // fetch_access_time(students[student_x].student_id);
                 // if (is_access_allowed(students[student_x].allowed_days, students[student_x].start_time, students[student_x].end_time)) {
                     if((students[student_x].pass_en == 1) && (students[student_x].fing_en == 1)) {
@@ -173,6 +219,7 @@ void app_main(void)
                 lcd_put_cur(2, 3);
                 while(1) {
                     press_keypad = keypad_get_char();
+    
                     if((press_keypad != 0) && (press_keypad != '*') && (press_keypad != '#')){
                         printf("%c \n", press_keypad);
                         enter_password[y] = press_keypad;
@@ -185,8 +232,10 @@ void app_main(void)
                         vTaskDelay(300/portTICK_PERIOD_MS);
                         break;
                     }
+                    if(press_keypad == '#') {currentstate = STATE_IDLE; press_keypad = 0; break;}
                     vTaskDelay(300/portTICK_PERIOD_MS);
                 }
+                if(currentstate == STATE_IDLE) {break;}
 
                 if(strcmp(enter_password, students[student_x].password) == 0) {
                     ESP_LOGI(TAG, "NHẬP MẬT KHẨU THÀNH CÔNG !!");
@@ -212,8 +261,12 @@ void app_main(void)
                 lcd_put_cur(1, 2); lcd_send_string("ENTER FINGERPRINT: ");
                 lcd_put_cur(2, 3);
                 do {
+                    press_keypad = keypad_get_char();
+                    if(press_keypad == '#') {currentstate = STATE_IDLE; press_keypad = 0; break;}
                     status = PS_GetImage();
                 } while (status != 0x00); // Chờ lấy ảnh thành công
+                if(currentstate == STATE_IDLE) {break;}
+
                 status = PS_GenChar(1); // Tạo đặc trưng ở buffer 1
                 if (status != 0x00) {
                 //    ESP_LOGE(TAG, "PS_GENCHAR_1: Failed to generate character from image. Error: %d\n", status);

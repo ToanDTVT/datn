@@ -1,0 +1,263 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400814bc: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400d9579: task_wifi_init at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ff: _esp_error_check_failed at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x40081b32: panic_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/panic.c:466
+0x4008a809: esp_system_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/esp_system_chip.c:84
+0x400918d2: abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/newlib/abort.c:38
+0x4008a7ff: _esp_error_check_failed at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/esp_err.c:50
+0x400d9579: task_wifi_init at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:82 (discriminator 1)
+0x400d82d9: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:56
+0x40177123: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008d051: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400814bc: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400d9579: task_wifi_init at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ff: _esp_error_check_failed at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x40081b32: panic_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/panic.c:466
+0x4008a809: esp_system_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/esp_system_chip.c:84
+0x400918d2: abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/newlib/abort.c:38
+0x4008a7ff: _esp_error_check_failed at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/esp_err.c:50
+0x400d9579: task_wifi_init at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:82 (discriminator 1)
+0x400d82d9: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:56
+0x40177123: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008d051: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400814bc: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400d9579: task_wifi_init at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ff: _esp_error_check_failed at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x40081b32: panic_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/panic.c:466
+0x4008a809: esp_system_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/esp_system_chip.c:84
+0x400918d2: abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/newlib/abort.c:38
+0x4008a7ff: _esp_error_check_failed at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/esp_err.c:50
+0x400d9579: task_wifi_init at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:82 (discriminator 1)
+0x400d82d9: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:56
+0x40177123: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008d051: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400814bc: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400814bc: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400d9579: task_wifi_init at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ff: _esp_error_check_failed at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x40081b32: panic_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/panic.c:466
+0x4008a809: esp_system_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/esp_system_chip.c:84
+0x400918d2: abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/newlib/abort.c:38
+0x4008a7ff: _esp_error_check_failed at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/esp_err.c:50
+0x400d9579: task_wifi_init at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:82 (discriminator 1)
+0x400d82d9: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:56
+0x40177123: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008d051: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400814bc: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400d9579: task_wifi_init at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ff: _esp_error_check_failed at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x40081b32: panic_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/panic.c:466
+0x4008a809: esp_system_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/esp_system_chip.c:84
+0x400918d2: abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/newlib/abort.c:38
+0x4008a7ff: _esp_error_check_failed at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/esp_err.c:50
+0x400d9579: task_wifi_init at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:82 (discriminator 1)
+0x400d82d9: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:56
+0x40177123: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008d051: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400814bc: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400d9579: task_wifi_init at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ff: _esp_error_check_failed at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x40081b32: panic_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/panic.c:466
+0x4008a809: esp_system_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/esp_system_chip.c:84
+0x400918d2: abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/newlib/abort.c:38
+0x4008a7ff: _esp_error_check_failed at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/esp_err.c:50
+0x400d9579: task_wifi_init at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:82 (discriminator 1)
+0x400d82d9: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:56
+0x40177123: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008d051: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400814bc: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400d9579: task_wifi_init at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ff: _esp_error_check_failed at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x40081b32: panic_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/panic.c:466
+0x4008a809: esp_system_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/esp_system_chip.c:84
+0x400918d2: abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/newlib/abort.c:38
+0x4008a7ff: _esp_error_check_failed at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/esp_err.c:50
+0x400d9579: task_wifi_init at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:82 (discriminator 1)
+0x400d82d9: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:56
+0x40177123: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008d051: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400814bc: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400d9579: task_wifi_init at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ff: _esp_error_check_failed at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x40081b32: panic_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/panic.c:466
+0x4008a809: esp_system_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/esp_system_chip.c:84
+0x400918d2: abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/newlib/abort.c:38
+0x4008a7ff: _esp_error_check_failed at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/esp_err.c:50
+0x400d9579: task_wifi_init at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:82 (discriminator 1)
+0x400d82d9: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:56
+0x40177123: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008d051: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400814bc: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400814bc: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400d9579: task_wifi_init at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ff: _esp_error_check_failed at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x40081b32: panic_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/panic.c:466
+0x4008a809: esp_system_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/esp_system_chip.c:84
+0x400918d2: abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/newlib/abort.c:38
+0x4008a7ff: _esp_error_check_failed at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/esp_err.c:50
+0x400d9579: task_wifi_init at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:82 (discriminator 1)
+0x400d82d9: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:56
+0x40177123: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008d051: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400814bc: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400d9579: task_wifi_init at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ff: _esp_error_check_failed at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x40081b32: panic_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/panic.c:466
+0x4008a809: esp_system_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/esp_system_chip.c:84
+0x400918d2: abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/newlib/abort.c:38
+0x4008a7ff: _esp_error_check_failed at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/esp_err.c:50
+0x400d9579: task_wifi_init at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:82 (discriminator 1)
+0x400d82d9: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:56
+0x40177123: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008d051: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400814bc: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400d9579: task_wifi_init at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ff: _esp_error_check_failed at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x40081b32: panic_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/panic.c:466
+0x4008a809: esp_system_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/esp_system_chip.c:84
+0x400918d2: abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/newlib/abort.c:38
+0x4008a7ff: _esp_error_check_failed at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/esp_err.c:50
+0x400d9579: task_wifi_init at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:82 (discriminator 1)
+0x400d82d9: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:56
+0x40177123: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008d051: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400814bc: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400d9579: task_wifi_init at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ff: _esp_error_check_failed at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x40081b32: panic_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/panic.c:466
+0x4008a809: esp_system_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/esp_system_chip.c:84
+0x400918d2: abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/newlib/abort.c:38
+0x4008a7ff: _esp_error_check_failed at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/esp_err.c:50
+0x400d9579: task_wifi_init at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:82 (discriminator 1)
+0x400d82d9: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:56
+0x40177123: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008d051: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400814bc: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400814bc: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400d9579: task_wifi_init at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ff: _esp_error_check_failed at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x40081b32: panic_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/panic.c:466
+0x4008a809: esp_system_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/esp_system_chip.c:84
+0x400918d2: abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/newlib/abort.c:38
+0x4008a7ff: _esp_error_check_failed at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/esp_err.c:50
+0x400d9579: task_wifi_init at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:82 (discriminator 1)
+0x400d82d9: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:56
+0x40177123: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008d051: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400814bc: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400814bc: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400d9579: task_wifi_init at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ff: _esp_error_check_failed at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x40081b32: panic_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/panic.c:466
+0x4008a809: esp_system_abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/esp_system_chip.c:84
+0x400918d2: abort at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/newlib/abort.c:38
+0x4008a7ff: _esp_error_check_failed at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/esp_err.c:50
+0x400d9579: task_wifi_init at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/components/wifi_config/wifi_config.c:82 (discriminator 1)
+0x400d82d9: app_main at D:/ESP/ESP_v5.1.5/ESP project v5.1.5/datn/main/main.c:56
+0x40177123: main_task at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/app_startup.c:208 (discriminator 13)
+0x4008d051: vPortTaskWrapper at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400814bc: call_start_cpu1 at D:/ESP/ESP_v5.1.5/Espressif/frameworks/esp-idf-v5.1.5/components/esp_system/port/cpu_start.c:159
+[0m
+[0m

@@ -1,6 +1,29 @@
 #include "wifi_config.h"
 
 
+static const char *TAG = "WIFI";
+
+
+// Định nghĩa biến để kiểm tra trạng thái kết nối
+static bool wifi_connected = false;
+
+// Hàm xử lý sự kiện Wi-Fi
+static void wifi_event_handler(void *arg, esp_event_base_t event_base,
+                               int32_t event_id, void *event_data) {
+    if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_START) {
+        ESP_LOGI(TAG, "Wi-Fi started, attempting to connect...");
+        esp_wifi_connect();
+    } else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED) {
+        wifi_connected = false;
+        ESP_LOGW(TAG, "Wi-Fi disconnected, retrying...");
+        esp_wifi_connect(); // Tự động kết nối lại
+    } else if (event_base == IP_EVENT && event_id == IP_EVENT_STA_GOT_IP) {
+        wifi_connected = true;
+        ip_event_got_ip_t *event = (ip_event_got_ip_t *)event_data;
+        ESP_LOGI(TAG, "Got IP: " IPSTR, IP2STR(&event->ip_info.ip));
+    }
+}
+
 
 
 
@@ -11,6 +34,8 @@ bool is_wifi_connected() {
     }
     return false;
 }
+
+
 
 
 
@@ -31,19 +56,30 @@ void task_wifi_init(){
     ESP_ERROR_CHECK(ret);
     ESP_ERROR_CHECK(esp_wifi_init(&cfg));
 
+    ESP_ERROR_CHECK(esp_event_handler_instance_register(WIFI_EVENT,
+                                                        ESP_EVENT_ANY_ID,
+                                                        &wifi_event_handler,
+                                                        NULL,
+                                                        NULL));
+    ESP_ERROR_CHECK(esp_event_handler_instance_register(IP_EVENT,
+                                                        IP_EVENT_STA_GOT_IP,
+                                                        &wifi_event_handler,
+                                                        NULL,
+                                                        NULL));
+
     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
 
     wifi_config_t sta_cfg = {
         .sta = {
-            .ssid = "BaPhuQuy",                               //BaPhuQuy           TP-LINK_4550AA      Ds Place guest          QT3112
-            .password = "BaTrpTNMT62",                        //BaTrpTNMT62            61924666        88888888      12345678
+            .ssid = "QT3112",                               //BaPhuQuy           TP-LINK_4550AA      Ds Place guest          QT3112
+            .password = "12345678",                        //BaTrpTNMT62            61924666        88888888      12345678
             .threshold.authmode = WIFI_AUTH_WPA2_PSK,
         }
     };
     ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &sta_cfg));
     ESP_ERROR_CHECK(esp_wifi_start());
-    vTaskDelay(pdMS_TO_TICKS(1000));
-    ESP_ERROR_CHECK(esp_wifi_connect());
+    // vTaskDelay(pdMS_TO_TICKS(1000));
+    // ESP_ERROR_CHECK(esp_wifi_connect());
 
 }
 

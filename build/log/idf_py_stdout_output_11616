@@ -1,0 +1,1168 @@
+Z�revision: v3.1[0m�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Nov 21 2024 21:08:18[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28810h (165904) map[0m
+[0;32mI (167) esp_image: segment 1: paddr=00038838 vaddr=3ffb0000 size=03c98h ( 15512) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=0003c4d8 vaddr=40080000 size=03b40h ( 15168) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a9164h (692580) map[0m
+[0;32mI (431) esp_image: segment 4: paddr=000e918c vaddr=40083b40 size=1407ch ( 82044) load[0m
+[0;32mI (477) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (477) boot: Disabling RNG early entropy source...[0m
+[0;32mI (489) cpu_start: Multicore app[0m
+[0;32mI (490) cpu_start: Pro cpu up.[0m
+[0;32mI (490) cpu_start: Starting app cpu, entry point is 0x400814bc[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (507) cpu_start: Pro cpu start user code[0m
+[0;32mI (507) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (507) cpu_start: Application information:[0m
+[0;32mI (512) cpu_start: Project name:     datn[0m
+[0;32mI (516) cpu_start: App version:      c87df0a-dirty[0m
+[0;32mI (522) cpu_start: Compile time:     Dec 27 2024 14:27:03[0m
+[0;32mI (528) cpu_start: ELF file SHA256:  b23832f69cdde46e...[0m
+[0;32mI (534) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (539) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (544) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (549) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (554) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (561) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (567) heap_init: At 3FFB8C30 len 000273D0 (156 KiB): DRAM[0m
+[0;32mI (573) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (579) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (586) heap_init: At 40097BBC len 00008444 (33 KiB): IRAM[0m
+[0;32mI (594) spi_flash: detected chip: generic[0m
+[0;32mI (597) spi_flash: flash io: dio[0m
+[0;32mI (601) app_start: Starting scheduler on CPU0[0m
+[0;32mI (606) app_start: Starting scheduler on CPU1[0m
+[0;32mI (606) main_task: Started on CPU0[0m
+[0;32mI (616) main_task: Calling app_main()[0m
+[0;32mI (616) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (626) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (636) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (646) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (656) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (666) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (666) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (676) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (796) wifi:wifi driver task: 3ffc19c8, prio:23, stack:6656, core=0[0m
+[0;32mI (806) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (806) wifi:wifi certification version: v7.0[0m
+[0;32mI (806) wifi:config NVS flash: enabled[0m
+[0;32mI (806) wifi:config nano formating: disabled[0m
+[0;32mI (806) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (816) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (816) wifi:Init management short buffer num: 32[0m
+[0;32mI (826) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (826) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (836) wifi:Init static rx buffer num: 10[0m
+[0;32mI (836) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (836) wifi_init: rx ba win: 6[0m
+[0;32mI (846) wifi_init: tcpip mbox: 32[0m
+[0;32mI (846) wifi_init: udp mbox: 6[0m
+[0;32mI (856) wifi_init: tcp mbox: 6[0m
+[0;32mI (856) wifi_init: tcp tx win: 5760[0m
+[0;32mI (856) wifi_init: tcp rx win: 5760[0m
+[0;32mI (866) wifi_init: tcp mss: 1440[0m
+[0;32mI (866) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (876) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (876) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (966) wifi:mode : sta (08:a6:f7:a1:ea:7c)[0m
+[0;32mI (966) wifi:enable tsf[0m
+[0;33mW (1966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (1966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (1966) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1976) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1976) mqtt_client: Error transport connect[0m
+[0;33mW (2966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (2966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (3966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (3966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (4966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (4966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (5966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (5966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (6966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (6966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (7966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (7966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (8966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (8966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (9966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (9966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (10966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (10966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (11966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (11966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (12966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (12966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (13966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (13966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (14966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (14966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (15966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (15966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (16966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (16966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (16986) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (16986) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (16986) mqtt_client: Error transport connect[0m
+[0;33mW (17966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (17966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (18966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (18966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (19966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (19966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (20966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (20966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (21966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (21966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (22966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (22966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (23966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (23966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (24966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (24966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (25966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (25966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (26966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (26966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (27966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (27966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (28966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (28966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (29966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (29966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (30966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (30966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (31966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (31966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (31996) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (31996) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (31996) mqtt_client: Error transport connect[0m
+[0;33mW (32966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (32966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (33966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (33966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (34966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (34966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (35966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (35966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (36966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (36966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (37966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (37966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (38966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (38966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (39966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (39966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (40966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (40966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (41966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (41966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (42966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (42966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (43966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (43966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (44966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (44966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (45966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (45966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (46966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (46966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (47006) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (47006) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (47006) mqtt_client: Error transport connect[0m
+[0;33mW (47966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (47966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (48966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (48966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (49966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (49966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (50966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (50966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (51966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (51966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (52966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (52966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (53966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (53966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (54966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (54966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (55966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (55966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (56966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (56966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (57966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (57966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (58966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (58966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (59966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (59966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (60966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (60966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (61966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (61966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (62016) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (62016) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (62016) mqtt_client: Error transport connect[0m
+[0;33mW (62966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (62966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (63966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (63966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (64966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (64966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (65966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (65966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (66966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (66966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (67966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (67966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (68966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (68966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (69966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (69966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (70966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (70966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (71966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (71966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (72966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (72966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (73966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (73966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (74966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (74966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (75966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (75966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (76966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (76966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (77026) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (77026) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (77026) mqtt_client: Error transport connect[0m
+[0;33mW (77966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (77966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (78966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (78966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (79966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (79966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (80966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (80966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (81966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (81966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (82966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (82966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (83966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (83966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (84966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (84966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (85966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (85966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (86966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (86966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (87966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (87966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (88966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (88966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (89966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (89966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (90966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (90966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (91966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (91966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (92036) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (92036) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (92036) mqtt_client: Error transport connect[0m
+[0;33mW (92966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (92966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (93966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (93966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (94966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (94966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (95966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (95966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (96966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (96966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (97966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (97966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (98966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (98966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (99966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (99966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (100966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (100966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (101966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (101966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (102966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (102966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (103966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (103966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (104966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (104966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (105966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (105966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (106966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (106966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (107046) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (107046) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (107046) mqtt_client: Error transport connect[0m
+[0;33mW (107966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (107966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (108966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (108966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (109966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (109966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (110966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (110966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (111966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (111966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (112966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (112966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (113966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (113966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (114966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (114966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (115966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (115966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (116966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (116966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (117966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (117966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (118966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (118966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (119966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (119966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (120966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (120966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (121966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (121966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (122056) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (122056) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (122056) mqtt_client: Error transport connect[0m
+[0;33mW (122966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (122966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (123966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (123966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (124966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (124966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (125966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (125966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (126966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (126966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (127966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (127966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (128966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (128966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (129966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (129966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (130966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (130966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (131966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (131966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (132966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (132966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (133966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (133966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (134966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (134966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (135966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (135966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (136966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (136966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (137066) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (137066) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (137066) mqtt_client: Error transport connect[0m
+[0;33mW (137966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (137966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (138966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (138966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (139966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (139966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (140966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (140966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (141966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (141966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (142966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (142966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (143966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (143966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (144966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (144966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (145966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (145966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (146966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (146966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (147966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (147966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (148966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (148966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (149966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (149966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (150966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (150966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (151966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (151966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (152076) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (152076) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (152076) mqtt_client: Error transport connect[0m
+[0;33mW (152966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (152966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (153966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (153966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (154966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (154966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (155966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (155966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (156966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (156966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (157966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (157966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (158966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (158966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (159966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (159966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (160966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (160966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (161966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (161966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (162966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (162966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (163966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (163966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (164966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (164966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (165966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (165966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (166966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (166966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (167086) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (167086) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (167086) mqtt_client: Error transport connect[0m
+[0;33mW (167966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (167966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (168966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (168966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (169966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (169966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (170966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (170966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (171966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (171966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (172966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (172966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (173966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (173966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (174966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (174966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (175966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (175966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (176966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (176966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (177966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (177966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (178966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (178966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (179966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (179966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (180966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (180966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (181966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (181966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (182096) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (182096) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (182096) mqtt_client: Error transport connect[0m
+[0;33mW (182966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (182966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (183966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (183966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (184966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (184966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (185966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (185966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (186966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (186966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (187966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (187966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (188966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (188966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (189966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (189966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (190966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (190966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (191966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (191966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (192966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (192966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (193966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (193966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (194966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (194966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (195966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (195966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (196966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (196966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (197106) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (197106) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (197106) mqtt_client: Error transport connect[0m
+[0;33mW (197966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (197966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (198966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (198966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (199966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (199966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (200966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (200966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (201966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (201966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (202966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (202966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (203966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (203966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (204966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (204966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (205966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (205966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (206966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (206966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (207966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (207966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (208966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (208966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (209966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (209966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (210966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (210966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (211966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (211966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (212116) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (212116) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (212116) mqtt_client: Error transport connect[0m
+[0;33mW (212966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (212966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (213966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (213966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (214966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (214966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (215966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (215966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (216966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (216966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (217966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (217966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (218966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (218966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (219966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (219966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (220966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (220966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (221966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (221966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (222966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (222966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (223966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (223966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (224966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (224966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (225966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (225966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (226966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (226966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (227126) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (227126) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (227126) mqtt_client: Error transport connect[0m
+[0;33mW (227966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (227966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (228966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (228966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (229966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (229966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (230966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (230966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (231966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (231966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (232966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (232966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (233966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (233966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (234966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (234966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (235966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (235966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (236966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (236966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (237966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (237966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (238966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (238966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (239966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (239966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (240966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (240966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (241966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (241966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (242136) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (242136) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (242136) mqtt_client: Error transport connect[0m
+[0;33mW (242966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (242966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (243966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (243966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (244966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (244966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (245966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (245966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (246966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (246966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (247966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (247966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (248966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (248966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (249966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (249966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (250966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (250966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (251966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (251966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (252966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (252966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (253966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (253966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (254966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (254966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (255966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (255966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (256966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (256966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (257146) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (257146) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (257146) mqtt_client: Error transport connect[0m
+[0;33mW (257966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (257966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (258966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (258966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (259966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (259966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (260966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (260966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (261966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (261966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (262966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (262966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (263966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (263966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (264966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (264966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (265966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (265966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (266966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (266966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (267966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (267966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (268966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (268966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (269966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (269966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (270966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (270966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (271966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (271966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (272156) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (272156) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (272156) mqtt_client: Error transport connect[0m
+[0;33mW (272966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (272966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (273966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (273966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (274966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (274966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (275966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (275966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (276966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (276966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (277966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (277966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (278966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (278966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (279966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (279966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (280966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (280966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (281966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (281966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (282966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (282966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (283966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (283966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (284966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (284966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (285966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (285966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (286966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (286966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (287166) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (287166) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (287166) mqtt_client: Error transport connect[0m
+[0;33mW (287966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (287966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (288966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (288966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (289966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (289966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (290966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (290966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (291966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (291966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (292966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (292966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (293966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (293966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (294966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (294966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (295966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (295966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (296966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (296966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (297966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (297966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (298966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (298966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (299966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (299966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (300966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (300966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (301966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (301966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (302176) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (302176) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (302176) mqtt_client: Error transport connect[0m
+[0;33mW (302966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (302966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (303966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (303966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (304966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (304966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (305966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (305966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (306966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (306966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (307966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (307966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (308966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (308966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (309966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (309966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (310966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (310966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (311966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (311966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (312966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (312966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (313966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (313966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (314966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (314966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (315966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (315966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (316966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (316966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (317186) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (317186) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (317186) mqtt_client: Error transport connect[0m
+[0;33mW (317966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (317966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (318966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (318966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (319966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (319966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (320966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (320966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (321966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (321966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (322966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (322966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (323966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (323966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (324966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (324966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (325966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (325966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (326966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (326966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (327966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (327966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (328966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (328966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (329966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (329966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (330966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (330966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (331966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (331966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (332196) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (332196) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (332196) mqtt_client: Error transport connect[0m
+[0;33mW (332966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (332966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (333966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (333966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (334966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (334966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (335966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (335966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (336966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (336966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (337966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (337966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (338966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (338966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (339966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (339966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (340966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (340966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (341966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (341966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (342966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (342966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (343966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (343966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (344966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (344966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (345966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (345966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (346966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (346966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (347206) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (347206) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (347206) mqtt_client: Error transport connect[0m
+[0;33mW (347966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (347966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (348966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (348966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (349966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (349966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (350966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (350966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (351966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (351966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (352966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (352966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (353966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (353966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (354966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (354966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (355966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (355966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (356966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (356966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (357966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (357966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (358966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (358966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (359966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (359966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (360966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (360966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (361966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (361966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (362216) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (362216) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (362216) mqtt_client: Error transport connect[0m
+[0;33mW (362966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (362966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (363966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (363966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (364966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (364966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (365966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (365966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (366966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (366966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (367966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (367966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (368966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (368966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (369966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (369966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (370966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (370966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (371966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (371966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (372966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (372966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (373966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (373966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (374966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (374966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (375966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (375966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (376966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (376966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (377226) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (377226) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (377226) mqtt_client: Error transport connect[0m
+[0;33mW (377966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (377966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (378966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (378966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (379966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (379966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (380966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (380966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (381966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (381966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (382966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (382966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (383966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (383966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (384966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (384966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (385966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (385966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (386966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (386966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (387966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (387966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (388966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (388966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (389966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (389966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (390966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (390966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (391966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (391966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (392236) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (392236) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (392236) mqtt_client: Error transport connect[0m
+[0;33mW (392966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (392966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (393966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (393966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (394966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (394966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (395966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (395966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (396966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (396966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (397966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (397966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (398966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (398966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (399966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (399966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (400966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (400966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (401966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (401966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (402966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (402966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (403966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (403966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (404966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (404966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (405966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (405966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (406966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (406966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (407246) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (407246) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (407246) mqtt_client: Error transport connect[0m
+[0;33mW (407966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (407966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (408966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (408966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (409966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (409966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (410966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (410966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (411966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (411966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (412966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (412966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (413966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (413966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (414966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (414966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (415966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (415966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (416966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (416966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (417966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (417966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (418966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (418966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (419966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (419966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (420966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (420966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (421966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (421966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (422256) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (422256) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (422256) mqtt_client: Error transport connect[0m
+[0;33mW (422966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (422966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (423966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (423966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (424966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (424966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (425966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (425966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (426966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (426966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (427966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (427966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (428966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (428966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (429966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (429966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (430966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (430966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (431966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (431966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (432966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (432966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (433966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (433966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (434966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (434966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (435966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (435966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (436966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (436966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (437266) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (437266) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (437266) mqtt_client: Error transport connect[0m
+[0;33mW (437966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (437966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (438966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (438966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (439966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (439966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (440966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (440966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (441966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (441966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (442966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (442966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (443966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (443966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (444966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (444966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (445966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (445966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (446966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (446966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (447966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (447966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (448966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (448966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (449966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (449966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (450966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (450966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (451966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (451966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (452276) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (452276) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (452276) mqtt_client: Error transport connect[0m
+[0;33mW (452966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (452966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (453966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (453966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (454966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (454966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (455966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (455966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (456966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (456966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (457966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (457966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (458966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (458966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (459966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (459966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (460966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (460966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (461966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (461966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (462966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (462966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (463966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (463966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (464966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (464966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (465966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (465966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (466966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (466966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (467286) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (467286) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (467286) mqtt_client: Error transport connect[0m
+[0;33mW (467966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (467966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (468966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (468966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (469966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (469966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (470966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (470966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (471966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (471966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (472966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (472966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (473966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (473966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (474966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (474966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (475966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (475966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (476966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (476966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (477966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (477966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (478966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (478966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (479966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (479966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (480966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (480966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (481966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (481966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (482296) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (482296) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (482296) mqtt_client: Error transport connect[0m
+[0;33mW (482966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (482966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (483966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (483966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (484966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (484966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (485966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (485966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (486966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (486966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (487966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (487966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (488966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (488966) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m

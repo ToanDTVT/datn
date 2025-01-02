@@ -3,6 +3,74 @@
 #define TAG "HTTP_CLIENT"
 
 
+void init_nvs() {
+    esp_err_t ret = nvs_flash_init();
+    if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
+        ESP_ERROR_CHECK(nvs_flash_erase());
+        ret = nvs_flash_init();
+    }
+    ESP_ERROR_CHECK(ret);
+}
+
+
+void save_students_to_flash(Student *students, size_t count) {
+    nvs_handle_t handle;
+    esp_err_t err;
+
+    // Mở không gian lưu trữ NVS
+    err = nvs_open("storage", NVS_READWRITE, &handle);
+    if (err != ESP_OK) {
+        printf("Error opening NVS handle!\n");
+        return;
+    }
+
+    // Lưu dữ liệu struct
+    size_t data_size = sizeof(Student) * count;
+    err = nvs_set_blob(handle, "students", students, data_size);
+    if (err != ESP_OK) {
+        printf("Failed to write data to NVS!\n");
+    } else {
+        printf("Data written successfully to NVS.\n");
+    }
+
+    // Ghi dữ liệu xuống flash
+    err = nvs_commit(handle);
+    if (err != ESP_OK) {
+        printf("Failed to commit data to flash!\n");
+    }
+
+    // Đóng NVS
+    nvs_close(handle);
+}
+
+
+
+void load_students_from_flash(Student *students, size_t count) {
+    nvs_handle_t handle;
+    esp_err_t err;
+
+    // Mở không gian lưu trữ NVS
+    err = nvs_open("storage", NVS_READONLY, &handle);
+    if (err != ESP_OK) {
+        printf("Error opening NVS handle!\n");
+        return;
+    }
+
+    // Đọc dữ liệu struct
+    size_t data_size = sizeof(Student) * count;
+    err = nvs_get_blob(handle, "students", students, &data_size);
+    if (err == ESP_OK) {
+        printf("Data loaded successfully from NVS.\n");
+    } else if (err == ESP_ERR_NVS_NOT_FOUND) {
+        printf("No data found in NVS.\n");
+    } else {
+        printf("Error reading data from NVS!\n");
+    }
+
+    // Đóng NVS
+    nvs_close(handle);
+}
+
 
 
 
@@ -51,9 +119,9 @@ void process_json_data(const char *json_data) {
         student_count++;
 
         // Lưu vào NVS
-        nvs_handle_t nvs_handle;
-        esp_err_t err = nvs_open("storage", NVS_READWRITE, &nvs_handle);
-        if (err == ESP_OK) {
+        // nvs_handle_t nvs_handle;
+        // esp_err_t err = nvs_open("storage", NVS_READWRITE, &nvs_handle);
+        // if (err == ESP_OK) {
             char key[20];
             snprintf(key, sizeof(key), "student_%d", students[student_count].id);
             char value[200];
@@ -66,16 +134,17 @@ void process_json_data(const char *json_data) {
                                                                     students[student_count].pass_en, 
                                                                     students[student_count].fing_en);
 
-            nvs_set_str(nvs_handle, key, value); // Lưu thông tin sinh viên
-            nvs_commit(nvs_handle); // Ghi vào flash
-            nvs_close(nvs_handle);
+        //     nvs_set_str(nvs_handle, key, value); // Lưu thông tin sinh viên
+        //     nvs_commit(nvs_handle); // Ghi vào flash
+        //     nvs_close(nvs_handle);
 
-            ESP_LOGI(TAG, "Stored student: %s", students[student_count].full_name);
-        } else {
-            ESP_LOGE(TAG, "Failed to open NVS");
-        }
+        //     ESP_LOGI(TAG, "Stored student: %s", students[student_count].full_name);
+        // } else {
+        //     ESP_LOGE(TAG, "Failed to open NVS");
+        // }
     }
 
+    save_students_to_flash(students, MAX_STUDENTS);
     
     // Giải phóng bộ nhớ JSON
     cJSON_Delete(json_array);
@@ -133,10 +202,13 @@ void http_get_task(void *pvParameters) {
         while (!is_wifi_connected()) {
             ESP_LOGI(TAG, "Chưa kết nối Wi-Fi, đang chờ...");
             vTaskDelay(pdMS_TO_TICKS(1000)); // Chờ 1 giây
+            //ESP_ERROR_CHECK(esp_wifi_start());
+            //vTaskDelay(pdMS_TO_TICKS(1000));
+            //ESP_ERROR_CHECK(esp_wifi_connect());
         }
 
         esp_http_client_config_t config_get = {
-            .url = "http://192.168.2.15:3000/api/get-database",
+            .url = "http://192.168.66.71:3000/api/get-database",
             .method = HTTP_METHOD_GET,
             .buffer_size = 4096,       // Kích thước bộ đệm nhận
             .buffer_size_tx = 2048,    // Kích thước bộ đệm gửi (nếu POST, PUT)
@@ -178,7 +250,7 @@ void send_login_request(int student_x) {
                                              students[student_x].position);
 
     esp_http_client_config_t config = {
-        .url = "http://192.168.2.15:3000/api/get-esp32",
+        .url = "http://192.168.66.71:3000/api/get-esp32",
         .cert_pem = NULL,
         .method = HTTP_METHOD_POST,
     };
@@ -257,7 +329,7 @@ void send_login_request(int student_x) {
 
 void fetch_access_time(const char *student_id) {
     char url[256];
-    snprintf(url, sizeof(url), "http://192.168.2.15:3000/api/getAccessTime?student_id=%s", student_id);
+    snprintf(url, sizeof(url), "http://192.168.66.71:3000/api/getAccessTime?student_id=%s", student_id);   //192.168.66.71      192.168.2.15
 
     esp_http_client_config_t config = {
         .url = url,

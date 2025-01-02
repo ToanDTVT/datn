@@ -9,6 +9,10 @@
 
 extern Student students[MAX_STUDENTS];
 
+void init_nvs();
+void save_students_to_flash(Student *students, size_t count);
+void load_students_from_flash(Student *students, size_t count);
+
 //void fetch_database();
 
 //void http_get_task();

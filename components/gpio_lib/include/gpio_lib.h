@@ -23,6 +23,7 @@
 #include "esp_event.h"
 #include "mqtt_client.h"
 #include "nvs_flash.h"
+#include "nvs.h"
 #include "esp_http_client.h"
 #include "protocol_examples_common.h"
 #include "cJSON.h"
@@ -52,6 +53,10 @@
 
 /*GPIO for relay*/
 #define RELAY GPIO_NUM_13             
+
+/*GPIO for doorbell*/
+#define DOORBELL_BUTTON GPIO_NUM_18 
+#define DOORBELL        GPIO_NUM_19 
 
 
 void func1(void);

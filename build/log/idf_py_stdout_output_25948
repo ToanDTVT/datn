@@ -1,0 +1,877 @@
+�Z�revision: v3.1[0ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Nov 21 2024 21:08:18[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28988h (166280) map[0m
+[0;32mI (167) esp_image: segment 1: paddr=000389b0 vaddr=3ffb0000 size=03c98h ( 15512) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=0003c650 vaddr=40080000 size=039c8h ( 14792) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a92c0h (692928) map[0m
+[0;32mI (431) esp_image: segment 4: paddr=000e92e8 vaddr=400839c8 size=141f4h ( 82420) load[0m
+[0;32mI (477) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (478) boot: Disabling RNG early entropy source...[0m
+[0;32mI (489) cpu_start: Multicore app[0m
+[0;32mI (490) cpu_start: Pro cpu up.[0m
+[0;32mI (490) cpu_start: Starting app cpu, entry point is 0x400814bc[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (507) cpu_start: Pro cpu start user code[0m
+[0;32mI (507) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (507) cpu_start: Application information:[0m
+[0;32mI (512) cpu_start: Project name:     datn[0m
+[0;32mI (517) cpu_start: App version:      c87df0a-dirty[0m
+[0;32mI (522) cpu_start: Compile time:     Dec 27 2024 14:27:03[0m
+[0;32mI (528) cpu_start: ELF file SHA256:  e5abdecf1bfafa16...[0m
+[0;32mI (534) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (540) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (544) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (549) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (554) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (561) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (567) heap_init: At 3FFB8C38 len 000273C8 (156 KiB): DRAM[0m
+[0;32mI (573) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (580) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (586) heap_init: At 40097BBC len 00008444 (33 KiB): IRAM[0m
+[0;32mI (594) spi_flash: detected chip: generic[0m
+[0;32mI (597) spi_flash: flash io: dio[0m
+[0;32mI (602) app_start: Starting scheduler on CPU0[0m
+[0;32mI (606) app_start: Starting scheduler on CPU1[0m
+[0;32mI (606) main_task: Started on CPU0[0m
+[0;32mI (616) main_task: Calling app_main()[0m
+[0;32mI (616) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (626) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (636) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (646) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (656) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (666) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (666) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (676) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (796) wifi:wifi driver task: 3ffc19d0, prio:23, stack:6656, core=0[0m
+[0;32mI (806) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (806) wifi:wifi certification version: v7.0[0m
+[0;32mI (806) wifi:config NVS flash: enabled[0m
+[0;32mI (806) wifi:config nano formating: disabled[0m
+[0;32mI (806) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (816) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (816) wifi:Init management short buffer num: 32[0m
+[0;32mI (826) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (826) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (836) wifi:Init static rx buffer num: 10[0m
+[0;32mI (836) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (836) wifi_init: rx ba win: 6[0m
+[0;32mI (846) wifi_init: tcpip mbox: 32[0m
+[0;32mI (846) wifi_init: udp mbox: 6[0m
+[0;32mI (856) wifi_init: tcp mbox: 6[0m
+[0;32mI (856) wifi_init: tcp tx win: 5760[0m
+[0;32mI (856) wifi_init: tcp rx win: 5760[0m
+[0;32mI (866) wifi_init: tcp mss: 1440[0m
+[0;32mI (866) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (876) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (876) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (966) wifi:mode : sta (08:a6:f7:a1:ea:7c)[0m
+[0;32mI (966) wifi:enable tsf[0m
+[0;33mW (966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (976) WIFI: Wi-Fi started, attempting to connect...[0m
+[0;32mI (976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (976) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (986) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (996) mqtt_client: Error transport connect[0m
+[0;33mW (1976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (1976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (2006) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (2006) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (2326) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (2326) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (2646) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (2646) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (2966) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (2966) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (2976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (2976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (3286) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (3286) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (3386) WIFI: Wi-Fi disconnected, retrying...[0m
+[0;33mW (3606) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (3606) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (3926) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (3926) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (3976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (3976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (4246) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (4246) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (4566) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (4566) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (4886) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (4886) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (4976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (4976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (5206) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (5206) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (5526) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (5526) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (5806) WIFI: Wi-Fi disconnected, retrying...[0m
+[0;33mW (5846) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (5846) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (5976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (5976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (6166) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (6166) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (6486) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (6486) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (6806) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (6806) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (6976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (6976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (7126) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (7126) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (7446) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (7446) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (7766) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (7766) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (7976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (7976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (8086) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (8086) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (8226) WIFI: Wi-Fi disconnected, retrying...[0m
+[0;32mI (8236) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (8236) wifi:state: init -> auth (b0)[0m
+[0;32mI (8246) wifi:state: auth -> assoc (0)[0m
+[0;32mI (8256) wifi:state: assoc -> run (10)[0m
+[0;32mI (8296) wifi:connected with QT3112, aid = 1, channel 11, BW20, bssid = 86:a4:fd:bd:31:19[0m
+[0;32mI (8296) wifi:security: WPA2-PSK, phy: bgn, rssi: -22[0m
+[0;32mI (8296) wifi:pm start, type: 1[0m
+
+[0;32mI (8296) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (8316) wifi:<ba-add>idx:0 (ifx:0, 86:a4:fd:bd:31:19), tid:0, ssn:0, winSize:64[0m
+[0;32mI (8346) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (8346) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;31mE (8976) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (8976) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (8976) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (9306) esp_netif_handlers: sta ip: 192.168.66.172, mask: 255.255.255.0, gw: 192.168.66.47[0m
+[0;32mI (9306) WIFI: Got IP: 192.168.66.172[0m
+[0;33mW (14166) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+--NHẬP MÃ SỐ SINH VIÊN-- 
+Connected to MQTT Broker
+[0;31mE (18996) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (18996) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (18996) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (21866) wifi:state: run -> init (3c0)[0m
+[0;32mI (21876) wifi:pm stop, total sleep time: 10292740 us / 13574500 us[0m
+
+[0;32mI (21876) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (21876) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;33mW (21886) WIFI: Wi-Fi disconnected, retrying...[0m
+[0;31mE (21886) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 55[0m
+[0;31mE (21896) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (21896) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (21906) wifi:state: init -> auth (b0)[0m
+[0;32mI (22926) wifi:state: auth -> init (200)[0m
+[0;32mI (22936) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;33mW (22936) WIFI: Wi-Fi disconnected, retrying...[0m
+[0;33mW (23996) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (23996) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Nov 21 2024 21:08:18[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28988h (166280) map[0m
+[0;32mI (167) esp_image: segment 1: paddr=000389b0 vaddr=3ffb0000 size=03c98h ( 15512) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=0003c650 vaddr=40080000 size=039c8h ( 14792) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a92c0h (692928) map[0m
+[0;32mI (431) esp_image: segment 4: paddr=000e92e8 vaddr=400839c8 size=141f4h ( 82420) load[0m
+[0;32mI (477) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (478) boot: Disabling RNG early entropy source...[0m
+[0;32mI (489) cpu_start: Multicore app[0m
+[0;32mI (490) cpu_start: Pro cpu up.[0m
+[0;32mI (490) cpu_start: Starting app cpu, entry point is 0x400814bc[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (507) cpu_start: Pro cpu start user code[0m
+[0;32mI (507) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (507) cpu_start: Application information:[0m
+[0;32mI (512) cpu_start: Project name:     datn[0m
+[0;32mI (517) cpu_start: App version:      c87df0a-dirty[0m
+[0;32mI (522) cpu_start: Compile time:     Dec 27 2024 14:27:03[0m
+[0;32mI (528) cpu_start: ELF file SHA256:  e5abdecf1bfafa16...[0m
+[0;32mI (534) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (540) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (544) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (549) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (554) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (561) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (567) heap_init: At 3FFB8C38 len 000273C8 (156 KiB): DRAM[0m
+[0;32mI (573) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (580) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (586) heap_init: At 40097BBC len 00008444 (33 KiB): IRAM[0m
+[0;32mI (594) spi_flash: detected chip: generic[0m
+[0;32mI (597) spi_flash: flash io: dio[0m
+[0;32mI (602) app_start: Starting scheduler on CPU0[0m
+[0;32mI (606) app_start: Starting scheduler on CPU1[0m
+[0;32mI (606) main_task: Started on CPU0[0m
+[0;32mI (616) main_task: Calling app_main()[0m
+[0;32mI (616) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (626) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (636) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (646) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (656) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (666) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (666) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (676) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (796) wifi:wifi driver task: 3ffc19d0, prio:23, stack:6656, core=0[0m
+[0;32mI (806) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (806) wifi:wifi certification version: v7.0[0m
+[0;32mI (806) wifi:config NVS flash: enabled[0m
+[0;32mI (806) wifi:config nano formating: disabled[0m
+[0;32mI (806) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (816) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (816) wifi:Init management short buffer num: 32[0m
+[0;32mI (826) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (826) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (836) wifi:Init static rx buffer num: 10[0m
+[0;32mI (836) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (836) wifi_init: rx ba win: 6[0m
+[0;32mI (846) wifi_init: tcpip mbox: 32[0m
+[0;32mI (846) wifi_init: udp mbox: 6[0m
+[0;32mI (856) wifi_init: tcp mbox: 6[0m
+[0;32mI (856) wifi_init: tcp tx win: 5760[0m
+[0;32mI (856) wifi_init: tcp rx win: 5760[0m
+[0;32mI (866) wifi_init: tcp mss: 1440[0m
+[0;32mI (866) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (876) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (876) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (966) wifi:mode : sta (08:a6:f7:a1:ea:7c)[0m
+[0;32mI (966) wifi:enable tsf[0m
+[0;33mW (966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (976) WIFI: Wi-Fi started, attempting to connect...[0m
+[0;32mI (976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (976) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (986) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (996) mqtt_client: Error transport connect[0m
+[0;33mW (1976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (1976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (2006) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (2006) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (2326) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (2326) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (2646) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (2646) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (2966) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (2966) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (2976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (2976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (3286) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (3286) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (3386) WIFI: Wi-Fi disconnected, retrying...[0m
+[0;33mW (3606) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (3606) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (3926) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (3926) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (3976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (3976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (4246) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (4246) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (4566) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (4566) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (4886) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (4886) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (4976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (4976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (5206) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (5206) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (5526) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (5526) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (5806) WIFI: Wi-Fi disconnected, retrying...[0m
+[0;33mW (5846) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (5846) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (5976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (5976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (6166) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (6166) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (6486) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (6486) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (6806) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (6806) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (6976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (6976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (7126) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (7126) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (7446) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (7446) wifi:Haven't to connect to a suitable AP now![0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15624
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.5-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Nov 21 2024 21:08:18[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28988h (166280) map[0m
+[0;32mI (167) esp_image: segment 1: paddr=000389b0 vaddr=3ffb0000 size=03c98h ( 15512) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=0003c650 vaddr=40080000 size=039c8h ( 14792) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a92c0h (692928) map[0m
+[0;32mI (431) esp_image: segment 4: paddr=000e92e8 vaddr=400839c8 size=141f4h ( 82420) load[0m
+[0;32mI (477) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (478) boot: Disabling RNG early entropy source...[0m
+[0;32mI (489) cpu_start: Multicore app[0m
+[0;32mI (490) cpu_start: Pro cpu up.[0m
+[0;32mI (490) cpu_start: Starting app cpu, entry point is 0x400814bc[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (507) cpu_start: Pro cpu start user code[0m
+[0;32mI (507) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (507) cpu_start: Application information:[0m
+[0;32mI (512) cpu_start: Project name:     datn[0m
+[0;32mI (517) cpu_start: App version:      c87df0a-dirty[0m
+[0;32mI (522) cpu_start: Compile time:     Dec 27 2024 14:27:03[0m
+[0;32mI (528) cpu_start: ELF file SHA256:  e5abdecf1bfafa16...[0m
+[0;32mI (534) cpu_start: ESP-IDF:          v5.1.5-dirty[0m
+[0;32mI (540) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (544) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (549) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (554) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (561) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (567) heap_init: At 3FFB8C38 len 000273C8 (156 KiB): DRAM[0m
+[0;32mI (573) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (580) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (586) heap_init: At 40097BBC len 00008444 (33 KiB): IRAM[0m
+[0;32mI (594) spi_flash: detected chip: generic[0m
+[0;32mI (597) spi_flash: flash io: dio[0m
+[0;32mI (602) app_start: Starting scheduler on CPU0[0m
+[0;32mI (606) app_start: Starting scheduler on CPU1[0m
+[0;32mI (606) main_task: Started on CPU0[0m
+[0;32mI (616) main_task: Calling app_main()[0m
+[0;32mI (616) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (626) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (636) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (646) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (656) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (666) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (666) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (676) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (796) wifi:wifi driver task: 3ffc19d0, prio:23, stack:6656, core=0[0m
+[0;32mI (806) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (806) wifi:wifi certification version: v7.0[0m
+[0;32mI (806) wifi:config NVS flash: enabled[0m
+[0;32mI (806) wifi:config nano formating: disabled[0m
+[0;32mI (806) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (816) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (816) wifi:Init management short buffer num: 32[0m
+[0;32mI (826) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (826) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (836) wifi:Init static rx buffer num: 10[0m
+[0;32mI (836) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (836) wifi_init: rx ba win: 6[0m
+[0;32mI (846) wifi_init: tcpip mbox: 32[0m
+[0;32mI (846) wifi_init: udp mbox: 6[0m
+[0;32mI (856) wifi_init: tcp mbox: 6[0m
+[0;32mI (856) wifi_init: tcp tx win: 5760[0m
+[0;32mI (856) wifi_init: tcp rx win: 5760[0m
+[0;32mI (866) wifi_init: tcp mss: 1440[0m
+[0;32mI (866) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (876) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (876) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (966) wifi:mode : sta (08:a6:f7:a1:ea:7c)[0m
+[0;32mI (966) wifi:enable tsf[0m
+[0;33mW (966) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (976) WIFI: Wi-Fi started, attempting to connect...[0m
+[0;32mI (976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (976) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (986) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (996) mqtt_client: Error transport connect[0m
+[0;33mW (1976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (1976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (1986) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (1986) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (2306) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (2306) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (2626) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (2626) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (2946) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (2946) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (2976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (2976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (3266) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (3266) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (3386) WIFI: Wi-Fi disconnected, retrying...[0m
+[0;33mW (3586) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (3586) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (3906) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (3906) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (3976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (3976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (4226) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (4226) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (4546) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (4546) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (4866) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (4866) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (4976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (4976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (5186) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (5186) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (5506) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (5506) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (5806) WIFI: Wi-Fi disconnected, retrying...[0m
+[0;33mW (5826) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (5826) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (5846) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (5976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (5976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+--NHẬP MÃ SỐ SINH VIÊN-- 
+[0;33mW (6976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (6976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (7976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (7976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (8226) WIFI: Wi-Fi disconnected, retrying...[0m
+[0;33mW (8976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (8976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (9976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (9976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (10636) WIFI: Wi-Fi disconnected, retrying...[0m
+[0;33mW (10976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (10976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (11976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (11976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (12976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (12976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (13056) WIFI: Wi-Fi disconnected, retrying...[0m
+[0;33mW (13976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (13976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (14976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (14976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (15476) WIFI: Wi-Fi disconnected, retrying...[0m
+[0;33mW (15976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (15976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;31mE (16006) esp-tls: couldn't get hostname for :broker.hivemq.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (16006) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (16006) mqtt_client: Error transport connect[0m
+[0;33mW (16976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (16976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (17886) WIFI: Wi-Fi disconnected, retrying...[0m
+[0;33mW (17976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (17976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (18976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (18976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (19976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (19976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (20306) WIFI: Wi-Fi disconnected, retrying...[0m
+[0;33mW (20976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (20976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (21976) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (21976) HTTP_CLIENT: Chưa kết nối Wi-Fi, đang chờ...[0m
+[0;33mW (22716) WIFI: Wi-Fi disconnected, retrying...[0m
+[0;32mI (22756) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (22756) wifi:state: init -> auth (b0)[0m
+[0;32mI (22766) wifi:state: auth -> assoc (0)[0m
+[0;32mI (22776) wifi:state: assoc -> run (10)[0m
+[0;32mI (22816) wifi:connected with QT3112, aid = 1, channel 11, BW20, bssid = 86:a4:fd:bd:31:19[0m
+[0;32mI (22816) wifi:security: WPA2-PSK, phy: bgn, rssi: -20[0m
+[0;32mI (22816) wifi:pm start, type: 1[0m
+
+[0;32mI (22816) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (22836) wifi:<ba-add>idx:0 (ifx:0, 86:a4:fd:bd:31:19), tid:0, ssn:0, winSize:64[0m
+[0;32mI (22966) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (22966) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;31mE (22976) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (22976) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (22976) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (23826) esp_netif_handlers: sta ip: 192.168.66.172, mask: 255.255.255.0, gw: 192.168.66.47[0m
+[0;32mI (23826) WIFI: Got IP: 192.168.66.172[0m
+[0;31mE (33006) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (33006) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (33006) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (41476) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned 0[0m
+[0;31mE (41476) mqtt_client: MQTT connect failed[0m
+[0;31mE (43016) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (43016) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (43016) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (53026) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (53026) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (53026) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (63036) esp-tls: [sock=55] select() timeout[0m
+[0;31mE (63036) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (63036) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (66776) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned 0[0m
+[0;31mE (66776) mqtt_client: MQTT connect failed[0m
+[0;31mE (73046) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (73046) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (73046) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (83056) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (83056) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (83056) HTTP_CLIENT: Connection failed, sock < 0[0m
+Connected to MQTT Broker
+[0;31mE (93066) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (93066) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (93066) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (103076) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (103076) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (103076) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (113086) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (113086) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (113086) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (123096) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (123096) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (123096) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (133106) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (133106) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (133106) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (143116) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (143116) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (143116) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (153126) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (153126) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (153126) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (163136) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (163136) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (163136) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (173146) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (173146) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (173146) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (183156) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (183156) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (183156) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (193166) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (193166) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (193166) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (203176) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (203176) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (203176) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (213186) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (213186) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (213186) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (223196) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (223196) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (223196) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (233206) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (233206) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (233206) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (243216) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (243216) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (243216) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (253226) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (253226) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (253226) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (263236) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (263236) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (263236) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (273256) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (273256) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (273256) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (283266) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (283266) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (283266) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (293276) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (293276) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (293276) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (303286) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (303286) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (303286) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (313296) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (313296) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (313296) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (323306) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (323306) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (323306) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (333316) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (333316) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (333316) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (343326) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (343326) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (343326) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (353336) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (353336) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (353336) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (363346) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (363346) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (363346) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (373356) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (373356) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (373356) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (383366) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (383366) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (383366) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (393376) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (393376) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (393376) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (403386) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (403386) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (403386) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (413396) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (413396) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (413396) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (423406) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (423406) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (423406) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (433416) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (433416) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (433416) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (443426) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (443426) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (443426) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (453436) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (453436) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (453436) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (463446) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (463446) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (463446) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (473456) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (473456) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (473456) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (483466) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (483466) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (483466) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (493476) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (493476) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (493476) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (503486) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (503486) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (503486) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (513496) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (513496) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (513496) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (523506) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (523506) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (523506) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (533516) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (533516) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (533516) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (543526) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (543526) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (543526) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (553536) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (553536) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (553536) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (563546) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (563546) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (563546) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (573556) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (573556) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (573556) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (583566) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (583566) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (583566) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (593576) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (593576) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (593576) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (603586) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (603586) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (603586) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (613596) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (613596) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (613596) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (623606) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (623606) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (623606) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (633616) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (633616) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (633616) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (643626) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (643626) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (643626) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (653636) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (653636) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (653636) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (663646) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (663646) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (663646) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (673656) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (673656) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (673656) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (683666) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (683666) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (683666) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (693676) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (693676) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (693676) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (694756) wifi:<ba-add>idx:1 (ifx:0, 86:a4:fd:bd:31:19), tid:1, ssn:0, winSize:64[0m
+[0;31mE (694756) transport_base: poll_read select error 104, errno = Connection reset by peer, fd = 55[0m
+[0;31mE (694766) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;31mE (703686) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (703686) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (703686) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (713696) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (713696) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (713696) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (720396) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned 0[0m
+[0;31mE (720396) mqtt_client: MQTT connect failed[0m
+[0;31mE (723706) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (723706) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (723706) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (733716) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (733716) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (733716) HTTP_CLIENT: Connection failed, sock < 0[0m
+Connected to MQTT Broker
+[0;31mE (743726) esp-tls: [sock=55] select() timeout[0m
+[0;31mE (743726) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (743726) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (753736) esp-tls: [sock=55] select() timeout[0m
+[0;31mE (753736) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (753736) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (763746) esp-tls: [sock=55] select() timeout[0m
+[0;31mE (763746) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (763746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (773756) esp-tls: [sock=55] select() timeout[0m
+[0;31mE (773756) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (773756) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (783776) esp-tls: [sock=55] select() timeout[0m
+[0;31mE (783776) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (783776) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (793786) esp-tls: [sock=55] select() timeout[0m
+[0;31mE (793786) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (793786) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (803796) esp-tls: [sock=55] select() timeout[0m
+[0;31mE (803796) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (803796) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (813806) esp-tls: [sock=55] select() timeout[0m
+[0;31mE (813806) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (813806) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (823816) esp-tls: [sock=55] select() timeout[0m
+[0;31mE (823816) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (823816) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (833826) esp-tls: [sock=55] select() timeout[0m
+[0;31mE (833826) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (833826) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (843836) esp-tls: [sock=55] select() timeout[0m
+[0;31mE (843836) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (843836) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (853846) esp-tls: [sock=55] select() timeout[0m
+[0;31mE (853846) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (853846) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (863856) esp-tls: [sock=55] select() timeout[0m
+[0;31mE (863856) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (863856) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (873866) esp-tls: [sock=55] select() timeout[0m
+[0;31mE (873866) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (873866) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (883876) esp-tls: [sock=55] select() timeout[0m
+[0;31mE (883876) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (883876) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (893886) esp-tls: [sock=55] select() timeout[0m
+[0;31mE (893886) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (893886) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (903896) esp-tls: [sock=55] select() timeout[0m
+[0;31mE (903896) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (903896) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (913906) esp-tls: [sock=55] select() timeout[0m
+[0;31mE (913906) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (913906) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (917616) mqtt_client: No PING_RESP, disconnected[0m
+[0;31mE (923916) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (923916) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (923916) HTTP_CLIENT: Connection failed, sock < 0[0m
+Connected to MQTT Broker
+[0;31mE (933926) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (933926) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (933926) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (943936) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (943936) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (943936) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (953946) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (953946) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (953946) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (963956) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (963956) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (963956) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (973966) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (973966) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (973966) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (983976) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (983976) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (983976) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (993986) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (993986) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (993986) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (1003996) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (1003996) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (1003996) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (1014006) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (1014006) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (1014006) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (1024016) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (1024016) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (1024016) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (1034026) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (1034026) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (1034026) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (1044036) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (1044036) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (1044036) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (1054046) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (1054046) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (1054046) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (1064056) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (1064056) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (1064056) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (1074066) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (1074066) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (1074066) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (1084076) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (1084076) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (1084076) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (1094086) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (1094086) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (1094086) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (1104096) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (1104096) transport_base: Failed to open a
